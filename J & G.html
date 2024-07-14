@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <meta charset="UTF-8"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <title>J&G Investment Limited</title>
+     <style>
+        body{
+            margin:0%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .section-1{
+            width: 100%;
+           
+        }
+
+        .icon-1{
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        .container-1{
+            background-image: url(./image/johannes-plenio-sPt5RIjKfpk-unsplash.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+
+        .container-1-heading{
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            width: 100%; 
+            padding-top: 170px;
+            padding-bottom: 160px;
+        }
+
+        .container-1-box{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 75%;
+            padding-left: 100px;
+            margin-bottom: 30px;
+            margin-left: 0%;
+            margin-top: -6%;
+            
+        }
+
+        h3{
+            text-align: center;
+            font-weight: 100;
+            color: white;
+        }
+
+        p{
+            line-height: 25px;
+            font-size: 14px;
+        }
+
+        li{
+            font-size: 14px;
+            padding-right: 20px;
+        }
+
+        .box-1{
+            background-color: #f79e02;
+            color: #f7cb80;
+            text-align: center;
+            line-height: 25px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 0px;
+            padding-right: 20px;
+            height: 270px;
+            width: 100%;
+        }
+
+        .box-2{
+            background-color: #343a40;
+            color: rgb(146, 143, 143);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 0px;
+            height: 270px;
+            width: 100%;
+        }
+
+        input{
+        border: 2px solid rgb(146, 143, 143);
+        background-color: #343a40;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        width: 250px;
+        }
+
+        button{
+            border: none;
+            background-color: #f79e02;
+            width: 250px;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .box-3{
+            background-color: #f79e02;
+            color: #f7cb80;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            height: 270px;
+            width: 100%;
+        }
+
+        h2{
+        text-align: center;
+        color: #f79e02;
+        font-weight: 700;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 26px;
+        margin-bottom: 15px;
+        }
+
+        .section-2{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 100%;
+        }
+
+        .container-2{
+            display: grid;
+            grid-template-columns: 1fr 0.5fr;
+            gap: 20px;
+            padding-top: 20px;
+            padding-left: 120px;
+            padding-right: 120px;
+            width: 80%;
+        }
+
+        .sub-container-2{
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        }
+
+        .container-2-p{
+            color: rgb(116, 114, 114);
+            font-weight: 500;
+        }
+
+        h4{
+            color: rgb(95, 94, 94);
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 0%;
+            margin-top: 0%;
+        }
+
+        .section-3{
+            padding-top: 80px;
+            width: 100%;
+        }
+
+        .container-3{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            padding-left: 100px;
+            padding-top: 50px;
+            padding-bottom: 80px;
+            gap: 10px;
+            width: 90%;
+        }
+
+        .sub-container-3{
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr 0.5fr;
+            gap: 10px;
+            
+        }
+
+        .sub-container-3a{
+            display: grid;
+            grid-template-columns: 0.2fr 0.5fr;
+            gap: 100px;
+        }
+
+        .container-3p{
+            color: rgb(99, 98, 98);
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .container-4{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            width: 100%;
+        }
+
+        .section-4{
+            padding-bottom: 70px;
+            width: 100%;
+        }
+
+        .section-5{
+            background-color: rgb(59, 59, 59);
+            color: rgb(124, 123, 123);
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            font-size: small;
+        }
+
+       
+        @media (max-width: 425px){
+            .container-1-heading{
+                padding-top: 125px;
+                padding-bottom: 125px;
+            }
+
+            .container-1-box{
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: none;
+                padding-left: 10px;
+                margin-top: -10%;
+                width: 88%;
+            }
+
+            .container-2{
+                display: grid;
+                grid-template-columns: 1fr 0.5fr;
+                grid-template-columns: none;
+                padding-left: 20px;
+                padding-right: 0px;
+            }
+
+            .sub-container-3{
+                display: grid;
+                grid-template-rows: 0.5fr 0.5fr 0.5fr;
+                grid-template-columns: none;
+            }
+
+            .container-3{
+                padding-left: 20px;
+            }
+
+            .sub-container-3a{
+                display: grid;
+                grid-template-columns: 0.2fr 1fr;
+            }
+
+            .container-4{
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-columns: none;
+            }
+        }
+
+        @media (min-width: 426px){
+          .container-1-box{
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-columns: none;
+          margin-top: 20px;
+          gap: 10px;
+          }
+
+          .container-3{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: none;
+            padding-left: 60px;
+          }
+
+          .sub-container-3{
+            grid-template-rows: 0.5fr 0.5fr 0.5fr;
+            grid-template-columns: none;
+          }
+
+          .sub-container-3a{
+            grid-template-columns: 0.2fr 1fr;
+          }
+
+          .container-2{
+            padding-left: 40px;
+            padding-right: 20px;
+            width: 90%;
+          }
+
+          input{
+            width: 90%;
+          }
+
+          button{
+            width: 90%;
+          }
+
+          li{
+            line-height: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+          }
+
+          .box-1{
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+
+        @media (min-width: 769px){
+           .container-1-box{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: none;
+            margin-top: -8%;
+           }
+
+           li{
+            line-height: 25px;
+            padding-bottom: 0px;
+            padding-left: 10px;
+           }
+
+           input{
+            width: 80%;
+           }
+
+           button{
+            width: 80%;
+           }
+
+           .container-3{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: none;
+            padding-left: 40px;
+            width: 95%;
+           }
+
+           .sub-container-3a{
+            grid-template-columns: 0.2fr 1fr;
+            gap: 50px;
+           }
+
+           .sub-container-3{
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr 0.5fr;
+            gap: 10px;
+            grid-template-rows: none;
+        }
+        }
+
+        @media (min-width: 1025px){
+            .container-1-box{
+                padding-left: 10%;
+            }
+
+            .icon-1{
+                padding-left: 40px;
+                padding-top: 40px;
+            }
+
+            li{
+                padding-right: 20px;
+                margin-left: 20px;
+            }
+
+            .container-1-heading{
+                padding-bottom: 24%;
+            }
+
+            .container-2{
+                width: 80%;
+                padding-left: 130px;
+            }
+
+            .container-3{
+                width: 85%;
+                margin-left: 130px;
+            }
+        }
+
+        @media (min-width: 1441px){
+             .container-1-heading{
+                padding-top: 19%;
+             }
+
+             .container-1-box{
+                padding-left: 12%;
+                margin-top: -3%;
+             }
+
+             .section-2{
+                padding-top: 100px;
+             }
+
+             li{
+                margin-left: 30px;
+                padding-right: 30px;
+             }
+              
+             .container-2{
+                width: 75%;
+                padding-left: 300px;
+             }
+
+             .section-3{
+                padding-top: 150px;
+                padding-bottom: 120px;
+             }
+
+             .container-3{
+                margin-left: 290px;
+             }
+
+        }
+       
+
+     </style>
+     </style>
+    </head>
+    <body>
+        <section class="section-1">
+           <div class="container-1">
+            <div class="icon-1">
+            <svg width="40" height="46" fill="#fafafa" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 18h18v-2H3v2Zm0-5h18v-2H3v2Zm0-7v2h18V6H3Z"></path>
+              </svg>
+            </div>
+            <div class="container-1-heading">
+                <h1>J&G INVESTMENT LIMITED</h1>
+            </div>
+           </div>
+            <div class="container-1-box">
+              <div class="box-1">
+                <h3>OUR GOAL</h3>
+                <ul>
+                    <li>To be the most prefered in the frieght forwarding sub sector and support services</li>
+                    <li>To partner with our client in service delivery</li>
+                    <li>To always provide value added service to our client</li>
+                </ul>
+              </div>
+              <div class="box-2">
+                <h3>TRACK YOUR SHIPMENT</h3>
+                <P style="color: rgb(146, 143, 143);">Enter bill of Loding</P>
+                 <input type="text" placeholder="Enter Bill of Loding"/>
+                 <p style="margin-bottom: 30px; color: rgb(170, 169, 169);">Shipment Status:</p>
+                 <button>Check</button>
+              </div>
+              <div class="box-3">
+                <h3>CONTACT US</h3>
+                <p><b>4, Tex Olawale Creasent, Coconut Bus-stop, Olodi Apapa Lagos</b></p>
+                <p><b>08033051890, 09091811039, 0803526018</b></p>
+                <p><b>lexwillyindustries@ymail.com</b></p>
+                <p><b>RC: 307.375</b></p>
+              </div>
+            </div>
+        </section>
+        <section class="section-2">
+            <h2>STRATEGY &AMP; VISION</h2>
+            <hr style="height: 3px;width: 70px;background-color: #f79e02;color:
+             #f79e02;border: none;">
+            <div class="container-2">
+             <div>
+                <h4>Vision Statement</h4>
+                <p class="container-2-p">Our company has been in business for over 15 years now 
+                    we like to look ahead instead of looking back</p>
+                    <p class="container-2-p">Our Management has a passion for it's job, for its stakeholder and cooperate in order 
+                        to get a profitable and sustainable business model, through relationship with customers, vendors 
+                        and all parties involved
+                    </p>
+                    <p class="container-2-p">Our staff are all committed to customer satisfaction as a define target for company success;
+                         if we said we can do it WE WILL DELIVER!
+                    </p>
+                    <P class="container-2-p">Our process and IT are customer driven, therefore flexible enough to adapt to the ever changing supply
+                        chain models of our customers
+                    </P>
+                    <p class="container-2-p">Through passion committed and flexiblility we want to make the difference in freight and logistics
+                        industry; with the world wild network solid soltion J&G Investment LTD is willing to become a 
+                        supply chain reference to customer and stakeholders.
+                    </p>
+             </div>
+             <div class="sub-container-2">
+                <div>
+                    <h4>Our Service</h4>
+                    <p class="container-2-p">Our aim is to provide efficient and reliable freight forwarding services 
+                        to our client at reasonable cost</p>
+                </div>
+                <div>
+                    <h4>Our Objective</h4>
+                    <p class="container-2-p">To optimally utilize our human and material resources to provide excellent and efficient frieght and 
+                        support to numerouse clients
+                    </p>
+                </div>
+                <div>
+                    <h4>Mission Statement</h4>
+                    <p class="container-2-p">We seek to enrich the lives of those within our company as well as those we do business with</p>
+                </div>
+             </div>
+            </div>
+        </section>
+        <section class="section-3">
+            <h2>WHAT WE OFFER</h2>
+            <p style="text-align: center; color: rgb(168, 164, 164);
+            font-weight: 500; font-size: 13px; padding-left: 10px; padding-right: 10px;">Our aim is to provide efficient and reliable freight forwarding services 
+                to our client at <br/>reasonable cost</p>
+            <hr style="height: 3px;width: 70px;background-color: #f79e02;color:
+             #f79e02;border: none;">
+        <div class="container-3">
+         <div class="sub-container-3">
+            <div class="sub-container-3a">
+                <svg width="46" height="46" fill="#f79e02" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16.48 14h4.02a2.5 2.5 0 0 0 0-5H6.618a1 1 0 0 1-.894-.553l-.447-.894A1 1 0 0 0 4.382 7H2.517a1 1 0 0 0-.92 1.394l2.143 5a1 1 0 0 0 .92.606h3.863a1 1 0 0 1 .929 1.371l-.903 2.258A1 1 0 0 0 9.477 19h2.043a1 1 0 0 0 .78-.375l3.4-4.25a1 1 0 0 1 .78-.375ZM9.5 8h4.75L12.3 5.4a1 1 0 0 0-.8-.4H9.618a1 1 0 0 0-.894 1.447L9.5 8Z" clip-rule="evenodd"></path>
+                  </svg>
+                  <p class="container-3p">Air Freight</p>
+            </div>
+            <div class="sub-container-3a">
+                <svg width="46" height="46" fill="#f79e02" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M9 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2h3a1 1 0 0 1 .982 1.192l-.438 2.238-1.327-.295-5-1.111a1 1 0 0 0-.434 0l-5 1.11-1.326.296-.438-2.238A1 1 0 0 1 6 5h3V3Zm-6.092 7.996-.125.028a1 1 0 0 0-.677 1.423l2 4a1 1 0 0 0 1.036.543L12 16.01l6.859.98a1 1 0 0 0 1.036-.543l2-4a1 1 0 0 0-.678-1.423l-.125-.028a1 1 0 0 1-.309-.02l-4-.889L12 9.024l-4.783 1.063-4 .89a1 1 0 0 1-.309.019Zm6.36 7.609a3.631 3.631 0 0 1 5.465 0l.036.04a1.57 1.57 0 0 0 2.052.273 3.57 3.57 0 0 1 3.306-.344l1.245.497a1 1 0 0 1-.743 1.857l-1.245-.498a1.57 1.57 0 0 0-1.454.152 3.57 3.57 0 0 1-4.666-.62l-.036-.04a1.631 1.631 0 0 0-2.455 0l-.036.04a3.57 3.57 0 0 1-4.667.62 1.57 1.57 0 0 0-1.453-.152l-1.245.498a1 1 0 1 1-.743-1.857l1.245-.497a3.57 3.57 0 0 1 3.306.344 1.57 1.57 0 0 0 2.052-.273l.035-.04Z" clip-rule="evenodd"></path>
+                  </svg>
+                  <p class="container-3p">Ocean freight</p>
+            </div>
+            <div class="sub-container-3a">
+                <svg width="46" height="46" fill="none" stroke="#f79e02" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path>
+                    <path d="M17 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path>
+                    <path d="M19 18h2v-6c0-1.857-.527-3.637-1.465-4.95C18.598 5.737 17.326 5 16 5h-1"></path>
+                    <path d="M7 18h8"></path>
+                    <path d="M12 18V5h3"></path>
+                    <path d="M3 17v-5h9"></path>
+                    <path d="M21 12h-4.5L15 5"></path>
+                  </svg>
+                  <p class="container-3p">Ground Shipping</p>
+            </div>
+         </div>
+         <div class="sub-container-3">
+            <div class="sub-container-3a">
+                <svg width="46" height="46" fill="#f79e02" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="m11.52 5.872 7.2 7.2v5.048a1.8 1.8 0 0 1-1.8 1.8H6.12a1.8 1.8 0 0 1-1.8-1.8v-5.048l7.2-7.2Zm6-.952v4.2l-2.4-2.4v-1.8a.6.6 0 0 1 .6-.6h1.2a.6.6 0 0 1 .6.6Z" clip-rule="evenodd"></path>
+                    <path fill-rule="evenodd" d="M10.672 3.72a1.2 1.2 0 0 1 1.697 0l7.976 7.976a.6.6 0 1 1-.85.85L11.52 4.568l-7.975 7.976a.6.6 0 0 1-.85-.85l7.977-7.975Z" clip-rule="evenodd"></path>
+                  </svg>
+                  <p class="container-3p">Wherehousing</p>
+            </div>
+            <div class="sub-container-3a">
+                <svg width="46" height="46" fill="none" stroke="#f79e02" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 6h20v4l-.7.42a3.5 3.5 0 0 1-3.6 0L17 10l-.7.42a3.5 3.5 0 0 1-3.6 0L12 10l-.7.42a3.5 3.5 0 0 1-3.6 0L7 10l-.7.42a3.5 3.5 0 0 1-3.6 0L2 10V6Z"></path>
+                    <path d="M4 11.244V22h16V11"></path>
+                    <path d="M4 5.911V2h16v4"></path>
+                    <path d="M14.5 16h-5v6h5v-6Z"></path>
+                  </svg>
+                <p class="container-3p">Storage</p>
+            </div>
+            <div class="sub-container-3a">
+                <svg width="46" height="46" fill="#f79e02" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 8h3l3 4.056V18h-2.035a3.5 3.5 0 0 1-6.93 0h-5.07a3.5 3.5 0 0 1-6.93 0H1V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2Zm0 2v3h4v-.285L18.992 10H17Z"></path>
+                  </svg>
+                  <p class="container-3p">Deliver Van</p>
+                </div>
+         </div>
+        </div>
+        </section>
+        <section class="section-4">
+            <div class="container-4">
+            <img src="./image/IMG-BOAT.jpg" width="100%">
+            <img src="./image/img_5.jpg" width="100%">
+            <img src="./image/img_1.jpg" width="100%">
+            <img src="./image/img-plane.jpg" width="100%">
+            </div>
+        </section>
+        <section class="section-5">
+            <div>Copyright &copy; All right reserved</div>
+        </section>
+    </body>
+</html>

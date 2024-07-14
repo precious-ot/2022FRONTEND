@@ -1,0 +1,37 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+        <style>
+            body{
+                background-color: burlywood;
+                font-family: Arial;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div>
+                <ol>
+                    <li id="day"></li>
+                    <li id="time"></li>
+                    <li id="window"></li>
+                    <li> month, date and year
+                        <ul>
+                            <li id="one"></li>
+                            <li id="two"></li>
+                            <li id="three"></li>
+                            <li id="four"></li>
+                        </ul>
+                    </li>
+                    <li id="area"></li>
+                </ol>
+            </div>
+        </div>
+        <div onload="animate_str('target')">
+            <h2 id="target" style="text-align: center;">string</h2>
+        </div>
+        <script src="js/exercises.js"></script>
+    </body>
+</html>

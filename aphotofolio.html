@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+         crossorigin="anonymous"></script>
+         <style>
+
+          @font-face {
+            font-family: garamond;
+            src: url(./fontawesome-free-6.5.2-web.zip);
+          }
+
+
+          .navbar-toggler-icon{
+            background-image: url(./image/menu\ \(1\).svg) !important;
+          }
+
+          .navbar-brand, .offcanvas-title{
+            font-family: garamond !important;
+            font-size: 40px !important;
+          }
+
+          #life{
+            font-family: garamond;
+            font-weight: 700;
+            font-size: 45px;
+          }
+
+          #life-1{
+            margin-top: 80px;
+          }
+
+          #button-close{
+            background-image: url(./image/close-13.svg);
+          }
+
+          #available-button{
+            padding: 12px 34px;
+          }
+
+         </style>
+  </head>
+  <body class="bg-dark">
+    <section class="pt-4">
+        <nav class="navbar navbar-expand-lg bg-transparent sticky-top">
+            <div class="container-fluid">
+               <a class="navbar-brand text-light">
+                <svg class="mb-2" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="darkgreen" class="bi bi-camera" viewBox="0 0 16 16">
+                    <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
+                    <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                  </svg>
+                  Photofolio
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" 
+               data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" 
+               aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="offcanvas offcanvas-end bg-dark" tabindex="1" id="navbarOffcanvasLg" 
+               aria-labelledby="navbarOffcanvasLabel">
+               <div class="offcanvas-header">
+               <h4 class="offcanvas-title text-light">
+                <svg class="mb-2" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="darkgreen" class="bi bi-camera" viewBox="0 0 16 16">
+                  <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
+                  <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                </svg>
+                Photofolio</h4>
+                <button type="button" class="btn-close btn-light" id="button-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+                <ul class="navbar-nav nav-underline  justify-content-end align-center me-5">
+                  <li class="nav-item">
+                    <a class="nav-link text-light ps-2 pe-2" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light ps-2 pe-2" href="#about">ABOUT</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link text-light ps-2 pe-2 dropdown-toggle" data-bs-toggle="dropdown"
+                     aria-expanded="false" href="#about">GALLERY</a>
+                     <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Nature</a></li>
+                      <li><a class="dropdown-item" href="#">People</a></li>
+                      <li><a class="dropdown-item" href="#">Architechture</a></li>
+                      <li><a class="dropdown-item " href="#">Animals</a></li>
+                      <li><a class="dropdown-item" href="#">Sport</a></li>
+                      <li><a class="dropdown-item" href="#">Travel</a></li>
+                      <li><a class="dropdown-item" href="#">Sub Menu</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light ps-2 pe-2" href="#Services">SERVICES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light ps-2 pe-2" href="#Contact">
+                      CONTACT
+                    </a>
+                  </li>
+                 </ul>
+               </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+      <div class="row justify-content-center align-center container-fluid mt-5">
+        <div class="col-lg-6 text-center">
+          <h2 class="text-light text-center" id="life">I'm Jenny Wilson a Professional Photographer from New York City</h2>
+      
+        <p class="text-light text-center px-2">Blanditiis praesentium aliquam illum tempore incidunt debitis 
+          dolorem magni 
+          est deserunt sed qui libero. Qui voluptas amet.</p>
+          <button class="btn btn-success text-center" id="available-button">AVAILABLE FOR HIRE</button>
+        </div>
+         </div>
+    </section>
+    <section class="ps-3 pt-5 mb-5">
+      <div class="container-fluid">
+      <div class="row justify-content-center align-center pt-4 g-4">
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <img class="img-fluid rounded" src="./image/gallery-1.jpg">
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <img class="img-fluid rounded" src="./image/gallery-2.jpg">
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <img class="img-fluid rounded" src="./image/gallery-3.jpg">
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <img class="img-fluid rounded" src="./image/gallery-4.jpg">
+        </div>
+      </div>
+      <div class="row justify-content-center align-center pt-4 g-4">
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <img class="img-fluid rounded" src="./image/gallery-5.jpg">
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <img class="img-fluid rounded" src="./image/gallery-6.jpg">
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <img class="img-fluid rounded" src="./image/gallery-7.jpg">
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <img class="img-fluid rounded" src="./image/gallery-8.jpg">
+        </div>
+      </div>
+      <div class="row justify-content-center align-center pt-4 g-4">
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <img class="img-fluid rounded" src="./image/gallery-9.jpg">
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <img class="img-fluid rounded" src="./image/gallery-10.jpg">
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <img class="img-fluid rounded" src="./image/gallery-11.jpg">
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <img class="img-fluid rounded" src="./image/gallery-12.jpg">
+        </div>
+      </div>
+      <div class="row justify-content-center align-center pt-4 g-4">
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <img class="img-fluid rounded" src="./image/gallery-13.jpg">
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <img class="img-fluid rounded" src="./image/gallery-14.jpg">
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <img class="img-fluid rounded" src="./image/gallery-15.jpg">
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <img class="img-fluid rounded" src="./image/gallery-16.jpg">
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="mt-5">
+      <div class="border-top pt-5" style="--bs-border-opacity: .5;">
+          
+      </div>
+    </section>
+  </body>
+</html>

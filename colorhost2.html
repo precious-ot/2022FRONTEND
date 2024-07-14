@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .heading {
+            margin: 0;
+            background-image: linear-gradient(to right, rgb(109, 66, 114), rgb(204, 65, 15))
+        }
+
+        .container-1 {
+            display: grid;
+            grid-template-columns: 0.5fr 1.8fr 0.4fr;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            width: 90%;
+        }
+
+        .heading-1 {
+            color: white;
+            font-size: 30px;
+            margin: 0;
+            padding-left: 35px;
+            padding-top: 5px;
+        }
+
+        .sub-heading-1 {
+            color: #c44323;
+        }
+
+        .navigation {
+            margin-left: 20px;
+            margin-right: 30px;
+            margin-top: 30px;
+        }
+
+        .nav {
+            display: inline;
+            color: white;
+            font-weight: 500;
+            font-size: 16px;
+            margin-right: 20px;
+            padding-bottom: 20px;
+        }
+
+        .home {
+            border-bottom: 2px solid white;
+            letter-spacing: 2px;
+            display: inline;
+            color: white;
+            font-weight: 500;
+            font-size: 16px;
+            margin-right: 20px;
+            padding-bottom: 20px;
+        }
+
+        .nav:hover {
+            border-bottom: 2px solid white;
+        }
+
+        .container-1-button {
+            border: 1px solid white;
+            background-color: transparent;
+            width: 130px;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 25px;
+        }
+
+        .container-1-button:hover {
+            border-color: #ff4718;
+        }
+
+        .container-2 {
+            width: 90%;
+            text-align: center;
+            color: white;
+            padding-top: 10%; 
+        }
+
+        .sub-container-2a {
+            font-size: 60px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .sub-container-2b {
+            font-size: 30px;
+            margin-top: 5.6px;
+        }
+
+        .sub-container-2c {
+             text-align: center;
+             border: 1px solid white;
+             padding: 15px 30px;
+             margin-bottom: 10px;
+             background-color: transparent;
+             color: white;
+             border-radius: 40px;
+        }
+
+        .sub-container-2c:hover {
+            border-color: #ff4718;
+        }
+
+        .container-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-top: 100px;
+            width: 85%;
+        }
+
+        .sub-container-3a {
+            background-color: #ff4718;
+            margin: 0;
+            text-align: center;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 100%;
+        }
+
+        .sub-container-3b {
+            background-color: white;
+            margin: 0;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 100%;
+        }
+
+        .sub-container-3b:hover {
+            background-color: #ff4718;
+            color: white;
+        }
+
+        .section-1 {
+            background-color: rgb(228, 228, 228);
+            padding-block-start: 100px;
+            padding-inline-start: 180px;
+            padding-inline-end: 180px;
+            padding-block-end: 80px;
+        }
+
+        .container-4 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 100%;
+        }
+
+        .sub-container-4a {
+            background-color: snow;
+            text-align: center;
+            width: 300px;
+            height: 350px;
+            margin-block-start: 40px;
+            width: 100%;
+        }
+
+        .sub-container-4c{
+            background-color: snow;
+            text-align: center;
+            width: 300px;
+            height: 350px;
+            margin-block-start: 40px;
+            width: 100%;
+        }
+
+        .sub-container-4a:hover {
+            box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14),
+             0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+            z-index: 1;
+        }
+
+        .sub-container-4c:hover{
+            box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14),
+             0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+            z-index: 1;
+        }
+
+        .plan-1-heading1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .doller {
+            font-size: 48px;
+            font-weight: 700;
+            color: #ff4718;
+            margin: 20px 0px;
+        }
+
+        .doller-1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: white;
+            margin: 20px 0px;
+        }
+
+        .plan-p {
+            font-size: 16px;
+            font-weight: 500;
+            color: #737373;
+            line-height: 25px;
+        }
+
+        .plan-1-span {
+            font-size: 16px;
+            font-weight: 500;
+            color: #303030;
+        }
+
+        .plan-1-button {
+            background-color: white;
+            border: 2px solid black;
+            padding: 15px 20px;
+            border-radius: 25px;
+        }
+
+        .plan-2-button {
+            background-color: #ff4718;
+            border: 2px solid white;
+            padding: 15px 20px;
+            border-radius: 25px;
+            color: white;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .plan-1-button:hover {
+            border-color: #ff4718;
+        }
+
+        .sub-container-4b {
+            color: white;
+            text-align: center;
+            background-color: #ff4718;
+            box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+            z-index: 1;
+            width: 100%;
+            padding-bottom: 20px;
+            padding-top: 30px;
+        }
+
+        .plan-1-heading2 {
+            color: #ff4718;
+            text-align: center;
+            background-color: white;
+            width: 10%;
+            font-size: 36px;
+            padding: 5px;
+        }
+
+        .section-2 {
+            background-image: linear-gradient(to right, rgb(109, 66, 114), rgb(204, 65, 15));
+            padding-bottom: 50px;
+        }
+
+        .container-5 {
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+            text-align: center;
+            width: 100%;
+        }
+
+        .container-5-heading {
+            font-size: 50px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+            margin-top: 80px;
+        }
+
+        .container-5-p {
+            color: white;
+            line-height: 25px;
+        }
+
+        .search {
+            margin-top: 50px;
+
+        }
+
+        .text-input {
+            color: white;
+            border-color: #fff;
+            width: 60%;
+            min-width: 56px;
+            padding: 15px 20px;
+            background-color: transparent;
+            border: 1px solid;
+            border-radius: 50px;
+            outline: 0;
+            font-size: 30px;
+            position: relative;
+        }
+
+        .container-5-button {
+            position: absolute;
+            padding-inline-start: 60px;
+            padding-inline-end: 60px;
+            background-color: #ff4718;
+            border: none;
+            padding-block-start: 13px;
+            padding-block-end: 13px;
+            border-radius: 100px;
+            color: white;
+            font-size: 29px;
+            cursor: pointer;
+            right: 90px;
+            width: 20%;
+            
+            
+        }
+
+        input::placeholder {
+            color: white;
+        }
+
+        .link {
+            display: inline;
+            text-decoration: none;
+            color: white;
+            font-size: x-large;
+            padding: 10px;
+            margin-right: 0px;
+        }
+
+        .section-3 {
+            background-color: #ff4718;
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .section-4 {
+            text-align: center;
+        }
+        
+        .container-7-a{
+        width: 100%;
+        }
+
+        .sub-container-7{
+        display: grid;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr;
+        margin-top: 70PX;
+        }
+
+        .container-7-heading {
+            font-size: 50px;
+            font-weight: 700;
+            color: black;
+            margin-block-end: 20px;
+            margin-block-start: 40px;
+        }
+
+        .container-7-p {
+            color: rgb(97, 96, 96);
+            line-height: 25px;
+            font-weight: 500;
+        }
+
+        .container-8 {
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr 0.5fr;
+            padding: 30px;
+            padding-block-end: 50px;
+            width: 95%;
+        }
+
+        .sub-container-8 {
+            text-align: center;
+            width: 100%;
+        }
+
+        .container-8-havor:hover {
+            color: #ff4718;
+
+        }
+
+        .container-8-img{
+        border: 1px solid black;
+        padding: 20px;
+        border-radius: 50px;
+        }
+
+        .container-8-img:hover {
+            background-color: #fa3402;
+            border: 1px solid #fa3402;
+        }
+
+        .section-5 {
+            background-color: rgb(226, 224, 224);
+            text-align: center;
+        
+            padding-block-start: 30px;
+            padding-block-end: 80px;
+        }
+
+        .section-6 {
+            background-image: linear-gradient(to right, rgb(109, 66, 114), rgb(204, 65, 15));
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 0px;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .container-9{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .sub-container-9{
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr;
+        }
+
+        .container-9-heading {
+            font-size: 66px;
+            font-weight: 600px;
+            color: white;
+            margin-bottom: 15px;
+            margin-top: 60px;
+        }
+
+        .container-9-p {
+            color: white;
+            font-weight: 500;
+            margin-top: 25px;
+        }
+
+        .section-7 {
+            padding-top: 50px;
+            text-align: center;
+            padding-bottom: 60px;
+        }
+
+        .container-10-heading{
+          font-size: 30px;
+            font-weight: 600;
+            color: black;
+            margin-block-end: 20px;
+            margin-block-start: 40px;
+        }
+
+        .container-10{
+        width: 100%;
+        }
+
+        .container-10-img {
+            margin-top: 80px;
+            width: 100%;
+        }
+
+        .container-10-p{
+            color: #303030;
+             font-size: 30px;
+              font-weight: 600; 
+            line-height: 40px;
+             margin-top: 50px;
+        }
+
+        .section-8 {
+            background-color: rgb(243, 241, 241);
+            padding-top: 40px;
+            padding-bottom: 80px;
+
+        }
+        .container-11-a{
+          width: 100%;
+        }
+
+        .container-11 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-left: 50px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 50px;
+            
+        }
+
+        .container-11-heading{
+            font-size: 60px;
+            font-weight: 700;
+             color: black;
+             margin-bottom: 20px; 
+             margin-top: 40px;
+             
+        }
+
+        .container-11-p{
+        margin-left: 40px;
+        }
+
+        .sub-container-11 {
+            display: grid;
+            grid-template-rows: 0.5 0.3fr 0.1fr 0.5fr 0.1;
+            border: 1px solid #cac7c7;
+            background-color: white;
+            width: 92%;
+        }
+
+        .red:hover {
+            color: #ff4718;
+            cursor: pointer;
+        }
+
+        .container-7 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 60px;
+            width: 100%;
+        }
+
+        .section-9 {
+            padding: 40px;
+            background-color: #303030;
+            color: white;
+        }
+
+        .container-12 {
+            display: grid;
+            grid-template-columns: 1fr 0.5fr 0.5fr;
+            gap: 30px;
+            width: 100%;
+        }
+
+        .service-1{
+            padding-bottom: 10px;
+            border-bottom: 1px solid white;
+            border-style: dotted;
+            border-top: none; 
+            border-right: none;
+            border-left: none;
+            margin-top: 30px;
+        }
+
+        .service-1:hover{
+            color: #ff4718;
+            border-bottom: 1px solid #ff4718;
+            border-style: dotted;
+            border-top: none; 
+            border-right: none;
+            border-left: none;
+        }
+
+        .container-6{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+        }
+        .container-6a{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+         .container-6-ca{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            border-right: 1px solid #cac7c7;
+            text-align: center;
+            color: white;
+            font-size: 28px;
+         }
+
+         .container-6-ca1{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            text-align: center;
+            color: white;
+            font-size: 28px;
+         }
+
+         .container-6-cb{
+            border-bottom: 1px solid #cac7c7;
+            padding-bottom: 10px;
+         }
+
+         .domain{
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           margin-top: 30px;
+           width: 60%;
+           padding-left: 20%;
+         }
+
+         .sub-domain-1, .sub-domain-2{
+          width: 100%;
+         display: grid;
+         grid-template-columns: 0.5fr 0.5fr 0.5fr;
+         }
+
+         .section-10{
+        background-color: #222222;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        text-align: center;
+        color: white;
+         }
+
+         .footer{
+            color: #ff4718;
+         }
+
+        @media (max-width: 425px){
+        .heading{
+        padding-left: 20px;
+        }
+
+        .link{
+        padding: 0%;
+        }
+
+        .container-1{
+        padding-right: 0%;
+        padding-left: 0px;
+        }
+        .nav, .home, .container-1-button{
+        display: none;
+        }
+
+        .heading-1{
+        font-size: 25px;
+        padding-left: 0px;
+        }
+
+        .sub-container-2a{
+        font-size: 30px;
+        }
+
+        .sub-container-2b{
+        font-size: 20px;
+        }
+        .sub-container-2c{
+        margin-left: 0px;
+        margin-bottom: 0px;
+        }
+
+        .container-3{
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 30px;
+        padding-left: 10px;
+        }
+
+        .container-4{
+        display: grid;
+        grid-template-rows: 0.7fr 1fr 0.7fr;
+        grid-template-columns: none;
+        gap: 15px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        }
+
+        .sub-container-4a, .sub-container-4c{
+        width: 90%;
+        margin-left: 15px;
+        margin-top: 0px;
+        }
+
+        .sub-container-4b{
+        width: 90%;
+        margin-left: 15px;
+        }
+
+        .container-5-heading{
+        font-size: 30px;
+        margin-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        }
+
+        .container-5-p{
+        padding-left: 15px;
+        padding-right: 15px;
+        }
+
+        .container-5-button{
+        margin-top: 6px;
+        padding-left: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 20px;
+        font-size: 16px;
+        width: 40%;
+        right: 6%;
+        }
+
+        .text-input{
+        padding-top: 10px;
+        width: 80%;
+        }
+
+        .text-input::placeholder{
+        font-size: 16px;
+        }
+
+        .section-1{
+        padding: 0%;
+        }
+
+        .section-3{
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+
+        .sub-domain-1, .sub-domain-2{
+        display: grid;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-columns: none;
+        gap: 20px;
+        }
+
+
+        .container-6a{
+        display: grid;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-columns: none;
+        gap: 20px;
+        }
+
+        .container-6{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: none;
+        gap: 15px;
+        }
+
+        .container-6-cb{
+        border-bottom: none;
+        }
+
+        .container-6-ca{
+        border-right: none;
+         border-bottom: 0.01px solid #b9b7b7;
+         padding-bottom: 15px;
+        }
+         
+        .sub-container-7{
+        padding-left: 20px;
+        }
+
+        .container-7-p{
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+
+        .container-7-heading{
+        font-size: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        }
+
+        .container-7{
+        display: grid;
+        grid-template-rows: 0.3fr 1fr;
+        grid-template-columns: none;
+        }
+
+        .container-8{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: none;
+        padding-right: 0%;
+        padding-left: 7.5px;
+        gap: 20px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        }
+
+        .container-8-p{
+        margin-left: 20px;
+        }
+
+        .container-9{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: none;
+        }
+
+        .sub-container-9{
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr;
+            grid-template-columns: none;
+        }
+
+        .container-10-heading{
+        font-size: 30px;
+    
+        font-weight: 600;
+        }
+
+        .container-11{
+         display: grid;
+         grid-template-rows: 1fr 1fr 1fr;
+         grid-template-columns: none;
+         gap: 50px;
+         margin: 0px;
+         padding-right: 0px;
+         padding-left: 20px;
+        }
+        
+        .container-11-p{
+        margin-left: 0%;
+        }
+
+        .container-11-heading{
+        font-size: 30px;
+            font-weight: 600;
+        }
+
+        .container-12{
+            display: grid;
+            grid-template-rows: 1fr 0.5fr 0.5fr;
+            grid-template-columns: none;
+        }
+
+        .container-10-p{
+            font-size: 20px;
+        }
+        }
+
+        @media (min-width: 426px){
+            .heading{
+        padding-left: 20px;
+        }
+
+        .container-1{
+        padding-right: 0%;
+        padding-left: 0px;
+        }
+        .nav, .home{
+        display: none;
+        }
+
+        .heading-1{
+        font-size: 25px;
+        padding-left: 0px;
+        }
+
+        .sub-container-2a{
+        font-size: 30px;
+        margin-bottom: 20px;
+        }
+
+        .sub-container-2b{
+        font-size: 20px;
+        margin-bottom: 30px;
+        }
+        .sub-container-2c{
+        margin-left: 0px;
+        margin-bottom: 0px;
+        }
+        .container-3{
+        margin: 0%;
+        padding-left: 40px;
+        margin-top: 30px;
+        }
+
+        .container-4{
+        display: grid;
+        grid-template-rows: 0.7fr 1fr 0.7fr;
+        grid-template-columns: none;
+        gap: 15px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        }
+
+        .sub-container-4a, .sub-container-4c{
+        width: 90%;
+        margin-left: 40px;
+        margin-top: 0px;
+        }
+
+        .sub-container-4b{
+        width: 90%;
+        margin-left: 40px;
+        }
+
+        .container-5-heading{
+        font-size: 40px;
+        margin-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        }
+
+        .container-5-p{
+        padding-left: 15px;
+        padding-right: 15px;
+        }
+
+        .container-5-button{
+        margin-top: 6px;
+        padding-left: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 20px;
+        font-size: 16px;
+        right: 9%;
+        }
+
+        .text-input{
+        padding-top: 10px;
+        width: 80%;
+        }
+
+        .text-input::placeholder{
+        font-size: 16px;
+        }
+
+        .section-1{
+        padding: 0%;
+        }
+
+        .section-3{
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+
+        .section-3{
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+
+        .sub-domain-1, .sub-domain-2{
+        display: grid;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-columns: none;
+        gap: 10px;
+        }
+
+        .featured{
+            width: 70%;
+        }
+
+        .container-6a{
+        display: grid;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-columns: none;
+        gap: 20px;
+        }
+
+        .container-6{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+        gap: 15px;
+        }
+
+        .container-6-cb{
+        border-bottom: none;
+        }
+        .container-6-cb{
+        border-bottom: none;
+        }
+
+        .container-6-ca{
+        border-right: none;
+         border-bottom: 0.01px solid #b9b7b7;
+         padding-bottom: 15px;
+        }
+
+        .container-6-ca1{
+        border-bottom: 1px solid #cac7c7;
+        }
+
+        .container-7-p{
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+
+        .container-7-heading{
+        font-size: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        }
+
+        .sub-container-7{
+        padding-left: 25px;
+        }
+
+        .container-7{
+        display: grid;
+        grid-template-rows: 0.3fr 0.3fr;
+        grid-template-columns: none;
+        }
+
+        .container-8{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: none;
+        padding-right: 0%;
+        gap: 20px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        }
+
+        .container-8-p{
+        margin-left: 20px;
+        }
+
+        .sub-container-9{
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr;
+            grid-template-columns: none;
+        }
+
+        .container-10-heading{
+            font-size: 40px;
+        }
+
+        .container-11{
+         display: grid;
+         grid-template-rows: 1fr 1fr 1fr;
+         grid-template-columns: none;
+         gap: 50px;
+         margin: 0px;
+         padding-right: 5px;
+         padding-left: 30px;
+        }
+
+        .container-11-heading{
+            font-size: 50px;
+        }
+
+        .container-11-p{
+        margin-left: 0%;
+        }
+
+        .container-12{
+            display: grid;
+            grid-template-rows: 1fr 0.5fr 0.5fr;
+            grid-template-columns: none;
+        }
+
+        .container-10-p{
+            font-size: 20px;
+        }
+
+        .section-10{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .sub-container-11{
+            margin-left: 15px;
+        }
+
+        .container-12{
+            display: grid;
+            grid-template-columns: 1fr 0.5fr;
+            grid-template-rows: none;
+        }
+        }
+
+        @media (min-width: 769px){
+
+           .heading-1{
+            font-size: 25px;
+           }
+
+           .nav, .home{
+            display: inline;
+           }
+
+           .navigation{
+            margin-left: 0%;
+            margin-right: 0%;
+            margin-top: 30px;
+            padding: 0%;
+           }
+
+           .container-1{
+            width: 100%;
+           }
+
+           .container-1-button{
+           display: inline;
+           padding: 5px 10px;
+           border-radius: 40px;
+           text-align: center;
+           
+           }
+
+            .sub-container-2c{
+                margin-left: 0px;
+            }
+
+            .container-2{
+                width: 100%;
+            }
+            
+            .container-3{
+                padding-left: 60px;
+            
+            }
+
+            .section-1{
+                text-align: center;
+            }
+
+            .container-4{
+                display: grid;
+                grid-template-columns: 0.3fr 0.7fr 0.5fr;
+                grid-template-rows: none;
+                gap: 0px;
+                text-align: center;
+                padding-left: 30px;
+                width: 80%;
+            }
+
+            .sub-container-4a{
+                margin-left: 30px;
+                width: 300px;
+                margin-top: 25px;
+            }
+
+            .sub-container-4c{
+                margin-right: 0px;
+                margin-left: 0px;
+                width: 300px;
+                margin-top: 25px;
+            }
+
+            .sub-container-4b{
+                margin-left: 0px;
+                width: 300px;
+                padding-bottom: 40px;
+            }
+
+            .sub-domain-1, .sub-domain-2{
+                display: grid;
+                grid-template-columns: 0.5fr 0.5fr 0.5fr;
+                grid-template-rows: none;
+            }
+
+            .domain{
+                gap: 10px;
+            }
+
+            .link{
+                padding-left: 0%;
+                padding-right: 0%;
+            }
+
+            .container-6a{
+                display: grid;
+                grid-template-columns: 0.5fr 0.5fr 0.5fr;
+                grid-template-rows: none;
+                text-align: center;
+                gap: 0px;
+            }
+
+            .container-6-ca{
+                border-bottom: none;
+                border-right: 1px solid #cac7c7;
+            }
+            
+            .container-6{
+                gap: 0px;
+            }
+            
+            .container-6-ca1{
+                border-bottom: none;
+                padding-bottom: 15px;
+            }
+
+            .container-6-cb{
+            border-bottom: 1px solid #cac7c7;
+            padding-bottom: 0px;
+            padding-bottom: 10px;
+         }
+
+
+            .container-7{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: none;
+            }
+
+            .featured{
+                width: 100%;
+                padding-top: 40px;
+            }
+
+            .container-8{
+                display: grid;
+                grid-template-columns: 0.5fr 0.5fr 0.5fr;
+                grid-template-rows: none;
+            }
+
+            .sub-container-9{
+                display: grid;
+                grid-template-columns: 0.5fr 0.5fr;
+                grid-template-rows: none;
+            }
+
+            .container-11-heading{
+                padding: 10px;
+            }
+
+            .container-11{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: none;
+                gap: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .container-12{
+                display: grid;
+                grid-template-columns: 1fr 0.5fr 0.5fr;
+                grid-template-rows: none;
+            }
+
+            .section-9{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        @media (min-width: 1025px){
+            .container-5-button{
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="heading">
+        <div class="container-1">
+            <div>
+                <h2 id="test-heading" class="heading-1"><span class="sub-heading-1">Color</span>Host</h2>
+            </div>
+            <div class="nav-container">
+                <ul class="navigation">
+                    <li class="home">HOME</li>
+                    <li class="nav">HOSTING</li>
+                    <li class="nav">DOMAIN</li>
+                    <li class="nav">WHMCS</li>
+                    <li class="nav">SHOP</li>
+                    <li class="nav">PAGES</li>
+                    <li class="nav">BLOG</li>
+                    <li class="nav">CONTACT</li>
+                </ul>
+            </div>
+            <button class="container-1-button">CLIENTAREA</button>
+        </div>
+        <div class="container-2">
+            <h1 class="sub-container-2a">SHARED HOSTING</h1>
+            <P class="sub-container-2b">Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+            <button class="sub-container-2c">VIEW DETAILS</button>
+        </div>
+
+        <div class="container-3">
+            <div class="sub-container-3a"><i><img
+                        src="./image/2849819_multimedia_construction_building_home_house_icon.png" width="20%"></i>
+            </div>
+            <div class="sub-container-3b"><img src="./image/309041_users_group_people_icon.png" width="20%"></div>
+            <div class="sub-container-3b"><img src="./image/134146_mail_email_icon.png" width="20%"></div>
+        </div>
+    </section>
+    <section class="section-1">
+        <div class="container-4">
+            <div class="sub-container-4a">
+                <h3 class="plan-1-heading1">Plan 1</h3>
+                <p class="plan-1-span">Starting At</p>
+                <p class="doller">$9.99</p>
+                <p class="plan-p">
+                    Lorem ipsum dolor sit amet,<br />
+                    consectetur adipisicing elit.
+                </p>
+                <button class="plan-1-button">ORDER NOW</button>
+            </div>
+            <div class="sub-container-4b">
+                <span class="plan-1-heading2">POPULAR</span>
+                <h3 class="plan-1-heading1">Plan 2</h3>
+                <p>Starting At</p>
+                <p class="doller-1">$95.99</p>
+                <p> Lorem ipsum dolor sit amet,<br>
+                    consectetur adipisicing elit.
+                </p>
+                <button class="plan-2-button">ORDER NOW</button>
+            </div>
+            <div class="sub-container-4c">
+                <h3 class="plan-1-heading1">Plan 3</h3>
+                <p class="plan-1-span">Starting At</p>
+                <p class="doller">$29.99</p>
+                <p class="plan-p">
+                    Lorem ipsum dolor sit amet,<br />
+                    consectetur adipisicing elit.
+                </p>
+                <button class="plan-1-button">ORDER NOW</button>
+            </div>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="container-5">
+            <div>
+                <h1 class="container-5-heading">LOOKING FOR A DOMAIN NAME?</h1>
+                <hr style="height: 2px;width: 60px;background-color: #ff4718;color: #ff4718;border: none;">
+            </div>
+            <div>
+                <p class="container-5-p">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem atque, praesentium doloremque quae<br>
+                    debitis odit quos quas atque commodi ipsa. Neque laborum animi illo amet provident, asperiores.
+                </p>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="e.g. example" class="text-input" autocomplete="0ff" required />
+                <button type="submit" class="container-5-button">SEARCH</button>
+            </div>
+            <div class="domain">
+                <div class="sub-domain-1">
+                    <div class="link"><input type="radio" class="radio"
+                            style=" opacity: 0.5; height: 20px;width: 20px;" />.com</div>
+                    <div class="link"><input type="radio" class="radio"
+                            style=" opacity: 0.5; height: 20px;width: 20px;" />.net</div>
+                    <div class="link"><input type="radio" class="radio"
+                            style="opacity: 0.5; height: 20px;width: 20px;" />.org</div>
+                </div>
+                <div class="sub-domain-2">
+                    <div class="link"><input type="radio" class="radio"
+                            style="opacity: 0.5; height: 20px;width: 20px;" />.info</div>
+                    <div class="link"><input type="radio" class="radio"
+                            style="opacity: 0.5; height: 20px;width: 20px;" />.us</div>
+                    <div class="link"><input type="radio" class="radio"
+                            style="opacity: 0.5; height: 20px;width: 20px;" />.biz</div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-3">
+        <div class="container-6">
+              <div class="container-6a">
+                <div class="container-6-ca">
+                   <div class="container-6-cb">.com</div>
+                   <div style="padding-top: 10px; font-weight: 600;">$1.17</div>
+                </div>
+                <div class="container-6-ca">
+                    <div class="container-6-cb">.net</div>
+                    <div style="padding-top: 10px; font-weight: 600;">$1.09</div>
+                 </div>
+                 <div class="container-6-ca">
+                    <div class="container-6-cb">.org</div>
+                    <div style="padding-top: 10px; font-weight: 600;">$0.09</div>
+                 </div>
+              </div>   
+              <div class="container-6a">
+                <div class="container-6-ca">
+                   <div class="container-6-cb">.info</div>
+                   <div style="padding-top: 10px; font-weight: 600;">$0.30</div>
+                </div>
+                <div class="container-6-ca">
+                    <div class="container-6-cb">.us</div>
+                    <div style="padding-top: 10px; font-weight: 600;">$1.00</div>
+                 </div>
+                 <div class="container-6-ca1">
+                    <div class="container-6-cb">.eu</div>
+                    <div style="padding-top: 10px; font-weight: 600;">$0.99</div>
+                 </div>
+              </div>   
+        </div>
+    </section>
+    <section class="section-4">
+    <div>
+        <div class="container-7-a">
+            <h1 class="container-7-heading">OUR SERVICES</h1>
+            <hr style="height: 2px;width: 60px;background-color: #ff4718;color: #ff4718;border: none;">
+        </div>
+        <div>
+            <p class="container-7-p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem atque, praesentium doloremque quae<br>
+                debitis odit quos quas atque commodi ipsa. Neque laborum animi illo amet provident, asperiores.
+            </p>
+        </div>
+    </div>
+        <div class="container-8">
+            <div class="sub-container-8">
+            <div class="container-8-head">
+                <span>
+                    <img src="./image/world.png" width="5%" style="opacity: 0.8; " class="container-8-img">
+                </span></div>
+                <div class="container-8-p">
+                    <h3 class="container-8-havor" style="font-size: 27px; margin-bottom: 10px; margin-top: 20px;">DOMAIN
+                        REGISTRATION</h3>
+                    <p style="color: #737373; margin-top: 0px; line-height: 25px;">Lorem ipsum dolor sit amet,
+                        consectetur<br> adipisicing elit eius.</p>
+                </div>
+            </div>
+            <div class="sub-container-8">
+                <span class="container-8-head">
+                    <img src="./image/windows.png" width="5%" style="opacity: 0.8; " class="container-8-img">
+                </span>
+                <div class="container-8-p">
+                    <h3 class="container-8-havor" style="font-size: 27px; margin-bottom: 10px; margin-top: 20px;">
+                        WINDOWS SERVER</h3>
+                    <p style="color: #737373; margin-top: 0px; line-height: 25px;">Lorem ipsum dolor sit amet,
+                        consectetur<br> adipisicing elit eius.</p>
+                </div>
+            </div>
+            <div class="sub-container-8">
+                <span class="container-8-head">
+                    <img src="./image/sitting-penguin.png" width="5%" style="opacity: 0.8;" class="container-8-img">
+                </span>
+                <div class="container-8-p">
+                    <h3 class="container-8-havor" style="font-size: 27px; margin-bottom: 10px; margin-top: 20px;">LINUX
+                        SERVER</h3>
+                    <p style="color: #737373; margin-top: 0px; line-height: 25px;">Lorem ipsum dolor sit amet,
+                        consectetur<br> adipisicing elit eius.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-5">
+        <div>
+            <h1 class="container-7-heading">SERVICES INCLUDED</h1>
+            <hr style="height: 2px;width: 60px;background-color: #ff4718;color: #ff4718;border: none;">
+        </div>
+        <div>
+            <p class="container-7-p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem atque, praesentium doloremque quae<br>
+                debitis odit quos quas atque commodi ipsa. Neque laborum animi illo amet provident, asperiores.
+            </p>
+        </div>
+        <div class="container-7">
+            <div><img src="./image/featured.png" width="100%" class="featured"></div>
+            <div class="sub-container-7">
+                <div style="text-align: left;">
+                    <h3 style="font-size: 27px; margin-bottom: 6px; margin-top: 20px;">24/7/360 SUPPORT</h3>
+                    <p style="color: #737373; margin-top: 0px; line-height: 25px;">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit.
+                        Non qui delectus<br /> ipsum iusto sit, hic voluptas, dicta deleniti.</p>
+                </div>
+                <div style="text-align: left;">
+                    <h3 style="font-size: 27px; margin-bottom: 6px; margin-top: 20px;">45 DAYS GUARANTEE</h3>
+                    <p style="color: #737373; margin-top: 0px; line-height: 25px;">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Non qui delectus<br />
+                        ipsum iusto sit, hic voluptas, dicta deleniti.</p>
+                </div>
+                <div style="text-align: left;">
+                    <h3 style="font-size: 27px; margin-bottom: 6px; margin-top: 20px;">99.9% UPTIME</h3>
+                    <p style="color: #737373; margin-top: 0px; line-height: 25px;">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Non qui delectus<BR />
+                        ipsum iusto sit, hic voluptas, dicta deleniti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-6">
+         <div class="container-9">
+            <div class="sub-container-9">
+                <div>
+                    <h1 class="container-9-heading">140</h1>
+                    <hr style="height: 2px;width: 60px;background-color: #ff4718;color: #ff4718;border: none;"> 
+                    <p class="container-9-p">PROJECT</p>              
+                </div>
+                <div>
+                    <h1 class="container-9-heading">140</h1>
+                    <hr style="height: 2px;width: 60px;background-color: #ff4718;color: #ff4718;border: none;"> 
+                    <p class="container-9-p">PROJECT</p>
+                </div>
+            </div>
+            <div class="sub-container-9">
+                <div>
+                    <h1 class="container-9-heading">140</h1>
+                    <hr style="height: 2px;width: 60px;background-color: #ff4718;color: #ff4718;border: none;"> 
+                    <p class="container-9-p">PROJECT</p>
+                </div>
+                <div>
+                    <h1 class="container-9-heading">140</h1>
+                    <hr style="height: 2px;width: 60px;background-color: #ff4718;color: #ff4718;border: none;"> 
+                    <p class="container-9-p">PROJECT</p>
+                </div>
+            </div>
+         </div>       
+    </section>
+    <section class="section-7">
+    <div class="container-10">
+        <div>
+            <h1 class="container-10-heading">CLIENT FEEDBACK</h1>
+            <hr style="height: 2px;width: 60px;background-color: #ff4718;color: #ff4718;border: none;">
+        </div>
+        <div>
+            <p class="container-7-p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem atque, praesentium doloremque quae<br>
+                debitis odit quos quas atque commodi ipsa. Neque laborum animi illo amet provident, asperiores.
+            </p>
+        </div>
+        <div class="container-10-img">
+            <img src="./image/client-01 (1).jpg" style="width: 10%; height: auto; border-radius: 190px;">
+            <img src="./image/client-02.jpg" style="width: 10%; height: auto; border-radius: 190px;">
+            <img src="./image/client-03.jpg" style="width: 10%; height: auto; border-radius: 190px;">
+        </div>
+        <div>
+            <p class="container-10-p">Lorem
+                ipsum dolor sit ament, consectetur adipisicing elit.<br>
+                Distinctio totam explicabo vitea omnis tetenur minima</p>
+            <p style="color: #737373; font-size: 16px; margin-top: 30px; font-weight: 600;">Justin Farrugia, Company</p>
+        </div>
+    </div>
+    </section>
+    <section class="section-8">
+    <div class="container-11-a">
+        <div style="text-align: center;" >
+            <h1 class="container-11-heading">LATEST
+                BLOG</h1>
+            <hr style="height: 2px;width: 60px;background-color: #ff4718;border: none;">
+        </div>
+        <div style="text-align: center;">
+            <p class="container-7-p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem atque, praesentium doloremque quae<br>
+                debitis odit quos quas atque commodi ipsa. Neque laborum animi illo amet provident, asperiores.
+            </p>
+        </div>
+        
+        <div class="container-11">
+            <div class="sub-container-11">
+                <div><img src="./image/post-02 (1).png" width="100%" class="post"></div>
+                <div style="color: #303030; font-size: 20px; padding-left: 20px; border-bottom: 1px solid #cac7c7;">
+                    <h4 class="red">SED VOLUPTATES AMET</h4>
+                </div>
+                <div
+                    style="font-size: 14px; color: #737373; font-weight: 500; padding: 10px 16px; border-bottom: 1px solid #cac7c7;">
+                    <a class="red">Uncategorized</a><a style="margin-left: 10px;margin-right: 10px;">/</a><a
+                        class="red">August 30, 2017</a></div>
+                <div
+                    style="font-size: 16px; color: #737373; font-weight: 500; padding: 10px 16px; border-bottom: 1px solid #cac7c7; line-height: 25px;">
+                    <p>Lorem ipsum dolor sit amet, consectetur<br />
+                        adipisicing elit. Sed voluptates amet<br /> perspiciatis possimus repellat, dolore aut eos<br />
+                        beatae consectetur velit sunt quidem veritatis<br>
+                        accusantium eveniet natus facilis eius nulla<br />
+                        esse! ...</p>
+                </div>
+                <div
+                    style="display: grid; grid-template-columns: 0.5fr 0.4fr; font-size: 14px; color: #737373; padding-left: 20px;">
+                    <p class="red"><span style="font-size: 18px;">&raquo;</span> READ MORE</p>
+                    <div class="container-11-p">
+                        <p class="red">0 Comment</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-container-11">
+                <div><img src="./image/post-01.png" width="100%" class="post"></div>
+                <div style="color: #303030; font-size: 20px; padding-left: 20px; border-bottom: 1px solid #cac7c7;">
+                    <h4 class="red">SED VOLUPTATES AMET</h4>
+                </div>
+                <div
+                    style="font-size: 14px; color: #737373; font-weight: 500; padding: 10px 16px; border-bottom: 1px solid #cac7c7;">
+                    <a class="red">Uncategorized</a><a style="margin-left: 10px;margin-right: 10px;">/</a><a
+                        class="red">August 30, 2017</a></div>
+                <div
+                    style="font-size: 16px; color: #737373; font-weight: 500; padding: 10px 16px; border-bottom: 1px solid #cac7c7; line-height: 25px;">
+                    <p>Lorem ipsum dolor sit amet, consectetur<br />
+                        adipisicing elit. Sed voluptates amet<br /> perspiciatis possimus repellat, dolore aut eos<br />
+                        beatae consectetur velit sunt quidem veritatis<br>
+                        accusantium eveniet natus facilis eius nulla<br />
+                        esse! ...</p>
+                </div>
+                <div
+                    style="display: grid; grid-template-columns: 0.5fr 0.4fr; font-size: 14px; color: #737373; padding-left: 20px;">
+                    <p class="red"><span style="font-size: 18px;">&raquo;</span> READ MORE</p>
+                    <div class="container-11-p">
+                        <p class="red">0 Comment</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-container-11">
+                <div><img src="./image/post-02 (1).png" width="100%" class="post"></div>
+                <div style="color: #303030; font-size: 20px; padding-left: 20px; border-bottom: 1px solid #cac7c7;">
+                    <h4 class="red">SED VOLUPTATES AMET</h4>
+                </div>
+                <div
+                    style="font-size: 14px; color: #737373; font-weight: 500; padding: 10px 16px; border-bottom: 1px solid #cac7c7;">
+                    <a class="red">Uncategorized</a><a style="margin-left: 10px;margin-right: 10px;">/</a><a
+                        class="red">August 30, 2017</a></div>
+                <div
+                    style="font-size: 16px; color: #737373; font-weight: 500; padding: 10px 16px; border-bottom: 1px solid #cac7c7; line-height: 25px;">
+                    <p>Lorem ipsum dolor sit amet, consectetur<br />
+                        adipisicing elit. Sed voluptates amet<br /> perspiciatis possimus repellat, dolore aut eos<br />
+                        beatae consectetur velit sunt quidem veritatis<br>
+                        accusantium eveniet natus facilis eius nulla<br />
+                        esse! ...</p>
+                </div>
+                <div
+                    style="display: grid; grid-template-columns: 0.5fr 0.4fr; font-size: 14px; color: #737373; padding-left: 20px;">
+                    <p class="red"><span style="font-size: 18px;">&raquo;</span> READ MORE</p>
+                    <div class="container-11-p">
+                        <p class="red">0 Comment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="section-9">
+        <div class="container-12">
+            <div>
+                <h2 style="margin-bottom: 10px;">About</h2>
+                <hr style="height: 2px;width: 50px;background-color: #ff4718;border: none; margin-left: 0px;">
+                <p style="line-height: 25px; margin-top: 28px;">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Laborum quod<br>
+                    mollitia quisquam. Architecto quam in atque sint voluptatem, consequatur<br>
+                    mollitia quisquam. Architecto quam in atque sint voluptatem, consequatur<br>
+                    modi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur<br>
+                    animi id ex perspiciatis distinctio sequi minima...</p>
+                <p style="font-weight: 600; color: #ff4718;">Learn More <span
+                        style="font-size: 20px; font-weight: 100;">&raquo;</span></p>
+            </div>
+            <div>
+                <h2 style="margin-bottom: 10px;">SERVICES</h2>
+                <hr style="height: 2px;width: 50px;background-color: #ff4718;border: none; margin-left: 0px;">
+                <div class="service-1"><span style="font-weight: 600;">&gt; Shared Hosting</span></div>
+                <div class="service-1"><span style="font-weight: 600;">&gt; Reseller Hosting</span></div>
+                <div class="service-1"><span style="font-weight: 600;">&gt; VPS Hosting</span></div>
+                <div class="service-1"><span style="font-weight: 600;">&gt; Dedicated Hosting</span></div>
+            </div>
+            <div>
+                <h2 style="margin-bottom: 10px;">USEFUL LINKS</h2>
+                <hr style="height: 2px;width: 50px;background-color: #ff4718;border: none; margin-left: 0px;">
+                <div class="service-1"><span style="font-weight: 600;">&gt; About</span></div>
+                <div class="service-1"><span style="font-weight: 600;">&gt; FAQ</span></div>
+                <div class="service-1"><span style="font-weight: 600;">&gt; Affiliate</span></div>
+                <div class="service-1"><span style="font-weight: 600;">&gt; Contact</span></div>
+            </div>
+        </div>
+    </section>
+    <section class="section-10">
+    <div id="footer"></div>
+    </section>
+    <script src="./js/colorhost.js"></script>
+</body>
+</html>

@@ -1,0 +1,1450 @@
+<!Doctype html>
+<html>
+    <head><title>Usnews</title>
+        <meta http-equiv="UTF-8">
+        <meta http-equiv="author" content="Otusanya Precious">
+        <meta http-equiv="expires" content="24th june 2023">
+        <meta name="viewpoint" content="width initial-scale">
+        <meta name="description" content="typeo of layout">
+        <meta name="keyboard" content="display">
+        <meta name="robot" content="nofollow">
+
+     <style>
+        body{
+            background-color: #ffffff;
+            font-family: Arial;
+            margin: 0%;
+        }
+        .container1{
+            display: grid;
+            margin-top: 30px;
+            grid-template-columns: 1fr 1fr;
+            padding-left: 30px;
+            padding-right: 40px;
+        }
+        .heading-img1{
+            padding-top: 15px;
+        
+        }
+        li{
+           display: inline;
+           margin-right: 25px;
+           font-weight: 600; 
+        }
+        li:hover{
+        cursor: pointer;
+        }
+        select{
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            background-color: #DA0000;
+            color: white;
+        }
+        .home{
+            width: 70px;
+        }
+        ul{
+            margin-left: 10px;
+        }
+        .container2{
+            background-color: #DA0000;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: white;
+            padding: 8px;
+            position: sticky;
+            position: -webkit-sticky;
+    top: 0%;
+    z-index: 999; }
+        .update{
+            width: 300px;
+            background-color: #1D1D1D;
+            color: white;
+            padding: 20px;
+            margin-left: 50px;
+            padding-top: 20px;
+        }
+        .sub1-span, .sub2-span{
+            font-size: small;
+            font-weight: 400;
+        }
+        .main{
+         margin-top: 50px;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         margin-left: 30px;
+        }
+        .sub-main1{
+            position: relative;
+            padding-left: 20px;
+        }
+        .sub-write{
+            position: absolute;
+            bottom: 2%;
+            color: white;
+        }
+        .sub1-button{
+            margin-left: 20px;
+            margin-bottom: 43%;
+            border: none;
+            background-color: black;
+            width: 80px;
+            height: 25px;
+            color: white;
+        }
+        .sub1-button:hover{
+            background-color: #DA0000;
+        }
+        .main1{
+            margin-left: 20px;
+            font-weight: 700;
+            font-size: large;
+            line-height: 28px;
+        }
+        img{
+            opacity: 1;
+        }
+        .sub-main2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .first-main2{
+            position: relative;
+        }
+        .main2-write{
+            position: absolute;
+            bottom: 8%;
+            line-height: 25px;
+            margin-left: 15px;
+            
+        }
+        .main2-p{
+            font-size: 15px;
+            color: white;
+            font-weight: 700;
+        }
+        .sub2-button{
+            font-size: small;
+            margin-bottom: 42px;
+            border: none;
+            background-color: black;
+            width: 70px;
+            height: 25px;
+            color: white  
+        }
+        .sub2-button:hover{
+            background-color: #DA0000;
+        }
+        .second-main2{
+            margin-right: 40px;
+            position: relative;
+        }
+        .sub3-button{
+            font-size: small;
+            margin-bottom: 48px;
+            border: none;
+            background-color: black;
+            color: white; 
+            width: 100px;
+            height: 25px;
+        }
+        .main3{
+        
+            grid-template-columns: 1fr;
+        }
+        .main2{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        .third-main{
+            position: relative;
+        }
+        .third-write{
+            position: absolute;
+            bottom: 5%;
+            color: white;
+            margin-left: 15px;
+        }
+        .third-button{
+    
+            margin-bottom: 6%;
+            border: none;
+            background-color: black;
+            width: 80px;
+            height: 25px;
+            color: white; 
+        }
+        .third-p{
+            font-weight: 500;
+            font-size: large;
+            line-height: 28px;
+        }
+        .container3{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-left: 30px;
+            margin-right: 20px;
+            margin-top: 50px;
+            height: 750px;
+        }
+        .world-news{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            margin-right: 20px;
+            height: 300px;
+        }
+        .world-news1{
+            border-top: solid 2px;
+            border-top-color: #DA0000;
+            width: 380px;
+            position: relative;
+            border-bottom: solid 2px whitesmoke;
+            padding-bottom: 15px;
+        }
+        .world-news-write{
+            position: absolute;
+            bottom: 13%;
+            color: white;
+            margin-left: 20px;
+        }
+        .world-p{
+            font-size: small;
+            font-weight: 600;
+            line-height: 25px;
+            margin: 0%;
+        }
+        .world-button{
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 5px;
+           margin-bottom: 15%;
+        }
+        .advertisment{
+            border-color: #ffffff;
+            border: solid 30px whitesmoke;
+            height: 250px;
+            width: 300px;
+            margin-top: 20px;
+        }
+        .world-news-2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 20px; 
+            border-bottom: solid 2px whitesmoke;
+            
+            margin-bottom: 0;
+        }
+        .world-span{
+            color: rgb(78, 77, 77);
+            font-size: small;
+            font-weight: 400;
+        }
+        .world-2p{
+            font-size: 12px;
+            font-weight: 800;  
+            line-height: 25px;
+            margin-top: 5px;
+            color: rgb(37, 37, 37); 
+        }
+        .sub-world{
+            padding-left: 8px;
+        }
+        .technology{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            height: 500px;
+            margin-right: 20px;
+        }
+        .world-div1{
+            width: 50px;
+        }
+        .world-news3{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+        .sub-world3{
+            display: grid;
+            grid-template-columns: 1fr 2.5fr;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            border-bottom: solid 2px whitesmoke;
+        }
+        h4{
+            color: #DA0000;
+        }
+        .advert{
+            display: grid;
+            grid-template-rows: 0.5fr 1fr;
+            height: 800px;
+            margin: px;
+        }
+        .advert-1{
+            border-top: solid 2px #DA0000;
+            margin-top: 70px;
+            padding-top: 20px;
+        }
+        .sub-advert-1{
+            color: rgb(102, 101, 101);
+            font-size: small;
+            font-weight: 400;
+            padding: 30px;
+            line-height: 25px;
+            background-color: rgb(240, 238, 238);
+            width: 350px;
+            margin-top: 50px;
+        }
+        .get{
+            border: none;
+            background-color: rgb(212, 210, 210);
+            width: 300px;
+            height: 2px;
+            margin-top: 10px;
+            margin-right: 0%;
+            padding: 20px;
+        }
+        .advert-span{
+            display: flex;
+            margin-top: 20px;
+        }
+        .search-button{
+            margin-top: 10px;
+            width: 50px;
+            height: 42px;
+            background-color: #DA0000;
+        }
+        .advert-2{
+            border-top: solid 2px #DA0000;
+            margin-top: 50px; 
+        }
+        .container4{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            margin-left: 30px;
+            margin-right: 20px;
+        }
+        .sub-container{
+            display: grid;
+            grid-template-rows: 0.2fr 0.73fr 0.73fr;
+        }
+        .finance{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-top: solid 2px #DA0000;
+            height: 300px;
+        }
+        .finance-img{
+            opacity: 8;
+        }
+        .sub-finance{
+            position: relative;
+        }
+        .finance-write{
+            position: absolute;
+            bottom: 75%;
+            margin-left: 10px;
+        }
+        .finance-button{
+            color: white;
+            background-color: black;
+            border: none;
+            padding: 5px;
+            width: 100px;
+        }
+        .finance-p{
+            line-height: 25px;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .sub-finance1{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            margin-top: 40px;
+        }
+        .car-image{
+            height: 100px;
+            margin-left: 20px;
+        }
+        .featured-news{
+            display: grid;
+            grid-template-rows: 0.5fr 2fr 1fr;
+        }
+        .connected{   
+            border-top: solid 2px #DA0000;
+        }
+        .sub-connected{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         margin: 5px;
+        }
+        .button-1{
+        font-size: xx-large;
+        font-weight: 700; 
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        color: rgb(42, 42, 133);
+        border: 1px solid rgb(42, 42, 133);
+        border-radius: 50px;
+        margin-right: 10px;
+        }
+        .button-1:hover{
+            background-color: rgb(42, 42, 133);
+        color: white;
+        }
+        .button-2{
+        font-size: x-large;
+        font-weight: 700; 
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        color: #c04545;
+        border: 1px solid #c04545;
+        border-radius: 50px;       
+        }
+        .button-2:hover{
+            background-color: #c04545;
+        color: white;
+        }
+        .button-3{
+        font-size: x-large;
+        font-weight: 700; 
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        color: #c04545;
+        border: 1px solid #c04545;
+        border-radius: 50px;       
+        }
+        .button-3:hover{
+            background-color: #c04545;
+        color: white;
+        }
+        .button{
+            border: 1px solid whitesmoke;
+            text-align: center;
+            line-height: 25px;
+            padding: 10px;
+            border-top: none;  
+        }
+        .featured-news-1{
+            display: grid;
+            grid-template-rows: 0.5fr 1fr;
+            margin-top: 20px;
+            padding: 15px;
+            border-top: 2px solid #DA0000;
+            height: 300px;
+        }
+        .featured-news-2{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .hot{
+            border: 1px solid whitesmoke;
+            padding-top: 5px; 
+            padding-bottom: 5px;  
+            padding-left: 15px;    
+            padding-right: 15px;    
+            height: 20px;
+            font-size: 14px;
+        }
+        .hot:hover{
+            color: #DA0000;
+            cursor: pointer;
+        }
+        .trendy{
+            color: white;
+            border: none;
+            background-color: #DA0000;
+            padding-top: 5px; 
+            padding-bottom: 5px;  
+            padding-left: 15px;    
+            padding-right: 15px;    
+            height: 20px;
+            font-size: 14px; 
+        }
+        .advert-3{
+            margin-top: 40px;
+            border-top: 2px solid #DA0000;
+        }
+        .politics{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .sub-politics1{
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        }
+        .sub-politics2{
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr;
+        }
+        .container5{
+            display: grid;
+            grid-template-rows: 1fr 0.38fr;
+            border-top: 2px solid #DA0000;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .sub-container1{
+            display: grid;
+            grid-template-columns: 1fr 0.5fr;
+        }
+        .audio{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            margin-top: 40px;
+        }
+        .audio-main{
+            position: relative;
+            opacity: 1;
+        }
+        .audio-write{
+            position: absolute;
+            bottom: 4%;
+            font-size: 16px;
+            color: white;
+        }
+        .audio-button{
+            color: white;
+            background-color: #1D1D1D;
+            padding: 5px;
+            margin-left: 15px;
+            margin-bottom: 32%;
+            border: none;
+        }
+        .sub-container2{
+            text-align: center;
+            margin-top: 3%;
+        }
+        .container6{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-left: 40px;
+            margin-right: 20px;
+        }
+        .sub-container6{
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr;
+            border-top: 2px solid #DA0000;
+        }
+        .flex{
+            display: flex;
+            text-align: center;
+            margin-bottom: 30px;
+            margin-left: 40px;
+            
+        }
+        .vote-p{
+            font-size: medium;
+            font-weight: 700;
+            color: rgb(14, 12, 12);
+            margin-top: 40px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
+        legend{
+            margin-left: 5px;
+            font-size: 14px;
+            color: rgb(102, 101, 101);
+            font-weight: 500;
+        }
+        .vote-button{
+            background-color: #DA0000;
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            color: white;
+            border: none;
+            margin-left: 30px;
+        }
+        .vote-2{
+            border-top: 2px solid #DA0000; 
+        }
+        .container7{
+            display: grid;
+            grid-template-columns: 1fr 0.5fr;
+            border-top: 2px solid #DA0000;
+            margin-left: 40px;
+            margin-right: 20px; 
+            margin-top: 30px;
+        }
+        .recipes-1{
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        }
+        .food-image{
+          position: relative;
+        }
+        .food-write{
+            position: absolute;
+            bottom: 10px;
+            color: white;
+            margin-left: 18px;
+            font-weight: 600;
+            font-size: small;
+            line-height: 20px;
+        }
+        .recipes-image{
+        opacity: 0.7;
+        filter: brightness(70%);
+        }
+        .food-image2{
+            position: relative;
+            margin-top: 60px;
+        }
+        .recipes-2{
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr;
+            margin-top: 60px;
+        }
+        .container-8{
+            display: grid;
+            grid-template-columns: 1fr 0.5fr;
+            margin-left: 40px;
+            margin-right: 20px;
+            margin-top: 30px;
+        }
+        .photo{
+            display: grid;
+            grid-template-rows: 1fr 0.5fr;
+            border-top: 2px solid #DA0000;
+        }
+        .photo-image{
+            position: relative;
+        }
+        .photo-write{
+            position: absolute;
+            bottom: 5px;
+            color: white;
+            font-weight: 600;
+            margin-left: 18px;
+            line-height: 20px;
+        }
+        .photo-button{
+            border: none;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            margin-bottom: 24%;
+        }
+        .photo-1{
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr 0.5fr;
+            margin-top: 10px; 
+        }
+        .photo-1-image{
+            position: relative;
+        }
+        .photo-1-write{
+            position: absolute;
+            color: white;
+            margin-left: 18px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            bottom: 5%;
+        }
+        .gallery{
+            display: grid;
+            grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+            border-top: 2px solid #DA0000;
+            margin-left: 10px;
+        }
+        .sub-gallery{
+            display: grid;
+            grid-template-columns: 0.2fr 1fr;
+            border-bottom: 2px solid rgb(218, 215, 215);
+            padding-top: 20px;
+        }
+        .gallery-p{
+            font-size: 12px;
+            font-weight: 800;  
+            line-height: 25px;
+            margin-left: 10px;
+            color: rgb(37, 37, 37); 
+            margin-top: 0%;
+        }
+        .ending{
+            background-color: rgb(24, 24, 24);
+            padding: 40px;
+            margin-top: 50px;
+        }
+        .sub-ending{
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;                    
+        }
+        .sub-ending1{
+        border-top: 2px solid white;
+        margin-right: 15px;
+        }
+        .end{
+            color: white;
+        }
+        .ending-p, a{
+            color: #777777;
+            font-size: 14px;
+            line-height: 25px;
+        }
+        .link{
+            border-bottom: 1px solid #3b3b3b;
+            color: #777777;
+            font-size: 14px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .link:hover{
+            color: #DA0000;
+        }
+        .sub-ending2{
+            border-top: 2px solid white; 
+            margin-right: 15px; 
+        }
+        .sub-ending3{
+            border-top: 2px solid white; 
+            margin-right: 15px;
+        }
+        .sub-ending4{
+            border-top: 2px solid white;  
+            margin-right: 15px;
+        }
+        .footer{
+            background-color: black;
+            display: grid; 
+            grid-template-columns: 1fr 1fr;
+            color: #777777;
+            padding: 10px;
+        }
+        .list1{
+            margin-left: 12px;
+    padding-left: 11px;
+    border-left: 1px solid;
+        }
+        .sub-list{
+            display: inline-block;
+        }
+        a{
+            color: #DA0000;
+            text-decoration: none;
+            font-size: medium;            
+        }
+        .copy{
+            margin-left: 50px;
+            font-size: medium;
+        }
+        .text-input{
+            font-family: cursive;
+            color: #DA0000;
+            font-size: larger;
+            font-weight: 600;
+        }
+     </style>
+    </head>
+    <body>
+        <div class="container1">
+            <div class="heading-img1"><img src="./image/usnews-logo.png"></div>
+            <div class="heading-img2"><img src="./image/car image.jpg"></div>
+        </div>
+        <div class="container2" data-trigger="sticky">
+         <div class="header">
+            <ul>
+                <li>
+                    <select class="home">
+                        <option>Home</option><br/><hr/>
+                        <option>Home Default</option>
+                        <option>Home Boxed</option>
+                        <option>Home RTL</option>
+                        <option>Home RTL Boxed</option>
+                        <option>Home Version</option>
+                    </select>
+                </li>
+                <li>
+                    <select>
+                        <option>Worlds News</option>
+                        <option>All</option>
+                        <option>Africa</option>
+                        <option>Middle East</option>
+                    </select>
+                </li>
+                <li>National</li>
+                <li>Financial</li>
+                <li>Entertainment</li>
+                <li>Lifestyle</li>
+                <li>Technology</li>
+                <li>
+                    <select>
+                        <option>Travel</option>
+                    </select>
+                </li>
+                <li>Sports</li>
+                <li>
+                    <select>
+                        <option>Category</option>
+                    </select>
+                </li>
+                <li>
+                    <select>
+                        <option>Pages</option>
+                    </select>
+            </li>
+            </ul>
+         </div>
+        </div>
+        <div>
+            <div class="update">News Updates <span>(Update 12 minutes ago)</span></div>
+        </div>
+        <div class="main">
+            <div class="sub-main1">
+             <img src="./image/banner-01.jpg" width="580px" height="400px">
+             <div class="sub-write">
+                <button class="sub1-button">POLITICS</button>
+                <p class="main1"><span class="sub1-span">Norma R. Hogan
+                    20 April 2017</span><br/>
+                    Siriyan civil war getting righteous indignation and dislike men <br/>who 
+                    are so beguiled and demoralized by the sure.</p>
+             </div>
+            </div>
+            <div class="main2">
+                <div class="sub-main2">
+                <div class="first-main2">
+                    <img src="./image/banner-02.jpg" width="280px">
+                    <div class="main2-write"><button class="sub2-button">TRAVEL</button>
+                        <p class="main2-p"><span class="sub2-span">Corey I. Dean
+                            20 April 2017</span><br>
+                            Lorem Ipsum is simply dummy text <br>of the printing</p>
+                    </div>
+                </div>
+                <div class="second-main2">
+                 <img src="./image/banner-03.jpg" width="280px">
+                 <div class="main2-write">
+                    <button class="sub3-button">EDUCATION</button>
+                 <p class="main2-p"><span class="sub2-span">Leraje
+                    20 April 2017</span><br>
+                    Lorem Ipsum is simply dummy text<br/> of the printing</p>
+                 </div>
+                </div>
+            </div> 
+            <div class="third-main">
+                <img src="./image/banner-04.jpg" width="578px">
+                <div class="third-write">
+                    <button class="third-button">POLITICS</button>
+                    <P class="third-p"><span class="sub2-span">Balam
+                        20 April 2017</span><br/>
+                        On the other hand, we denounce with righteous indignation and<br/>
+                         dislike men who are so beguiled and demoralized by the sure.</P>
+                </div>
+            </div>   
+        </div>
+        </div>
+
+      <div class="container3">
+        <div class="world-news">
+            <div class="world-news1">
+                <h4>WORLD NEWS</h4>
+                <img src="./image/world-news-01.jpg" width="380px">
+                <div class="world-news-write">
+                    <button class="world-button">WAR</button>
+                    <p class="world-p"><span class="sub2-span">Astaroth
+                        Yeasterday 03:52 pm</span><br/>
+                        Siriya attaced by a long established fact that a reader<br/>
+                         will be distracted by</p>
+                </div>
+            </div>
+            <div class="world-news-2">   
+            <div >
+                    <img src="./image/world-news-02.jpg" width="180px">
+                    <p class="world-2p"><span class="world-span">Hantu Raya
+                        17 April 2017</span><br/>
+                        It is a long established fact<br/> that a reader will done</p>
+                </div>
+                <div class="sub-world">
+                    <img src="./image/world-news-03.jpg" width="180px">
+                    <p class="world-2p"><span class="world-span">Astaroth
+                        17 April 2017</span><br/>It is a long established fact<br/>that a reader will done
+                    </p></div>
+            </div>
+            <div class="world-news-2">
+                <div >
+                    <img src="./image/world-news-04.jpg" width="180px">
+                    <p class="world-2p"><span class="world-span">Astaroth
+                        17 April 2017</span><br/>
+                        It is a long established fact<br/> that a reader will done</p>
+                </div>
+                <div class="sub-world">
+                    <img src="./image/world-news-05.jpg" width="180px">
+                    <p class="world-2p"><span class="world-span">Hantu Raya
+                        17 April 2017</span><br/>It is a long established fact<br/>that a reader will done
+                    </p></div>
+                </div>
+                </div>
+
+        <div class="technology">
+            <div class="world-news1">
+                <h4>TECNOLOGY</h4>
+                <img src="./image/technology-01.jpg" width="380px">
+                <div class="world-news-write">
+                    <button class="world-button">COMPUTER</button>
+                    <p class="world-p"><span class="sub2-span">Bathin
+                        Yeasterday 03:52 pm</span><br/>
+                        It is a long established fact that a reader will be<br> distracted by
+                        </p>
+                </div>  
+            </div>
+            <div class="world-news3">
+                <div class="sub-world3">
+                    <div class="world-image"><img src="./image/technology-02.jpg"></div>
+                    <div class="world-2p"><span class="world-span">Bune
+                        16 April 2017</span><br/>
+                        Long established fact that a reader will<br> be distracted by the readable</div>
+                </div>
+                <div class="sub-world3">
+                    <div><img src="./image/technology-03.jpg"></div>
+                    <div class="world-2p"><span class="world-span">Bune
+                        16 April 2017</span><br/>
+                        Long established fact that a reader will<br> be distracted by the readable</div>
+                </div>
+                <div class="sub-world3">
+                    <div><img src="./image/technology-03.jpg"></div>
+                    <div class="world-2p"><span class="world-span">Bune
+                        16 April 2017</span><br/>
+                        Long established fact that a reader will<br> be distracted by the readable</div>
+                </div>
+                <div class="sub-world3">
+                    <div><img src="./image/technology-04.jpg"></div>
+                    <div class="world-2p"><span class="world-span">Bune
+                        16 April 2017</span><br/>
+                        Long established fact that a reader will<br> be distracted by the readable</div>
+                </div>
+            </div>
+        </div>
+        <div class="advert">
+        <div class="advertisment">
+            <img src="./image/advert.jpg">
+        </div>
+        <div class="advert-1">
+            <h4>GET NEWSLETTER</h4>
+            <div class="sub-advert-1">
+                <p>Subscribe to our newsletter to get latest news, popular<br/>
+                     news and exclusive updates.</p>
+                     <span class="advert-span">
+                     <input type="email" placeholder="E-mail address" class="get">
+                     <img src="./image/search button.png" class="search-button">
+                     </span>
+            </div>
+        </div>
+        </div>
+      </div>
+
+        <div class="container4">
+        <div class="sub-container">
+            <div class="car-image">
+            <img src="./image/car image.jpg">
+            </div>
+            <div class="finance">
+             <div class="sub-finance">
+                <h4>FINANCE</h4>
+                <img src="./image/finance-01.jpg" class="finance-img" width="380px" height="250px">
+                <div class="finance-write">
+                    <button class="finance-button">BUSINESS</button>
+                </div>
+                <p class="finance-p"><span class="world-span">Vassago
+                    Today 03:30 am</span><br/>
+                    At vero eos et accusamus et iusto odio dignissimos<br/>
+                     ducimus qui blanditiis praesentium voluptatum<br/>
+                     deleniti atque corrupti quos dolores et quas.</p>
+             </div>
+             <div class="sub-finance1">
+                <div class="world-news-2">   
+                <div >
+                        <img src="./image/finance-02.jpg" width="180px">
+                        <p class="world-2p"><span class="world-span">Hantu Raya
+                            17 April 2017</span><br/>
+                            It is a long established fact<br/> that a reader will be</p>
+                    </div>
+                    <div class="sub-world">
+                        <img src="./image/finance-03.jpg" width="180px">
+                        <p class="world-2p"><span class="world-span">Astaroth
+                            17 April 2017</span><br/>It is a long established fact<br/>that a reader will be
+                        </p></div>
+                </div>
+                <div class="world-news-2">
+                    <div >
+                        <img src="./image/finance-04.jpg" width="180px">
+                        <p class="world-2p"><span class="world-span">Astaroth
+                            17 April 2017</span><br/>
+                            It is a long established fact<br/> that a reader will be</p>
+                    </div>
+                    <div class="sub-world">
+                        <img src="./image/finance-05.jpg" width="180px">
+                        <p class="world-2p"><span class="world-span">Hantu Raya
+                            17 April 2017</span><br/>It is a long established fact<br/>that a reader will be
+                        </p></div>
+                    </div>
+                    </div>
+
+             </div>
+             <div class="politics">
+                <div class="sub-politics1">
+                <div class="world-news1">
+                    <h4>POLITICS</h4>
+                    <img src="./image/politics-01.jpg" width="380px">
+                    <div class="world-news-write">
+                        <button class="world-button">ELECTION</button>
+                        <p class="world-p"><span class="sub2-span">Astaroth
+                            Yeasterday 03:52 pm</span><br/>
+                            It is a long established fact that a reader will be<br/> distracted by</p>
+                    </div>
+                </div>
+                <div class="world-news-2">   
+                    <div >
+                            <img src="./image/politics-02.jpg" width="180px">
+                            <p class="world-2p"><span class="world-span">Hantu Raya
+                                17 April 2017</span><br/>
+                                It is a long established fact<br/> that a reader will done</p>
+                        </div>
+                        <div class="sub-world">
+                            <img src="./image/politics-03.jpg" width="180px">
+                            <p class="world-2p"><span class="world-span">Astaroth
+                                17 April 2017</span><br/>It is a long established fact<br/>that a reader will done
+                            </p></div>
+                    </div>
+                    <div class="world-news-2">
+                        <div >
+                            <img src="./image/politics-04.jpg" width="180px">
+                            <p class="world-2p"><span class="world-span">Astaroth
+                                17 April 2017</span><br/>
+                                It is a long established fact<br/> that a reader will done</p>
+                        </div>
+                        <div class="sub-world">
+                            <img src="./image/politics-05.jpg" width="180px">
+                            <p class="world-2p"><span class="world-span">Hantu Raya
+                                17 April 2017</span><br/>It is a long established fact<br/>that a reader will done
+                            </p></div>
+                        </div>
+                    </div>
+                    <div class="sub-politics2">
+                    <div class="world-news1">
+                        <h4>SPORT</h4>
+                        <img src="./image/sports-01.jpg" width="380px">
+                        <div class="world-news-write">
+                            <button class="world-button">BASKETBALL</button>
+                            <p class="world-p"><span class="sub2-span">Bathin
+                                Yeasterday 03:52 pm</span><br/>
+                                It is a long established fact that a reader will be<br> distracted by
+                                </p>
+                        </div>  
+                    </div>
+                    <div class="world-news3">
+                        <div class="sub-world3">
+                            <div class="world-image"><img src="./image/sports-02.jpg"></div>
+                            <div class="world-2p"><span class="world-span">Bune
+                                16 April 2017</span><br/>
+                                Long established fact that a reader will<br> be distracted by the readable</div>
+                        </div>
+                        <div class="sub-world3">
+                            <div><img src="./image/sports-03.jpg"></div>
+                            <div class="world-2p"><span class="world-span">Bune
+                                16 April 2017</span><br/>
+                                Long established fact that a reader will<br> be distracted by the readable</div>
+                        </div>
+                        <div class="sub-world3">
+                            <div><img src="./image/sports-04.jpg"></div>
+                            <div class="world-2p"><span class="world-span">Bune
+                                16 April 2017</span><br/>
+                                Long established fact that a reader will<br> be distracted by the readable</div>
+                        </div>
+                        <div class="sub-world3">
+                            <div><img src="./image/sports-05.jpg"></div>
+                            <div class="world-2p"><span class="world-span">Bune
+                                16 April 2017</span><br/>
+                                Long established fact that a reader will<br> be distracted by the readable</div>
+                        </div>
+                    </div>
+             </div>
+                        </div>
+        </div>
+        <div class="featured-news">
+           <div class="connected">
+            <h4>STAY CONNECTED</h4>
+            <div class="sub-connected">
+           <div class="button"><button class="button-1">f</button><br/>
+            521<br/>
+           <span class="world-span">LIKES</span>
+        </div>
+           <div class="button"><button class="button-2">In</button><br/>
+            3297<br/>
+            <span class="world-span">FOLLOWERS</span>
+        </div>
+           <div class="button"><button class="button-3">G+</button><br/>
+            596282<br/>
+            <span class="world-span">FOLLOWERS</span>
+        </div>
+            </div>
+           </div>
+           <div class="featured-news-1">
+            <h4>FEATURED NEWS</h4>
+            <div class="featured-news-2">               
+                <div class="hot">Hot News</div>
+                <div class="trendy">Trendy News</div>
+                <div class="hot">Most Watched</div>
+            </div>
+            <div class="world-news3">
+                <div class="sub-world3">
+                    <div class="world-image"><img src="./image/technology-02.jpg"></div>
+                    <div class="world-2p"><span class="world-span">Bune
+                        16 April 2017</span><br/>
+                        Long established fact that a reader will<br> be distracted by the readable</div>
+                </div>
+                <div class="sub-world3">
+                    <div><img src="./image/technology-03.jpg"></div>
+                    <div class="world-2p"><span class="world-span">Bune
+                        16 April 2017</span><br/>
+                        Long established fact that a reader will<br> be distracted by the readable</div>
+                </div>
+                <div class="sub-world3">
+                    <div><img src="./image/technology-03.jpg"></div>
+                    <div class="world-2p"><span class="world-span">Bune
+                        16 April 2017</span><br/>
+                        Long established fact that a reader will<br> be distracted by the readable</div>
+                </div>
+                <div class="sub-world3">
+                    <div><img src="./image/technology-04.jpg"></div>
+                    <div class="world-2p"><span class="world-span">Bune
+                        16 April 2017</span><br/>
+                        Long established fact that a reader will<br> be distracted by the readable</div>
+                </div>
+            </div>
+            <div class="advert-3">
+                <h4>ADVERTISMENT</h4>
+           <div class="advertisment"><img src="./image/advert-2.jpg"></div>
+           </div>
+           </div>                  
+           </div>
+        </div>
+        <div class="container5">     
+        <div class="sub-container1">
+            <div class="audio-main">
+                <h4>AUDIO & VIDEO</h4> 
+                <img src="./image/audio-video-01.jpg" width="760px" height="400px">
+                <div class="audio-write">
+                    <button class="audio-button">WAVE</button>
+                    <p class="main1"><span class="sub1-span">Succubus
+                        Today 03:52 pm</span><br/>
+Standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those<br/>
+ interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum</p>
+                 </div>
+            </div>
+            <div class="audio">
+                <div class="sub-world3">
+                    <div class="world-image"><img src="./image/audio-video-02.jpg"></div>
+                    <div class="world-2p"><span class="world-span">Bune
+                        16 April 2017</span><br/>
+                        Long established fact that a reader will<br> be distracted by the readable</div>
+                </div>
+                <div class="sub-world3">
+                    <div><img src="./image/audio-video-03.jpg"></div>
+                    <div class="world-2p"><span class="world-span">Bune
+                        16 April 2017</span><br/>
+                        Long established fact that a reader will<br> be distracted by the readable</div>
+                </div>
+                <div class="sub-world3">
+                    <div><img src="./image/audio-video-04.jpg"></div>
+                    <div class="world-2p"><span class="world-span">Bune
+                        16 April 2017</span><br/>
+                        Long established fact that a reader will<br> be distracted by the readable</div>
+                </div>
+                <div class="sub-world3">
+                    <div><img src="./image/audio-video-05.jpg"></div>
+                    <div class="world-2p"><span class="world-span">Bune
+                        16 April 2017</span><br/>
+                        Long established fact that a reader will<br> be distracted by the readable</div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-container2">
+            <img src="./image/ad.jpg">
+        </div>
+        </div>
+        <div class="container6">
+            <div class="sub-politics2">
+                <div class="world-news1">
+                    <h4>HEALTH & FITNESS</h4>
+                    <img src="./image/health-and-fitness-01.jpg" width="380px">
+                    <div class="world-news-write">
+                        <button class="world-button">BASKETBALL</button>
+                        <p class="world-p"><span class="sub2-span">Bathin
+                            Yeasterday 03:52 pm</span><br/>
+                            It is a long established fact that a reader will be<br> distracted by
+                            </p>
+                    </div>  
+                </div>
+                <div class="world-news3">
+                    <div class="sub-world3">
+                        <div class="world-image"><img src="./image/health-and-fitness-02.jpg"></div>
+                        <div class="world-2p"><span class="world-span">Maclaan John
+                            16 April 2017</span><br/>
+                            Established fact that a reader will<br/> be distracted by the readable content</div>
+                    </div>
+                    <div class="sub-world3">
+                        <div><img src="./image/health-and-fitness-03.jpg"></div>
+                        <div class="world-2p"><span class="world-span">Ziminiar
+                            16 April 2017</span><br/>
+                            Long established fact that a reader will<br> be distracted by the readable</div>
+                    </div>
+                    <div class="sub-world3">
+                        <div><img src="./image/health-and-fitness-04.jpg"></div>
+                        <div class="world-2p"><span class="world-span">Vanth
+                            16 April 2017</span><br/>
+                            Long established fact that a reader will<br> be distracted by the readable</div>
+                    </div>
+                    <div class="sub-world3">
+                        <div><img src="./image/health-and-fitness-05.jpg"></div>
+                        <div class="world-2p"><span class="world-span">Vanth
+                            16 April 2017</span><br/>
+                            Long established fact that a reader will<br> be distracted by the readable</div>
+                    </div>
+                </div>
+         </div>
+         <div class="politics">
+            <div class="sub-politics1">
+            <div class="world-news1">
+                <h4>LIFDESTYLE</h4>
+                <img src="./image/lifestyle-01.jpg" width="380px">
+                <div class="world-news-write">
+                    <button class="world-button">FASHION</button>
+                    <p class="world-p"><span class="sub2-span">Astaroth
+                        Yeasterday 03:52 pm</span><br/>
+Siriya attaced by a long established fact that a<br/> reader will be distracted by</p>
+                </div>
+            </div>
+            <div class="world-news-2">   
+                <div >
+                        <img src="./image/lifestyle-02.jpg" width="180px">
+                        <p class="world-2p"><span class="world-span">Astaroth
+                            17 April 2017</span><br/>
+                            It is a long established fact<br/> that a reader will done</p>
+                    </div>
+                    <div class="sub-world">
+                        <img src="./image/lifestyle-03.jpg" width="180px">
+                        <p class="world-2p"><span class="world-span">Astaroth
+                            17 April 2017</span><br/>It is a long established fact<br/>that a reader will done
+                        </p></div>
+                </div>
+                <div class="world-news-2">
+                    <div >
+                        <img src="./image/lifestyle-04.jpg" width="180px">
+                        <p class="world-2p"><span class="world-span">Astaroth
+                            17 April 2017</span><br/>
+                            It is a long established fact<br/> that a reader will done</p>
+                    </div>
+                    <div class="sub-world">
+                        <img src="./image/lifestyle-05.jpg" width="180px">
+                        <p class="world-2p"><span class="world-span">Astaroth
+                            17 April 2017</span><br/>It is a long established fact<br/>that a reader will done
+                        </p>
+                    </div>
+                    </div>
+                </div>
+         </div>
+         <div class="sub-container6">
+            <div class="vote-1">
+            <h4>VOTING POLL (CHECKBOX)</h4>
+            <p class="vote-p">Which was the best Football World Cup<br/> ever in your opinion?</p>
+            <form class="flex">
+                <input type="checkbox" class="box"/>
+                <legend>Brazil 2014</legend>
+             </form> 
+             <form class="flex">
+                <input type="checkbox" class="box"/>
+                <legend>South Africa 2010</legend>
+             </form>
+             <form class="flex">
+                <input type="checkbox" class="box"/>
+                <legend>Germany 2006</legend>
+             </form>
+             <p id="textinput" class="text-input">Thanks for Voting</p>
+             <button class="vote-button" id="votebutton">Vote Now</button>
+            </div>
+            <div>
+                <div class="vote-2">
+                    <h4>VOTING POLL (RADIO)</h4>
+                    <p class="vote-p">Do you think the cost of sending money<br/> to mobile phone should be reduced?</p>
+                    <form class="flex">
+                        <input type="radio" class="box"/>
+                        <legend>Yes</legend>
+                     </form> 
+                     <form class="flex">
+                        <input type="radio" class="box"/>
+                        <legend>No</legend>
+                     </form>
+                     <form class="flex">
+                        <input type="radio" class="box"/>
+                        <legend>Average</legend>
+                     </form>
+                     <button class="vote-button">Vote Now</button>
+                    </div>  
+            </div>
+         </div>
+        </div>
+        <div class="container7">
+         <div class="recipes-1">
+          <div class="food-image">
+            <h4>FOODS AND RECIPES</h4>
+            <img src="./image/food-and-resturent-01.jpg" class="recipes-image" width="250px" height="200px">
+            <p class="food-write"><span class="sub2-span">Astaroth
+                Yeasterday 03:52 pm</span><br/>
+                It is a long established fact that a<br/> reader will be distracted by</p>
+          </div>
+          <div class="food-image2">
+            <img src="./image/food-and-resturent-02.jpg" class="recipes-image" width="250px" height="200px">
+            <p class="food-write"><span class="sub2-span">Astaroth
+                Yeasterday 03:52 pm</span><br/>
+                It is a long established fact that a<br/> reader will be distracted by</p>
+          </div>
+          <div class="food-image2">
+            <img src="./image/food-and-resturent-03.jpg" class="recipes-image" width="250px" height="200px">
+            <p class="food-write"><span class="sub2-span">Astaroth
+                Yeasterday 03:52 pm</span><br/>
+                It is a long established fact that a<br/> reader will be distracted by</p>
+          </div>
+         </div>
+         <div class="recipes-2">
+          <div>
+            <img src="./image/advert-6.jpg">
+          </div>
+          <div>
+            <img src="./image/container-7.jpg">
+          </div>
+         </div>
+        </div>
+        <div class="container-8">
+            <div class="photo">
+           <div class="photo-image">
+            <h4>PHOTO & GALLERY</h4>           
+            <img src="./image/photo-gallery-01.jpg" width="785px" height="300px">
+            <div class="photo-write">
+            <button class="photo-button">SERFER</button>
+             <p><span class="sub2-span">Astaroth
+                Today 05:52 pm</span><br/>
+                Standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those<br/>
+                 interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum</p></div>
+            </div>
+           <div class="photo-1">
+            <div class="photo-1-image">                
+                <img src="./image/photo-gallery-02.jpg" class="recipes-image" width="250px" height="200px">
+                <p class="photo-1-write"><span class="sub2-span">Astaroth
+                    Yeasterday 03:52 pm</span><br/>
+                    It is a long established fact that a<br/> reader will be distracted by</p>
+              </div>
+              <div class="photo-1-image">                
+                <img src="./image/photo-gallery-03.jpg" class="recipes-image" width="250px" height="200px">
+                <p class="photo-1-write"><span class="sub2-span">Astaroth
+                    Yeasterday 03:52 pm</span><br/>
+                    It is a long established fact that a<br/> reader will be distracted by</p>
+              </div>
+              <div class="photo-1-image">                
+                <img src="./image/photo-gallery-04.jpg" class="recipes-image" width="250px" height="200px">
+                <p class="photo-1-write"><span class="sub2-span">Astaroth
+                    Yeasterday 03:52 pm</span><br/>
+                    It is a long established fact that a<br/> reader will be distracted by</p>
+              </div>
+           </div>
+            </div>
+            <div class="gallery">
+                <h4>EDITORS CHOICE</h4>
+             <div class="sub-gallery">                
+                <div>                                     
+                    <img src="./image/editors-choice-01.jpg">
+                </div>
+                <div><p class="gallery-p">
+                   <span class="world-span"> Ninurta
+16 April 2017</span><br/>
+Long established fact that a<br/> reader will be distracted</p>
+                </div>
+             </div>
+             <div class="sub-gallery">  <div>                                     
+                <img src="./image/editors-choice-02.jpg">
+            </div>
+            <div><p class="gallery-p">
+               <span class="world-span"> Ninurta
+16 April 2017</span><br/>
+Long established fact that a<br/> reader will be distracted</p>
+            </div></div>
+             <div class="sub-gallery">  <div>                                     
+                <img src="./image/editors-choice-03.jpg">
+            </div>
+            <div><p class="gallery-p">
+               <span class="world-span"> Ninurta
+16 April 2017</span><br/>
+Long established fact that a<br/> reader will be distracted</p>
+            </div></div>
+             <div class="sub-gallery">  <div>                                     
+                <img src="./image/editors-choice-04.jpg">
+            </div>
+            <div><p class="gallery-p">
+               <span class="world-span"> Ninurta
+16 April 2017</span><br/>
+Long established fact that a<br/> reader will be distracted</p>
+            </div></div>
+            </div>
+        </div>
+        <section class="ending">
+         <div class="sub-ending">
+            <div class="sub-ending1">
+                <h4 class="end">ABOUT US</h4>
+                <p class="ending-p">At vero eos et accusamus et iusto odio<br/>
+                     dignissimos ducimus qui blanditiis<br/> praesentium laborum et dolorum fuga.</p>
+                     <a>Read More &raquo;</a>
+            </div>
+            <div class="sub-ending2">
+                <h4 class="end">USEFULL INFO LIMKS</h4>
+                <div class="link">&gt; Gadgets</div>
+                <div class="link">&gt; Shop</div>
+                <div class="link">&gt; Term and Conditions</div>
+                <div class="link">&gt; Forum</div>
+                <div class="link">&gt; Top News of the Week</div>
+                <div class="link">&gt; Special Recipes</div>
+                <div class="link">&gt; Sign Up</div>
+            </div>
+            <div class="sub-ending3">
+                <h4 class="end">ADVERTISMENT</h4>
+                <div class="link">&gt; Post and Add</div>
+                <div class="link">&gt; Adds Renew</div>
+                <div class="link">&gt; Price of Advertisment</div>
+                <div class="link">&gt; Adds Closed</div>
+                <div class="link">&gt; Monthly or Yearly</div>
+                <div class="link">&gt; Trial Adds</div>
+                <div class="link">&gt; Adds Making</div> 
+            </div>
+            <div class="sub-ending4">
+                <h4 class="end">CAREER</h4>
+                <div class="link">&gt; Available Post</div>
+                <div class="link">&gt; Career Details</div>
+                <div class="link">&gt; How to Apply?</div>
+                <div class="link">&gt; Freelence Job</div>
+                <div class="link">&gt; Be a Member</div>
+                <div class="link">&gt; Apply Now</div>
+                <div class="link">&gt; Send Your Resume</div>
+            </div>
+         </div>
+        </section>
+        <section class="footer">
+            <div class="copy" id="copy"></div>
+            <div class="list">
+                <ul class="sub-list">
+                    <li class="list1">Home</li>
+                    <li class="list1">FAQ</li>
+                    <li class="list1">Support</li>
+                </ul>
+            </div>
+        </section>  
+        <script src="./js/usquery.js"></script> 
+        <script src="./js/jquery.js"></script>   
+        <script src="./js/usnews.js"></script>
+        
+    </body>
+</html>

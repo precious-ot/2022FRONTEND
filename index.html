@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>love</title>
+    <link href="./index-menu.html">
+   <style>
+     body{
+        background-color: rgb(5, 61, 5);
+        margin: 0%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+     }
+
+    li{
+        display: inline;
+        text-decoration-line: none;
+        padding-left: 20px;
+        padding-right: 20px;
+       
+    }
+
+   ul{
+    text-align: center;
+    padding-right: 30px;
+    padding-top: 20px;
+   }
+   
+   .container-2{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 20px;
+    background-color: rgb(4, 70, 4);
+   }
+
+   h1{
+    padding-left: 30px;
+   }
+
+    a{
+        color: white;
+        text-decoration-line: none;
+        font-weight: 600;
+    }
+
+   .container-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+   }
+
+   .salad-image{
+    width: 25%;
+    border-radius: 50%;
+   }
+
+   input{
+      width: 60%;
+      height: 40px;
+      background-color: rgb(6, 87, 6);
+      border: none;
+      border-radius: 5px;
+      color: white;
+   }
+
+   .input-1{
+    padding-left: 20px;
+   }
+
+   .float-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 65px;
+    padding-bottom: 30px;
+   }
+
+   h2, h3{
+    padding-left: 65px;
+   }
+
+   select{
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(6, 87, 6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+   }
+
+   .float-2{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 10px;
+    padding-left: 65px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+   }
+
+   .float-3{
+    padding-left: 65px;
+    padding-bottom: 30px;
+   }
+
+   .float-4{
+    background-color: rgb(6, 87, 6);
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+   }
+
+   .float-5{
+    margin: 0%;
+   }
+
+   @media screen and (max-width: 2560px){
+    .burger-nav{
+        display: none;
+    }
+   }
+
+   @media screen and (max-width: 780px){
+    
+    .container-2{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    ul{
+        padding-top: 25px;
+        margin: 0%;
+        text-align: center;
+    }
+
+    .menu{
+        background-color: rgb(1, 44, 1);
+    }
+
+    .burger-nav{
+        display: none;
+    }
+   }
+
+   @media screen and (max-width: 480px){
+    .burger-container{
+        display: block;
+        height: 40px;
+        width: 100%;
+        background-color: rgb(1, 44, 1);
+        margin-top: 10px;
+        text-align: right;
+    }
+
+    .burger-nav{
+        cursor: pointer;
+    }
+
+    .burger-p{
+        float: left;
+        padding-left: 10px;
+        margin: 10px 0px;
+    }
+
+    .container-2{
+        display: grid;
+        grid-template-rows: 0.5fr 0.5fr;
+        gap: 0;
+    }
+
+    .menu ul{
+        overflow: hidden;
+        height: 0;
+    }
+
+    .menu ul.open{
+        height: auto;
+    }
+
+    .menu ul li{
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0%;
+        padding-left: 0%;
+       
+    }
+
+    .menu{
+        background-color: rgb(42, 85, 42);
+    }
+
+    .menu ul li a{
+        border-bottom: 1px solid rgb(1, 71, 1);
+        display: block;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0%;
+    }
+
+    ul{
+        padding: 0px;
+    }
+
+    .salad-image{
+    width: 60%;
+    }
+
+    .float-1, .float-2{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    input{
+      width: 80%;
+    }
+
+    .float-3{
+        padding-right: 10px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+   }
+   </style>
+    </head>
+    <body>
+        <section>
+        <div class="container-2">
+            <h1>Yoko`s Kitchen</h1>
+            <div class="burger-container">
+                <p class="burger-p">MENU</p>
+            <a class="bugger-nav">
+                <svg width="40" height="40" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 18h18v-2H3v2Zm0-5h18v-2H3v2Zm0-7v2h18V6H3Z"></path>
+                </svg>
+            </a>
+            </div>
+            <div class="menu">
+            <ul>
+                <li><a href="http://www.example.com">Home</a></li>
+                <li><a href="http://www.example.com">About</a></li>
+                <li><a href="http://www.example.com">Contact</a></li>
+                <li><a href="http://www.example.com">Shop</a></li>
+                <li><a href="./index-menu.html">Menu</a></li>
+                </ul>
+            </div>
+                
+        </div>
+        <div class="container-1">
+            <img src="./image/food-and-resturent-01.jpg" class="salad-image"/>
+        </div>
+    <h2 class="credit">Order For Your lovely salad</h1>
+    <h3>It's cashless & cardless</h2>
+    <div class="float-1">
+        <div>
+        <P class="one">Firstname:</P>
+        <input type="text" class="input-1"/>
+        </div>
+        <div>
+            <P class="one">surname:</P>
+            <input type="text" class="input-1"/>
+            </div>
+    </div>
+
+   <div class="float-1">
+        <div>
+        <P class="one">Email:</P>
+        <input type="email" class="input-1" id="email"/>
+        <p id="message" style="color: white;"></p>
+        </div>
+        <div>
+            <P class="one">Number:</P>
+            <input type="tel" class="input-1"/>
+            </div>
+    </div>
+    <div class="float-2">
+    <div>
+        <select name="status">
+            <option value="single" selected>Single</option>
+            <option value="divorce">Divorce</option>
+            <option value="married">Married</option>
+        </select>
+    </div>
+    <div>
+        <input type="button" value="Register"/>
+    </div>
+    </div>
+    <div class="float-3">
+        <p class="intro">By registering, I agree to Smart Fuel Wallet <a href="http://www.termsonline.com">Terms of Service</a>
+        and <a href="http://www.imldo.com">Privacy policy</a></p>
+    </div>
+    <div class="float-4" id="float"></div>
+        </section>
+       
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/java-index.js"></script>
+</body>
+</html>    

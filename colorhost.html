@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>colourhost</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .heading {
+            margin: 0;
+            background-image: linear-gradient(to right, rgb(109, 66, 114), rgb(204, 65, 15));
+        }
+
+        .container-1 {
+            display: grid;
+            grid-template-columns: 0.5fr 1.8fr 0.4fr;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .heading-1 {
+            color: white;
+            font-size: calc(0.75rem + 1.5vw);
+            margin: 0;
+            padding-left: 35px;
+            padding-top: 5px;
+        }
+
+        .sub-heading-1 {
+            color: #c44323;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .nav {
+            display: inline;
+            color: white;
+            font-weight: 500;
+            font-size: calc(0.20rem + 1vw);
+            margin-right: 20px;
+            padding-bottom: 20px;
+        }
+
+        .home {
+            border-bottom: 2px solid white;
+            letter-spacing: 2px;
+            display: inline;
+            color: white;
+            font-weight: 500;
+            font-size: calc(0.20rem + 1vw);
+            margin-right: 20px;
+            padding-bottom: 20px;
+        }
+
+        .nav:hover {
+            border-bottom: 2px solid white;
+        }
+
+        .container-1-button {
+            border: 1px solid white;
+            height: 35px;
+            width: 130px;
+            text-align: center;
+            padding-top: 15px;
+            color: white;
+            font-weight: 600;
+            font-size: 15px;
+            border-radius: 25px;
+        }
+
+        .container-1-button:hover {
+            border-color: #ff4718;
+        }
+
+        .container-2 {
+            text-align: center;
+            color: white;
+            padding-top: 10%;
+            display: grid;
+            grid-template-rows: 0.5fr 0.3fr 0.2fr;
+        }
+
+        .sub-container-2a {
+            font-size: calc(1.8rem + 1.5vw);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .sub-container-2b {
+            font-size: calc(1.20rem + 1vw);
+            margin-top: 5.6px;
+        }
+
+        .sub-container-2c {
+            border: 1px solid white;
+            padding-block-start: 15px;
+            padding-bottom: 15px;
+            width: 150px;
+            color: white;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: calc(0.70rem + 0.5vw);
+            text-align: center;
+            margin-inline-start: 45%;
+            margin-block-start: 10px;
+        }
+
+        .sub-container-2c:hover {
+            border-color: #ff4718;
+        }
+
+        .container-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-top: 100px;
+        }
+
+        .sub-container-3a {
+            background-color: #ff4718;
+            margin: 0;
+            text-align: center;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .sub-container-3b {
+            background-color: white;
+            margin: 0;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .sub-container-3b:hover {
+            background-color: #ff4718;
+            color: white;
+        }
+
+        .section-1 {
+            background-color: rgb(228, 228, 228);
+            padding-block-start: 100px;
+            padding-inline-start: 180px;
+            padding-inline-end: 180px;
+            padding-block-end: 80px;
+        }
+
+        .container-4 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .sub-container-4a {
+            background-color: snow;
+            text-align: center;
+            width: 300px;
+            height: 350px;
+            margin-block-start: 50px;
+        }
+
+        .sub-container-4a:hover {
+            box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+            z-index: 1;
+        }
+
+        .plan-1-heading1 {
+            font-size: calc(1.55rem + 1.5vw);
+            margin-bottom: 10px;
+        }
+
+        .doller {
+            font-size: calc(1.70rem + 1.5vw);
+            font-weight: 700;
+            color: #ff4718;
+            margin: 20px 0px;
+        }
+
+        .doller-1 {
+            font-size: calc(1.70rem + 1.5vw);
+            font-weight: 700;
+            color: white;
+            margin: 20px 0px;
+        }
+
+        .plan-p {
+            font-size: calc(0.70rem + 0.4vw);
+            font-weight: 500;
+            color: #737373;
+            line-height: 25px;
+        }
+
+        .plan-1-span {
+            font-size: calc(0.60rem + 0.5vw);
+            font-weight: 500;
+            color: #303030;
+        }
+
+        .plan-1-button {
+            background-color: white;
+            border: 2px solid black;
+            padding: 15px 20px;
+            border-radius: 25px;
+        }
+
+        .plan-2-button {
+            background-color: #ff4718;
+            border: 2px solid white;
+            padding: 15px 20px;
+            border-radius: 25px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .plan-1-button:hover {
+            border-color: #ff4718;
+        }
+
+        .sub-container-4b {
+            color: white;
+            text-align: center;
+            background-color: #ff4718;
+            box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+            z-index: 1;
+            height: 450px;
+        }
+
+        .plan-1-heading2 {
+            color: #ff4718;
+            background-color: white;
+            padding: 10px 10px;
+            width: 180px;
+            margin-left: 60px;
+            font-size: calc(0.75rem + 1.5vw);
+        }
+
+        .section-2 {
+            background-image: linear-gradient(to right, rgb(109, 66, 114), rgb(204, 65, 15));
+            padding-bottom: 50px;
+        }
+
+        .container-5 {
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+            text-align: center;
+        }
+
+        .container-5-heading {
+            font-size: calc(1.75rem + 1.5vw);
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+            margin-top: 80px;
+        }
+
+        .container-5-p {
+            color: white;
+            line-height: 25px;
+        }
+
+        .search {
+            margin-top: 50px;
+
+        }
+
+        .text-input {
+            color: white;
+            border-color: #fff;
+            width: 60%;
+            min-width: 56px;
+            padding: 15px 20px;
+            background-color: transparent;
+            border: 1px solid;
+            border-radius: 50px;
+            outline: 0;
+            font-size: calc(1.25rem + 1.5vw);
+            position: relative;
+        }
+
+        .container-5-button {
+            position: absolute;
+            padding-inline-start: 60px;
+            padding-inline-end: 60px;
+            background-color: #ff4718;
+            border: none;
+            padding-block-start: 13px;
+            padding-block-end: 13px;
+            border-radius: 100px;
+            color: white;
+            font-size: calc(0.75rem + 1.5vw);
+            cursor: pointer;
+            right: 0px;
+            margin-inline-end: 238px;
+            margin-block-start: 4.5px;
+        }
+
+        input::placeholder {
+            color: white;
+        }
+
+        ul {
+            margin-right: 30px;
+            margin-top: 30px;
+        }
+
+        .link {
+            display: inline;
+            text-decoration: none;
+            color: white;
+            font-size: x-large;
+            padding: 30px;
+            margin-right: 10px;
+        }
+
+        .section-3 {
+            background-color: #ff4718;
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .sub-container-6 {
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+            margin-bottom: 0%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .sub-container-6a {
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+            margin-bottom: 0%;
+        }
+
+        .container-6 {
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr;
+            color: white;
+        }
+
+        .container-6-a {
+            font-size: calc(1.55rem + 1.5vw);
+            padding: 0%;
+            text-align: center;
+        }
+
+        .container-6-ba {
+            font-size: calc(1.75rem + 1.5vw);
+
+            height: 80px;
+            text-align: center;
+            border-left: 1px solid rgba(255, 255, 255, 0.3);
+            padding-top: 0px;
+        }
+
+        .container-6-n {
+            font-size: calc(1.55rem + 1.5vw);
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .container-6-cn {
+            font-size: calc(1.55rem + 1.5vw);
+            text-align: center;
+            font-weight: 600;
+            border-left: 1px solid rgba(255, 255, 255, 0.3);
+            height: 80px;
+        }
+
+        .section-4 {
+            text-align: center;
+        }
+
+        .container-7-heading {
+            font-size: calc(1.75rem + 1.5vw);
+            font-weight: 700;
+            color: black;
+            margin-block-end: 20px;
+            margin-block-start: 40px;
+        }
+
+        .container-7-p {
+            color: rgb(97, 96, 96);
+            line-height: 25px;
+            font-weight: 500;
+        }
+
+        .container-8 {
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr 0.5fr;
+            padding: 30px;
+            padding-block-end: 50px;
+        }
+
+        .sub-container-8 {
+            text-align: center;
+        }
+
+        .container-8-havor:hover {
+            color: #ff4718;
+
+        }
+
+        .container-8-head:hover {
+            background-color: #fa3402;
+        }
+
+        .section-5 {
+            background-color: rgb(226, 224, 224);
+            text-align: center;
+            padding: 30px;
+            padding-block-start: 30px;
+            padding-block-end: 80px;
+        }
+
+        .section-6 {
+            background-image: linear-gradient(to right, rgb(109, 66, 114), rgb(204, 65, 15));
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 0px;
+        }
+
+        .container-9 {
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+            padding-bottom: 30px;
+        }
+
+        .container-9-heading {
+            font-size: calc(1.75rem + 1.5vw);
+            font-weight: 600px;
+            color: white;
+            margin-bottom: 15px;
+            margin-top: 60px;
+        }
+
+        .container-9-p {
+            color: white;
+            font-weight: 500;
+            margin-top: 25px;
+        }
+
+        .section-7 {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 50px;
+            text-align: center;
+            padding-bottom: 60px;
+        }
+
+        .container-10-img {
+            margin-top: 80px;
+        }
+
+        .section-8 {
+            background-color: rgb(243, 241, 241);
+            padding-top: 40px;
+            padding-bottom: 80px;
+
+        }
+
+        .container-11 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-left: 50px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 50px;
+        }
+
+        .sub-container-11 {
+            display: grid;
+            grid-template-rows: 0.5 0.3fr 0.1fr 0.5fr 0.1;
+            border: 1px solid #cac7c7;
+            background-color: white;
+            width: 355px;
+        }
+
+        .red:hover {
+            color: #ff4718;
+            cursor: pointer;
+        }
+
+        .container-7 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 60px;
+        }
+
+        .section-9 {
+            padding: 40px;
+            background-color: #303030;
+            color: white;
+        }
+
+        .container-12 {
+            display: grid;
+            grid-template-columns: 1fr 0.5fr 0.5fr;
+        }
+
+        @media (max-width: 425px) {
+
+             .nav{
+                display: none;
+            }
+
+             html {
+                font-size: 16px;
+            }
+
+            .section-1 {
+                padding: 70px;
+            }
+
+            .sub-container-4a {
+                width: 280px;
+            }
+
+            .sub-container-4b {
+                width: 280px;
+            }
+
+            .section-2 {
+                padding: 50px;
+            }
+
+            .domain {
+                padding-block-start: 20px;
+                padding-inline-start: 60px;
+                padding-inline-end: 60px;
+            }
+
+            .container-5-button {
+                margin-inline-end: 210px;
+                margin-block-start: 7px;
+            }
+
+            .section-4 {
+                padding-inline-start: 50px;
+                padding-inline-end: 50px;
+                padding-block-end: 30px;
+            }
+
+            .container-8 {
+                display: grid;
+                grid-template-rows: 0.5fr 0.5fr 0.5fr;
+                grid-template-columns: none;
+                gap: 5px;
+            }
+
+            .section-5 {
+                padding-inline-start: 50px;
+                padding-inline-end: 50px;
+            }
+
+            .container-7 {
+                display: grid;
+                grid-template-rows: 0.5fr 1fr;
+                grid-template-columns: none;
+            }
+
+            .container-9 {
+                display: grid;
+                grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+                grid-template-columns: none;
+            }
+
+            .container-5-p {
+                line-height: 60px;
+            }
+
+            .search {
+                padding-block-start: 50px;
+            }
+
+            .container-11 {
+                display: grid;
+                grid-template-rows: repeat(auto-fill, minmax(15em, 1fr));
+                grid-template-columns: none;
+
+            }
+
+            .container-2 {
+                padding-inline-start: 10px;
+                padding-inline-end: 10px;
+            }
+
+            .sub-container-2a {
+                line-height: 95px;
+            }
+
+            .sub-container-2b {
+                line-height: 65px;
+            }
+
+            .sub-container-6 {
+                padding-block-end: 30px;
+            }
+
+            .sub-container-6a {
+                margin-block-start: 20px;
+            } 
+        }
+    </style>
+</head>
+
+<body>
+    <section class="heading">
+        <div class="container-1">
+            <div>
+                <h2 id="test-heading" class="heading-1"><span class="sub-heading-1">Color</span>Host</h2>
+            </div>
+            <div class="nav-container">
+                <ul>
+                    <li class="home">HOME</li>
+                    <li class="nav">HOSTING</li>
+                    <li class="nav">DOMAIN</li>
+                    <li class="nav">WHMCS</li>
+                    <li class="nav">SHOP</li>
+                    <li class="nav">PAGES</li>
+                    <li class="nav">BLOG</li>
+                    <li class="nav">CONTACT</li>
+                </ul>
+            </div>
+            <div class="container-1-button">CLIENTAREA</div>
+        </div>
+        <div class="container-2">
+            <h1 class="sub-container-2a">SHARED HOSTING</h1>
+            <P class="sub-container-2b">Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+            <div class="sub-container-2c">VIEW DETAILS</div>
+        </div>
+
+        <div class="container-3">
+            <div class="sub-container-3a"><i><img
+                        src="./image/2849819_multimedia_construction_building_home_house_icon.png" width="50px"></i>
+            </div>
+            <div class="sub-container-3b"><img src="./image/309041_users_group_people_icon.png" width="50px"></div>
+            <div class="sub-container-3b"><img src="./image/134146_mail_email_icon.png" width="50px"></div>
+        </div>
+    </section>
+    <section class="section-1">
+        <div class="container-4">
+            <div class="sub-container-4a">
+                <h3 class="plan-1-heading1">Plan 1</h3>
+                <p class="plan-p">
+                <p class="plan-1-span">Starting At</p>
+                <p class="doller">$9.99</p>
+                <p class="plan-p">
+                    Lorem ipsum dolor sit amet,<br />
+                    consectetur adipisicing elit.
+                </p>
+                <button class="plan-1-button">ORDER NOW</button>
+            </div>
+            <div class="sub-container-4b">
+                <h2 class="plan-1-heading2">POPULAR</h2>
+                <h3 class="plan-1-heading1">Plan 2</h3>
+                <p>Starting At</p>
+                <p class="doller-1">$95.99</p>
+                <p> Lorem ipsum dolor sit amet,<br>
+                    consectetur adipisicing elit.
+                </p>
+                <button class="plan-2-button">ORDER NOW</button>
+            </div>
+            <div class="sub-container-4a">
+                <h3 class="plan-1-heading1">Plan 3</h3>
+                <p class="plan-p">
+                <p class="plan-1-span">Starting At</p>
+                <p class="doller">$29.99</p>
+                <p class="plan-p">
+                    Lorem ipsum dolor sit amet,<br />
+                    consectetur adipisicing elit.
+                </p>
+                <button class="plan-1-button">ORDER NOW</button>
+            </div>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="container-5">
+            <div>
+                <h1 class="container-5-heading">LOOKING FOR A DOMAIN NAME?</h1>
+                <hr style="height: 2px;width: 60px;background-color: #ff4718;color: #ff4718;border: none;">
+            </div>
+            <div>
+                <p class="container-5-p">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem atque, praesentium doloremque quae<br>
+                    debitis odit quos quas atque commodi ipsa. Neque laborum animi illo amet provident, asperiores.
+                </p>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="e.g. example" class="text-input" autocomplete="0ff" required />
+                <button type="submit" class="container-5-button">SEARCH</button>
+            </div>
+            <div class="domain">
+                <ul>
+                    <li class="link"><input type="radio" class="radio"
+                            style=" opacity: 0.5; height: 20px;width: 20px;vertical-align: middle;" />.com</li>
+                    <li class="link"><input type="radio" class="radio"
+                            style=" opacity: 0.5; height: 20px;width: 20px;vertical-align: middle;" />.net</li>
+                    <li class="link"><input type="radio" class="radio"
+                            style="opacity: 0.5; height: 20px;width: 20px;vertical-align: middle;" />.org</li>
+                    <li class="link"><input type="radio" class="radio"
+                            style="opacity: 0.5; height: 20px;width: 20px;vertical-align: middle;" />.info</li>
+                    <li class="link"><input type="radio" class="radio"
+                            style="opacity: 0.5; height: 20px;width: 20px;vertical-align: middle;" />.us</li>
+                    <li class="link"><input type="radio" class="radio"
+                            style="opacity: 0.5; height: 20px;width: 20px;vertical-align: middle;" />.biz</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section-3">
+        <div class="container-6">
+            <div class="sub-container-6">
+                <div class="container-6-a">
+                    <p style="margin: 0%; margin-top: 30px;">.com</p>
+                </div>
+                <div class="container-6-ba">
+                    <p>.net</p>
+                </div>
+                <div class="container-6-ba">
+                    <p>.org</p>
+                </div>
+                <div class="container-6-ba">
+                    <p>.info</p>
+                </div>
+                <div class="container-6-ba">
+                    <p>.us</p>
+                </div>
+                <div class="container-6-ba">
+                    <p>.eu</p>
+                </div>
+            </div>
+            <div class="sub-container-6a">
+                <div class="container-6-n">
+                    <p style="margin: 0%;" class="">$1.17</p>
+                </div>
+                <div class="container-6-cn">
+                    <p style="margin-top: 10px;">$1.09</p>
+                </div>
+                <div class="container-6-cn">
+                    <p style="margin-top: 10px;">$0.90</p>
+                </div>
+                <div class="container-6-cn">
+                    <p style="margin-top: 10px;">$0.30</p>
+                </div>
+                <div class="container-6-cn">
+                    <p style="margin-top: 10px;">$1.00</p>
+                </div>
+                <div class="container-6-cn">
+                    <p style="margin-top: 10px;">$0.99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-4">
+        <div>
+            <h1 class="container-7-heading">OUR SERVICES</h1>
+            <hr style="height: 2px;width: 60px;background-color: #ff4718;color: #ff4718;border: none;">
+        </div>
+        <div>
+            <p class="container-7-p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem atque, praesentium doloremque quae<br>
+                debitis odit quos quas atque commodi ipsa. Neque laborum animi illo amet provident, asperiores.
+            </p>
+        </div>
+        <div class="container-8">
+            <div class="sub-container-8">
+                <div class="container-8-head" style="border: 1px solid #303030; margin-inline-start: 40%; 
+                border-radius: 60px; width: 30px; padding: 30px; ">
+                    <img src="./image/world.png" width="30px" style="opacity: 0.8; " class="container-8-img">
+                </div>
+                <div>
+                    <h3 class="container-8-havor" style="font-size: 27px; margin-bottom: 10px; margin-top: 20px;">DOMAIN
+                        REGISTRATION</h3>
+                    <p style="color: #737373; margin-top: 0px; line-height: 25px;">Lorem ipsum dolor sit amet,
+                        consectetur<br> adipisicing elit eius.</p>
+                </div>
+            </div>
+            <div class="sub-container-8">
+                <div class="container-8-head" style="border: 1px solid #303030; margin-inline-start: 40%;
+                 border-radius: 60px; width: 30px; padding: 30px; ">
+                    <img src="./image/windows.png" width="30px" style="opacity: 0.8; " class="container-8-img">
+                </div>
+                <div>
+                    <h3 class="container-8-havor" style="font-size: 27px; margin-bottom: 10px; margin-top: 20px;">
+                        WINDOWS SERVER</h3>
+                    <p style="color: #737373; margin-top: 0px; line-height: 25px;">Lorem ipsum dolor sit amet,
+                        consectetur<br> adipisicing elit eius.</p>
+                </div>
+            </div>
+            <div class="sub-container-8">
+                <div class="container-8-head" style="border: 1px solid #303030; margin-inline-start: 40%; 
+                border-radius: 60px; width: 30px; padding: 30px; ">
+                    <img src="./image/sitting-penguin.png" width="30px" style="opacity: 0.8;" class="container-8-img">
+                </div>
+                <div>
+                    <h3 class="container-8-havor" style="font-size: 27px; margin-bottom: 10px; margin-top: 20px;">LINUX
+                        SERVER</h3>
+                    <p style="color: #737373; margin-top: 0px; line-height: 25px;">Lorem ipsum dolor sit amet,
+                        consectetur<br> adipisicing elit eius.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-5">
+        <div>
+            <h1 class="container-7-heading">SERVICES INCLUDED</h1>
+            <hr style="height: 2px;width: 60px;background-color: #ff4718;color: #ff4718;border: none;">
+        </div>
+        <div>
+            <p class="container-7-p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem atque, praesentium doloremque quae<br>
+                debitis odit quos quas atque commodi ipsa. Neque laborum animi illo amet provident, asperiores.
+            </p>
+        </div>
+        <div class="container-7">
+            <div><img src="./image/featured.png" width="550px" class="featured"></div>
+            <div style="display: grid; grid-template-rows: 0.2fr 0.2fr 0.2fr; margin-top: 70PX;">
+                <div style="text-align: left;">
+                    <h3 style="font-size: 27px; margin-bottom: 6px; margin-top: 20px;">24/7/360 SUPPORT</h3>
+                    <p style="color: #737373; margin-top: 0px; line-height: 25px;">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit.
+                        Non qui delectus<br /> ipsum iusto sit, hic voluptas, dicta deleniti.</p>
+                </div>
+                <div style="text-align: left;">
+                    <h3 style="font-size: 27px; margin-bottom: 6px; margin-top: 20px;">45 DAYS GUARANTEE</h3>
+                    <p style="color: #737373; margin-top: 0px; line-height: 25px;">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Non qui delectus<br />
+                        ipsum iusto sit, hic voluptas, dicta deleniti.</p>
+                </div>
+                <div style="text-align: left;">
+                    <h3 style="font-size: 27px; margin-bottom: 6px; margin-top: 20px;">99.9% UPTIME</h3>
+                    <p style="color: #737373; margin-top: 0px; line-height: 25px;">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Non qui delectus<BR />
+                        ipsum iusto sit, hic voluptas, dicta deleniti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-6">
+        <div class="container-9">
+            <div style="text-align: center;">
+                <h1 class="container-9-heading">140</h1>
+                <hr style="height: 2px;width: 60px;background-color: #ff4718;color: #ff4718;border: none;">
+                <p class="container-9-p">PROJECT COMPLETED</p>
+            </div>
+            <div style="text-align: center;">
+                <h1 class="container-9-heading">268</h1>
+                <hr style="height: 2px;width: 60px;background-color: #ff4718;color: #ff4718;border: none;">
+                <p class="container-9-p">HAPPY CLIENT</p>
+            </div>
+            <div style="text-align: center;">
+                <h1 class="container-9-heading">1612</h1>
+                <hr style="height: 2px;width: 60px;background-color: #ff4718;color: #ff4718;border: none;">
+                <p class="container-9-p">LINE OF CODES</p>
+            </div>
+            <div style="text-align: center;">
+                <h1 class="container-9-heading">972</h1>
+                <hr style="height: 2px;width: 60px;background-color: #ff4718;color: #ff4718;border: none;">
+                <p class="container-9-p">CUP OF TEA</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-7">
+        <div>
+            <h1 class="container-7-heading">CLIENT FEEDBACK</h1>
+            <hr style="height: 2px;width: 60px;background-color: #ff4718;color: #ff4718;border: none;">
+        </div>
+        <div>
+            <p class="container-7-p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem atque, praesentium doloremque quae<br>
+                debitis odit quos quas atque commodi ipsa. Neque laborum animi illo amet provident, asperiores.
+            </p>
+        </div>
+        <div class="container-10-img">
+            <img src="./image/client-01 (1).jpg" style="width: 120px; height: 120px; border-radius: 190px;">
+            <img src="./image/client-02.jpg" style="width: 120px; height: 120px; border-radius: 190px;">
+            <img src="./image/client-03.jpg" style="width: 120px; height: 120px; border-radius: 190px;">
+        </div>
+        <div>
+            <p style="color: #303030; font-size: 30px; font-weight: 600; line-height: 40px; margin-top: 50px;">Lorem
+                ipsum dolor sit ament, consectetur adipisicing elit.<br>
+                Distinctio totam explicabo vitea omnis tetenur minima</p>
+            <p style="color: #737373; font-size: 16px; margin-top: 30px; font-weight: 600;">Justin Farrugia, Company</p>
+        </div>
+    </section>
+    <section class="section-8">
+        <div style="text-align: center;">
+            <h1 style="font-size: 60px;font-weight: 700; color: black;margin-bottom: 20px; margin-top: 40px;">LATEST
+                BLOG</h1>
+            <hr style="height: 2px;width: 60px;background-color: #ff4718;border: none;">
+        </div>
+        <div style="text-align: center;">
+            <p class="container-7-p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem atque, praesentium doloremque quae<br>
+                debitis odit quos quas atque commodi ipsa. Neque laborum animi illo amet provident, asperiores.
+            </p>
+        </div>
+        <div class="container-11">
+            <div class="sub-container-11">
+                <div><img src="./image/post-02 (1).png" width="355px"></div>
+                <div style="color: #303030; font-size: 20px; padding-left: 20px; border-bottom: 1px solid #cac7c7;">
+                    <h4 class="red">SED VOLUPTATES AMET</h4>
+                </div>
+                <div
+                    style="font-size: 14px; color: #737373; font-weight: 500; padding: 10px 16px; border-bottom: 1px solid #cac7c7;">
+                    <a class="red">Uncategorized</a><a style="margin-left: 10px;margin-right: 10px;">/</a><a
+                        class="red">August 30, 2017</a></div>
+                <div
+                    style="font-size: 16px; color: #737373; font-weight: 500; padding: 10px 16px; border-bottom: 1px solid #cac7c7; line-height: 25px;">
+                    <p>Lorem ipsum dolor sit amet, consectetur<br />
+                        adipisicing elit. Sed voluptates amet<br /> perspiciatis possimus repellat, dolore aut eos<br />
+                        beatae consectetur velit sunt quidem veritatis<br>
+                        accusantium eveniet natus facilis eius nulla<br />
+                        esse! ...</p>
+                </div>
+                <div
+                    style="display: grid; grid-template-columns: 0.5fr 0.4fr; font-size: 14px; color: #737373; padding-left: 20px;">
+                    <p class="red"><span style="font-size: 18px;">&raquo;</span> READ MORE</p>
+                    <div style="margin-left: 40px;">
+                        <p class="red">0 Comment</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-container-11">
+                <div><img src="./image/post-01.png" width="355px"></div>
+                <div style="color: #303030; font-size: 20px; padding-left: 20px; border-bottom: 1px solid #cac7c7;">
+                    <h4 class="red">SED VOLUPTATES AMET</h4>
+                </div>
+                <div
+                    style="font-size: 14px; color: #737373; font-weight: 500; padding: 10px 16px; border-bottom: 1px solid #cac7c7;">
+                    <a class="red">Uncategorized</a><a style="margin-left: 10px;margin-right: 10px;">/</a><a
+                        class="red">August 30, 2017</a></div>
+                <div
+                    style="font-size: 16px; color: #737373; font-weight: 500; padding: 10px 16px; border-bottom: 1px solid #cac7c7; line-height: 25px;">
+                    <p>Lorem ipsum dolor sit amet, consectetur<br />
+                        adipisicing elit. Sed voluptates amet<br /> perspiciatis possimus repellat, dolore aut eos<br />
+                        beatae consectetur velit sunt quidem veritatis<br>
+                        accusantium eveniet natus facilis eius nulla<br />
+                        esse! ...</p>
+                </div>
+                <div
+                    style="display: grid; grid-template-columns: 0.5fr 0.4fr; font-size: 14px; color: #737373; padding-left: 20px;">
+                    <p class="red"><span style="font-size: 18px;">&raquo;</span> READ MORE</p>
+                    <div style="margin-left: 40px;">
+                        <p class="red">0 Comment</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-container-11">
+                <div><img src="./image/post-02 (1).png" width="355px"></div>
+                <div style="color: #303030; font-size: 20px; padding-left: 20px; border-bottom: 1px solid #cac7c7;">
+                    <h4 class="red">SED VOLUPTATES AMET</h4>
+                </div>
+                <div
+                    style="font-size: 14px; color: #737373; font-weight: 500; padding: 10px 16px; border-bottom: 1px solid #cac7c7;">
+                    <a class="red">Uncategorized</a><a style="margin-left: 10px;margin-right: 10px;">/</a><a
+                        class="red">August 30, 2017</a></div>
+                <div
+                    style="font-size: 16px; color: #737373; font-weight: 500; padding: 10px 16px; border-bottom: 1px solid #cac7c7; line-height: 25px;">
+                    <p>Lorem ipsum dolor sit amet, consectetur<br />
+                        adipisicing elit. Sed voluptates amet<br /> perspiciatis possimus repellat, dolore aut eos<br />
+                        beatae consectetur velit sunt quidem veritatis<br>
+                        accusantium eveniet natus facilis eius nulla<br />
+                        esse! ...</p>
+                </div>
+                <div
+                    style="display: grid; grid-template-columns: 0.5fr 0.4fr; font-size: 14px; color: #737373; padding-left: 20px;">
+                    <p class="red"><span style="font-size: 18px;">&raquo;</span> READ MORE</p>
+                    <div style="margin-left: 40px;">
+                        <p class="red">0 Comment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-9">
+        <div class="container-12">
+            <div>
+                <h2 style="margin-bottom: 10px;">About</h2>
+                <hr style="height: 2px;width: 50px;background-color: #ff4718;border: none; margin-left: 0px;">
+                <p style="line-height: 25px; margin-top: 28px;">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Laborum quod<br>
+                    mollitia quisquam. Architecto quam in atque sint voluptatem, consequatur<br>
+                    mollitia quisquam. Architecto quam in atque sint voluptatem, consequatur<br>
+                    modi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur<br>
+                    animi id ex perspiciatis distinctio sequi minima...</p>
+                <p style="font-weight: 600; color: #ff4718;">Learn More <span
+                        style="font-size: 20px; font-weight: 100;">&raquo;</span></p>
+            </div>
+            <div>
+                <h2 style="margin-bottom: 10px;">SERVICES</h2>
+                <hr style="height: 2px;width: 50px;background-color: #ff4718;border: none; margin-left: 0px;">
+                <div style="border-bottom: 1px solid white; border-style: dotted; border-top: none; border-right: none;
+             border-left: none; margin-top: 30px;"><span style="font-weight: 600;">&gt;</span></div>
+            </div>
+            <div></div>
+        </div>
+    </section>
+</body>
+
+</html>

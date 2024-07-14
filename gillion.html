@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Gillion</title>
+        <style>
+            body{
+              margin: 0%;
+              font-family: Arial, Helvetica, sans-serif;
+              background-color: #fff;
+            }
+
+            .section-1{
+                background-color: rgb(65, 64, 64);
+                padding-left: 30px;
+                padding-right: 30px;
+                width: 90.9%;
+            }
+
+            .container-1{
+                display: grid;
+                grid-template-columns: 2fr 0.4fr 0.2fr 0.3fr;
+            }
+            
+            .list{
+                display: inline;
+                padding-right: 10px;
+            }
+
+            .link{
+                color: white;
+                text-decoration: none;
+                font-size: small;
+            }
+
+            .sub-container-1b{
+                display: grid;
+                grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+                margin-right: 10px;
+                margin-top: 15px;
+            }
+
+            .sub-container-1c{
+                border: 1px solid rgb(131, 130, 130);
+                background-color: transparent;
+                color: white;
+                width: 50px;
+                height: 15px;
+                font-size: small;
+                padding: 8px 20px;
+                border-radius: 30px;
+                margin-top: 8px;
+                margin-right: 15px;
+            }
+
+            .sub-container-1d{
+                display: grid; 
+                grid-template-columns: 0.2fr 0.2fr;
+                color: white;
+                border-left: 1px solid rgb(100, 100, 100);
+                margin-top: 8px;
+                margin-bottom: 8px;
+                padding-left: 10px;
+            }
+
+            .section-2{
+              width: 90.9%;
+            }
+
+            .container-2{
+                text-align: center; 
+                display: grid;  
+                grid-template-columns: 1fr 1fr; 
+                width: 10%;
+                margin-left: 45%;
+                padding-top: 30px;
+                padding-bottom: 15px;
+            }
+
+            .container-2-heading{
+                margin-top: 2px;
+                padding-right: 5px;
+            }
+
+            .section-3{
+                padding-left: 50px;
+            padding-right: 65px;
+            width: 90%;
+            }
+
+            .container-3{
+                display: grid;
+                grid-template-columns: 0.2fr 1fr 0.2fr;
+                border-top: 0.5px solid rgb(226, 226, 226);
+                border-bottom: 0.5px solid rgb(226, 226, 226);
+                
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            .container-3a-icon{
+                display: grid;
+                grid-template-columns: 0.1fr 0.1fr;
+                gap: 10px;
+                width: 30%;
+                align-items: center;
+            }
+
+            .container-3b-icon{
+                display: grid;
+                grid-template-columns: 0.1fr 0.1fr;
+                gap: 10px;
+                width: 30%;
+                padding-left: 90px;
+                align-items: center;
+            }
+
+            .container-3c-icon{
+                border-bottom: 1px solid rgb(226, 225, 225);
+                padding: 5px;
+            }
+
+            .container-3d-icon{
+                padding: 5px;
+            }
+
+            .link-2{
+                color: black;
+                text-decoration: none;
+                font-weight: 600;
+                padding-left: 10px;
+            }
+            .sub-container-3a{
+                text-align: center;
+            }
+
+           .sub-container-3b{
+            display: grid;
+            grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+            float: right;
+           }
+
+           .sub-container-3b{
+            margin-top: -50px;
+            background-color: white;
+            box-shadow: 0px 2px 5px 5px rgb(228, 227, 227);
+            position: sticky;
+            position: fixed;
+            right: 0;
+            top: 14rem;
+           }
+
+           .section-4{
+            padding-top: 30px;
+            padding-left: 50px;
+            padding-right: 65px;
+            padding-bottom: 30px;
+           }
+
+           .container-4{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1.5fr 1fr;
+           }
+
+           .sub-container-4a{
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr;
+            gap: 10px;
+           }
+
+           .sub-container-4c{
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr;
+            gap: 10px;
+           }
+
+           .container-4a-image{
+            position: relative;
+           }
+
+           .sub-container-4a-write{
+            position: absolute;
+            color: white;
+            bottom: 10%;
+            padding-left: 20px;
+            line-height: 25px;
+           }
+
+           .container-4a-button{
+            border: none;
+            color: white;
+            background-color: rgb(27, 5, 5);
+            padding: 5px 15px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            margin-left: 3px;
+           }
+
+           .sub-container-4b{
+            position: relative;
+           }
+
+           .sub-container-4b-write{
+            position: absolute;
+            color: white;
+            bottom: 10%;
+            padding-left: 20px;
+            line-height: 25px;
+           }
+
+           .container-4b-icon{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 0.3fr 1fr 0.4fr 1fr;
+           }
+
+           .section-5{
+            padding-top: 40px;
+            padding-left: 50px;
+            padding-right: 65px;
+            padding-bottom: 30px;
+            width: 90.9%;
+           }
+
+           .container-5{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+           }
+
+           .sub-container-5{
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 0.5fr 1fr;
+           }
+
+           .container-5p{
+            font-size: 14px;
+             font-weight: bold;
+             color: rgb(53, 53, 53);
+             margin-top: 5px;
+             line-height: 18px;
+           }
+
+           .container-5-span{
+            font-size: 12px;
+            color: rgb(94, 92, 92);
+           }
+
+           .section-6{
+            padding-left: 50px;
+            padding-right: 65px;
+            padding-bottom: 30px;
+            width: 90.9%;
+           }
+
+           .container-6{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+           }
+
+           .sub-container-6a-2{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            border-top: 1px solid rgb(116, 115, 115);
+            padding-top: 30px;
+           }
+
+           .container-6p{
+            font-size: 14px;
+            color: rgb(44, 44, 44);
+            line-height: 20px;
+           }
+
+           .sub-container-6b-1{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            padding-top: 30px;
+            border-top: 1px solid rgb(116, 115, 115);
+            gap: 20px;
+           }
+
+           .like{
+            display: grid;
+            grid-template-columns: 2fr 0.4fr;
+            background-color: rgb(106, 106, 241);
+            width: 100%;
+            border-radius: 7px;
+           }
+
+           .follow-1{
+            display: grid;
+            grid-template-columns: 2fr 0.4fr;
+            background-color: rgb(78, 195, 241);
+            width: 100%;
+            border-radius: 7px;
+           }
+
+           .follow-2{
+            display: grid;
+            grid-template-columns: 2fr 0.4fr;
+            background-image: linear-gradient(to right, rgb(144, 5, 160), rgb(252, 79, 17));
+            width: 100%;
+            border-radius: 7px;
+           }
+
+           .subscribe{
+            display: grid;
+            grid-template-columns: 2fr 0.4fr;
+            background-color: rgb(235, 65, 4);
+            width: 100%;
+            border-radius: 7px;
+           }
+            
+           .section-7{
+            padding-top: 30px;
+            padding-left: 50px;
+            padding-right: 65px;
+            padding-bottom: 30px;
+            width: 90.9%;
+           }
+
+           .container-7{
+            display: grid;
+            grid-template-columns: 1fr 0.5fr;
+            gap: 25px;
+           }
+
+           .sub-container-7a{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            border-top: 1px solid black;
+            padding-top: 30px;
+            padding-bottom: 50px;
+           }
+
+           .container-7a-1{
+            display: grid;
+            grid-template-rows: 1fr 0.2fr 0.2fr;
+            gap: 10px;
+           }
+
+           .image-7{
+            width: 65%;
+            height: 30%;
+           }
+
+           .sport-1{
+            position: relative;
+           }
+
+           .sport-1-button{
+            border: none;
+            color: white;
+            background-color: rgb(27, 5, 5);
+            padding: 5px 15px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            margin-left: 3px;
+           position: absolute;
+           bottom: 50%;
+           left: 4%;
+           }
+
+           .sport-1p{
+            font-size: 14px;
+            line-height: 25px;
+           }
+
+           .sport-2{
+            display: grid;
+            grid-template-columns: 0.4fr 1fr;
+            border-top: 1px solid rgb(223, 220, 220);
+            padding-top: 20px;
+           }
+
+           .sport-2p{
+            margin-top: 8px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 22px;
+           }
+
+           .container-7b-1{
+            display: grid;
+            grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr;
+           }
+
+           .review{
+            display: grid;
+            grid-template-columns: 0.5fr 1fr;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            border-top: 1px solid rgb(223, 220, 220);
+            
+           }
+
+           .review-p{
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 22px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+           }
+
+           .section-7-image{
+            position: relative;
+            width: 100%;
+            min-width: 80%;
+
+           }
+
+           .section-8{
+            padding-top: 10px;
+            padding-left: 50px;
+            padding-right: 65px;
+            padding-bottom: 30px;
+            width: 90.9%;
+           }
+
+           .container-8{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            border-top: 1px solid rgb(223, 220, 220);
+            padding-top: 30px;
+            position: relative;
+           }
+
+           .container-8-write{
+            position: absolute;
+            bottom: 5%;
+            padding-left: 20px;
+            padding-right: 10px;
+            color: white;
+            font-size: 18px;
+           }
+
+           .section-9{
+            padding-top: 10px;
+            padding-left: 50px;
+            padding-right: 65px;
+            padding-bottom: 30px;
+           }
+
+           .container-9{
+            display: grid;
+            grid-template-columns: 1fr 0.5fr;
+            gap: 50px;
+           }
+           
+           .part{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            border-top: 1px solid rgb(218, 216, 216);
+           }
+
+           .part-1{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 20px;
+            padding-top: 30px;
+           }
+
+           .part-1a{
+            position: relative;
+           }
+
+           .container-9a-button{
+            position: absolute;
+            border: none;
+            color: white;
+            background-color: rgb(15, 10, 10);
+            padding: 5px 15px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            margin-left: 3px;
+            bottom: 40%;
+            left: 3%;
+           }
+
+           .container-9a-p{
+            font-size: 18px;
+            font-weight: 600;
+            color: rgb(49, 49, 49);
+           }
+
+           .container-9-icon{
+            display: grid;
+            grid-template-columns: 0.35fr 0.2fr 0.3fr;
+            width: 340px;
+           }
+
+           .container-9b-part1{
+            border-top: 1px solid rgb(218, 216, 216);
+            padding-top: 30px;
+           }
+
+           .container-9-input{
+            height: 70px;
+            width: 350px;
+            border-radius: 40px;
+            border: 1px solid rgb(218, 215, 215);
+           }
+
+           .container-9-input::placeholder{
+            padding-left: 20px;
+            color: rgb(122, 120, 120);
+           }
+
+           .input-p{
+            color: rgb(170, 168, 168);
+            font-size: 14px;
+            font-weight: 100;
+            margin-top: 20px;
+           }
+
+           .container-9b-part2{
+            padding-top: 50px;
+           }
+
+           .sub-subscribe{
+            border-bottom: 2px solid black;
+            width: 285px;
+           }
+
+           .life-hack{
+            display: grid;
+            grid-template-columns: 0.7fr 0.2fr 0.2fr;
+            gap: 10px;
+           }
+
+           .hack-1{
+            text-align: center;
+            border: 1px solid rgb(184, 182, 182);
+            margin: auto;
+            padding: 5px 10px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px 5px rgb(224, 224, 224);
+           }
+
+           .hack-2{
+            margin: auto;
+           }
+
+           .advert{
+            border-top: 1px solid rgb(184, 182, 182);
+            padding-top: 30px;
+           }
+
+           .section-9-button{
+            margin-top: 80px;
+            width: 65%;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            border: none;
+            background-color: #fff;
+            box-shadow: 1px 2px 10px 3px rgb(209, 208, 208);
+           }
+
+           .section-10{
+            padding-top: 30px;
+            padding-left: 50px;
+            padding-right: 65px;
+            padding-bottom: 30px;
+            background-image: url(./image/aleksandr-popov-5tsvxCrFi_I-unsplash.jpg);
+            background-position: 10%;
+            background-position-y: bottom;
+            width: 90.9%;
+           }
+
+           .container-10{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            width: 100%;
+           }
+
+           .container-10-input{
+            height: 50px;
+            width: 350px;
+            border-radius: 40px;
+            border: 1px solid rgb(218, 215, 215);
+           }
+
+           .container-10-input::placeholder{
+            padding-left: 20px;
+            color: rgb(122, 120, 120);
+           }
+
+           .container-10b-1{
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr 0.5fr;
+           }
+
+           .review-10p{
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 22px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            color: #fff;
+           }
+
+           .container-10-list2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            border-bottom: 1px solid white;
+            color: white;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            font-size: 14px;
+            font-weight: 600;
+           }
+
+           .container-10-list1{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            border-bottom: 1px solid white;
+            color: white;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            border-top: 1px solid white;
+            font-size: 14px;
+            font-weight: 600;
+           }
+
+           .container-11{
+            background-color: black;
+            color: white;
+            font-size: 14px;
+            margin: 0%;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+           }
+
+           .container-11p{
+            margin: 0%;
+           }
+           
+           @media (max-width: 320px){
+            .section-1{
+              display: none;
+            }
+
+            .section-3{
+              display: none;
+            }
+
+            .section-4{
+              padding-left: 5px;
+              padding-right: 5px;
+            }
+
+            .container-4{
+              display: grid;
+              grid-template-rows: 1fr 1fr 1fr;
+              grid-template-columns: none;
+            }
+
+            .section-5{
+              padding-left: 5px;
+              padding-right: 5px;
+            }
+
+            .container-5{
+              display: grid;
+              grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr;
+              grid-template-columns: none;
+            }
+
+            .section-6{
+              padding-left: 5px;
+              padding-right: 5px;
+            }
+
+            .sub-container-6a-2{
+              display: grid;
+              grid-template-rows: 1fr 1fr 1fr;
+              grid-template-columns: none;
+            }
+
+            .container-6{
+              display: grid;
+              grid-template-rows: 1fr 0.3fr;
+              grid-template-columns: none;
+            }
+
+            .section-7{
+              padding-left: 5px;
+              padding-right: 5px;
+            }
+
+            .container-7{
+              display: grid;
+              grid-template-rows: 1fr 0.5fr;
+              grid-template-columns: none;
+            }
+
+            .sub-container-7a{
+              display: grid;
+              grid-template-rows: 1fr 1fr;
+              grid-template-columns: none;
+            }
+
+            .section-8{
+              padding-left: 5px;
+              padding-right: 5px;
+            }
+
+            .container-8{
+              display: grid;
+              grid-template-rows: 1fr 1fr 1fr;
+              grid-template-columns: none;
+            }
+
+            .image-9{
+              width: 270px;
+            }
+
+            .container-9a-p{
+              width: 260px;
+            }
+
+            .part-1, .part-1a{
+              width: 280px;
+            }
+
+            .part{
+              display: grid;
+              grid-template-rows: 1fr 1fr;
+              grid-template-columns: none;
+            }
+
+            .sub-subscribe{
+              width: 200px;
+            }
+
+            .hack-1, .hack-2{
+              display: none;
+            }
+
+            .life-hack{
+              grid-template-columns: none;
+            }
+
+            .section-9{
+              padding-left: 5px;
+              padding-right: 5px;
+            }
+
+            .container-9{
+              display: grid;
+              grid-template-rows: 1fr 0.3fr;
+              grid-template-columns: none;
+            }
+
+            .section-10{
+              padding-left: 5px;
+              padding-right: 5px;
+              width: 300px;
+            }
+
+            .review{
+              display: grid;
+              grid-template-columns: 0.3fr 0.5fr;
+            }
+
+            .container-10-list2{
+              display: grid;
+              grid-template-columns: 0.5fr 0.1fr;
+            }
+
+            .container-10-input{
+              width: 200px;
+            }
+
+            .advert-image{
+              width: 280px;
+            }
+
+             .container-10-list1{
+              display: grid;
+              grid-template-columns: 0.5fr 0.1fr;
+            }
+
+
+            .container-10{
+              display: grid;
+              grid-template-rows: 0.5fr 1fr 1fr;
+              grid-template-columns: none;
+            }
+           }
+        </style>
+    </head>
+    <body>
+      <section>
+        <div class="icon-1">
+          <svg width="40" height="46" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 18h18v-2H3v2Zm0-5h18v-2H3v2Zm0-7v2h18V6H3Z"></path>
+            </svg>
+          </div>
+      </section>
+        <section class="section-1">
+        <div class="container-1">
+          <div class="sub-container-1a">
+            <ul>
+                <li class="list"><a href="#" class="link">About</a></li>
+                <li class="list"><a href="#" class="link">Contact</a></li>
+                <li class="list"><a href="#" class="link">Advertise</a></li>
+                <li class="list"><a href="#" class="link">Buy theme</a></li>
+                <li class="list"><a href="#" class="link">Work for us</a></li>
+            </ul>
+          </div>
+          <div class="sub-container-1b">
+            <svg width="20" height="20" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.2 2.875A4.625 4.625 0 0 0 9.575 7.5v2.575H7.1c-.124 0-.225.1-.225.225v3.4c0 .124.1.225.225.225h2.475V20.9c0 .124.1.225.225.225h3.4c.124 0 .225-.1.225-.225v-6.975h2.497c.103 0 .193-.07.218-.17l.85-3.4a.225.225 0 0 0-.218-.28h-3.347V7.5a.775.775 0 0 1 .775-.775h2.6c.124 0 .225-.1.225-.225V3.1c0-.124-.1-.225-.225-.225h-2.6Z"></path>
+              </svg>
+              <svg width="20" height="20" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.25 5.133a9.46 9.46 0 0 1-2.65.717 4.57 4.57 0 0 0 2.03-2.512c-.908.53-1.9.903-2.932 1.101A4.647 4.647 0 0 0 16.327 3c-2.55 0-4.615 2.034-4.615 4.542a4.37 4.37 0 0 0 .119 1.036A13.158 13.158 0 0 1 2.315 3.83a4.485 4.485 0 0 0-.627 2.283c0 1.574.821 2.967 2.062 3.782a4.57 4.57 0 0 1-2.1-.567v.056c0 2.204 1.595 4.036 3.704 4.454a4.752 4.752 0 0 1-1.216.159c-.291 0-.582-.028-.868-.085.587 1.805 2.294 3.118 4.315 3.155a9.356 9.356 0 0 1-6.835 1.88A13.063 13.063 0 0 0 7.816 21c8.501 0 13.146-6.923 13.146-12.928 0-.197-.006-.394-.015-.586a9.304 9.304 0 0 0 2.303-2.353Z"></path>
+              </svg>
+              <svg width="20" height="20" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.375 3.25a4.388 4.388 0 0 1 4.375 4.375v8.75a4.388 4.388 0 0 1-4.375 4.375h-8.75a4.389 4.389 0 0 1-4.375-4.375v-8.75A4.388 4.388 0 0 1 7.625 3.25h8.75Zm0-1.75h-8.75C4.256 1.5 1.5 4.256 1.5 7.625v8.75c0 3.369 2.756 6.125 6.125 6.125h8.75c3.369 0 6.125-2.756 6.125-6.125v-8.75c0-3.369-2.756-6.125-6.125-6.125Z"></path>
+                <path d="M17.688 7.625a1.313 1.313 0 1 1 0-2.625 1.313 1.313 0 0 1 0 2.625Z"></path>
+                <path d="M12 8.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Zm0-1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5Z"></path>
+              </svg>
+              <svg width="20" height="20" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.002 1.5c-5.798 0-10.5 4.702-10.5 10.5 0 4.298 2.587 7.992 6.286 9.619-.028-.732-.005-1.613.183-2.41l1.35-5.723s-.338-.67-.338-1.66c0-1.556.9-2.718 2.025-2.718.957 0 1.416.717 1.416 1.575 0 .96-.614 2.395-.928 3.726-.263 1.116.557 2.02 1.66 2.02 1.987 0 3.327-2.554 3.327-5.582 0-2.302-1.551-4.022-4.369-4.022-3.182 0-5.17 2.377-5.17 5.03 0 .914.272 1.56.694 2.057.192.23.22.324.15.586-.052.193-.164.657-.216.844-.07.267-.286.361-.525.263-1.467-.6-2.151-2.203-2.151-4.013 0-2.981 2.517-6.558 7.504-6.558 4.008 0 6.647 2.902 6.647 6.014 0 4.12-2.292 7.196-5.667 7.196-1.134 0-2.198-.614-2.564-1.308 0 0-.61 2.419-.74 2.887-.22.811-.657 1.618-1.055 2.25.966.286 1.969.43 2.976.432 5.799 0 10.5-4.702 10.5-10.5C22.497 6.206 17.8 1.5 12.002 1.5Z"></path>
+              </svg>
+          </div>
+          <div class="sub-container-1c">LOG IN</div>
+          <div class="sub-container-1d">
+            <div style="padding-left: 5px; font-size: 30px; padding-right: 5px;">28</div>
+            <div style="display: grid; grid-template-rows: 0.1fr 0.1fr; font-size: 12px;">
+              <div style="margin-bottom: 2px;">JAN</div>
+              <div>2024</div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <section class="section-2">
+         <div class="container-2">
+            <svg width="43" height="46" fill="#6d88f3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 4.917a2.5 2.5 0 0 1 2.5-2.5h15a2.5 2.5 0 0 1 2.5 2.5v10a2.5 2.5 0 0 1-2.5 2.5h-3.125a1.25 1.25 0 0 0-1 .5L13 21.083a1.25 1.25 0 0 1-2 0l-2.375-3.166a1.25 1.25 0 0 0-1-.5H4.5a2.5 2.5 0 0 1-2.5-2.5v-10Zm4.375 1.25a.625.625 0 0 0 0 1.25h11.25a.625.625 0 1 0 0-1.25H6.375Zm0 3.125a.625.625 0 0 0 0 1.25h11.25a.625.625 0 0 0 0-1.25H6.375Zm0 3.125a.625.625 0 1 0 0 1.25h6.25a.625.625 0 0 0 0-1.25h-6.25Z"></path>
+              </svg>
+          <h1 class="container-2-heading">gillion</h1>
+         </div>
+        </section>
+        <section class="section-3">
+        <div class="container-3">
+           <div class="container-3a-icon">
+            <svg width="20" height="20" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 3a8 8 0 1 0 0 16 8 8 0 1 0 0-16z"></path>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+              <svg width="20" height="20" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2a3 3 0 1 0 0 6 3 3 0 1 0 0-6z"></path>
+                <path d="M6 9a3 3 0 1 0 0 6 3 3 0 1 0 0-6z"></path>
+                <path d="M18 16a3 3 0 1 0 0 6 3 3 0 1 0 0-6z"></path>
+                <path d="m8.59 13.51 6.83 3.98"></path>
+                <path d="m15.41 6.51-6.82 3.98"></path>
+              </svg>
+           </div>
+           <div class="sub-container-3a">
+            <ul class="container-3-ul">
+                <li class="list"><a href="#section-1" class="link-2">Home :</a></li>
+                <li class="list"><a href="#" class="link-2">Features :</a></li>
+                <li class="list"><a href="#" class="link-2">Blog Style :</a></li>
+                <li class="list"><a href="#" class="link-2">Mega Menu :</a></li>
+                <li class="list"><a href="#" class="link-2">Shop :</a></li>
+            </ul>
+
+            
+           </div>
+           <div class="container-3b-icon">
+            <svg width="22" height="22" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.755 14.255h-.79l-.28-.27a6.471 6.471 0 0 0 1.57-4.23 6.5 6.5 0 1 0-6.5 6.5c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99 1.49-1.49-4.99-5Zm-6 0c-2.49 0-4.5-2.01-4.5-4.5s2.01-4.5 4.5-4.5 4.5 2.01 4.5 4.5-2.01 4.5-4.5 4.5Z"></path>
+              </svg>
+              <svg width="20" height="20" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2a3 3 0 1 0 0 6 3 3 0 1 0 0-6z"></path>
+                <path d="M6 9a3 3 0 1 0 0 6 3 3 0 1 0 0-6z"></path>
+                <path d="M18 16a3 3 0 1 0 0 6 3 3 0 1 0 0-6z"></path>
+                <path d="m8.59 13.51 6.83 3.98"></path>
+                <path d="m15.41 6.51-6.82 3.98"></path>
+              </svg>
+           </div>
+        </div>
+        <div class="sub-container-3b">
+            <div class="container-3c-icon">
+            <svg width="25" height="25" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2Zm0 14H3V5h18v12Zm-2-9H8v2h11V8Zm0 4H8v2h11v-2ZM7 8H5v2h2V8Zm0 4H5v2h2v-2Z"></path>
+              </svg>
+            </div>
+            <div class="container-3c-icon">
+            <svg width="25" height="25" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6.5H8.3l8.26-3.34-.68-1.66L3.24 6.65C2.51 6.93 2 7.67 2 8.5v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-12c0-1.11-.89-2-2-2Zm0 2v3h-2v-2h-2v2H4v-3h16Zm-16 12v-7h16v7H4Z"></path>
+                <path d="M8 19.48a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"></path>
+              </svg>
+            </div>
+            <div class="container-3c-icon">
+            <svg width="25" height="25" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.5 23.295v-3.6c-5.01-.26-9-4.42-9-9.49 0-5.24 4.26-9.5 9.5-9.5s9.5 4.26 9.5 9.5c0 4.95-3.44 9.93-8.57 12.4l-1.43.69Zm.5-20.59c-4.14 0-7.5 3.36-7.5 7.5 0 4.14 3.36 7.5 7.5 7.5h1.5v2.3c3.64-2.3 6-6.08 6-9.8 0-4.14-3.36-7.5-7.5-7.5Zm-1 11.5h2v2h-2v-2Zm2-1.5h-2c0-3.25 3-3 3-5 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 2.5-3 2.75-3 5Z"></path>
+              </svg>
+            </div>
+            <div class="container-3c-icon">
+              <svg width="25" height="25" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.88 3.46 6.6 1.93 2 5.78l1.29 1.53 4.59-3.85ZM22 5.79l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.79ZM12 4.07a9 9 0 0 0-9 9c0 4.97 4.02 9 9 9a9 9 0 0 0 0-18Zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7Zm1-11h-2v3H8v2h3v3h2v-3h3v-2h-3v-3Z"></path>
+              </svg>
+            </div>
+            <div class="container-3d-icon">
+              <svg width="25" height="25" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.5 3h-16c-1.1 0-1.99.9-1.99 2L1.5 17c0 1.1.9 2 2 2h8v-2h-8V7l8 5 8-5v5h2V5c0-1.1-.9-2-2-2Zm-8 7-8-5h16l-8 5Zm5.34 11-3.54-3.54 1.41-1.41 2.12 2.12 4.24-4.24 1.43 1.41L16.84 21Z"></path>
+              </svg>
+            </div>
+        </div>
+        </section>
+        <section class="section-4">
+            <div class="container-4">
+             <div class="sub-container-4a">
+                <div class="container-4a-image">
+                    <img src="./image/post-02 (1).png" width="100%" height="300px"
+                    style="border-radius: 5px; filter: brightness(70%);">
+                    <div class="sub-container-4a-write">
+                    <button class="container-4a-button"><i>Health</i></button>
+                    <p>How Much Time On Social Network is Considered Healthy</p>
+                    </div>
+                </div>
+                <div class="container-4a-image">
+                    <img src="./image/post-01.png" width="100%" height="300px"
+                    style="border-radius: 5px; filter: brightness(70%);">
+                    <div class="sub-container-4a-write">
+                    <button class="container-4a-button"><i>Tech</i></button>
+                    <p>Smart Phones That Will Make Some Money</p>
+                    </div>
+                </div>
+             </div>
+             <div class="sub-container-4b">
+                <img src="./image/andrey-k-W85SC0ZZqAM-unsplash.jpg" width="100%" height="615px" class="image-4b"
+                style="border-radius: 5px;">
+                <div class="sub-container-4b-write">
+                    <button class="container-4a-button"><i>Lifestyle</i></button>
+                    <p>How Fashion Trend Change The Way You Think</p>
+                    <div class="container-4b-icon">
+                        <div><img src="./image/client-01 (1).jpg" width="100%" style="border-radius: 5px;"></div>
+                        <div>Gillion, 5 years ago</div>
+                        <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 20px; padding-left: 15px;
+                         border-left: 1px solid white;"> <div style="margin-top: 2px;"><svg width="20" height="20" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                          </svg></div><span style="padding-left: 4px;">0 </span></div>
+                        <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 20px; padding-left: 5px;
+                         border-left: 1px solid white;"> <div style="margin-top: 2px;"><svg width="20" height="20" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                          </svg></div><span style="padding-left: 4px;">3 min read </span></div>
+                    </div>
+                    </div>
+             </div>
+             <div class="sub-container-4c">
+                <div class="container-4a-image">
+                    <img src="./image/photo-gallery-04.jpg" width="100%" height="300px"
+                    style="border-radius: 5px; filter: brightness(70%);">
+                    <div class="sub-container-4a-write">
+                    <button class="container-4a-button"><i>Cars</i></button>
+                    <p>Porsche Cayman Re-style is On The Way</p>
+                    </div>
+                </div>
+                <div class="container-4a-image">
+                    <img src="./image/camera-color.jpg" width="100%" height="300px"
+                    style="border-radius: 5px; filter: brightness(70%);">
+                    <div class="sub-container-4a-write">
+                    <button class="container-4a-button"><i>Tech</i></button>
+                    <p>Best Cameras To Choose From In 2019</p>
+                    </div>
+                </div>
+             </div>
+            </div>
+        </section>
+        <section class="section-5">
+        <div class="container-5">
+         <div class="sub-container-5">
+            <img src="./image/aleksandr-popov-5tsvxCrFi_I-unsplash.jpg" width="80px" height="80px"
+             style="border-radius: 5px;">
+             <div>
+                <span class="container-5-span"><i>Beauty</i></span>
+                <p class="container-5p">How To Find Good Sport For Nature Inspired photo-shoots</p>
+             </div>
+         </div>
+         <div class="sub-container-5">
+            <img src="./image/photo-gallery-04.jpg" width="80px" height="80px"
+             style="border-radius: 5px;">
+             <div>
+                <span class="container-5-span"><i>Cars</i></span>
+                <p class="container-5p">Sneak Peak Of Mercedes Benz Interior Update in c-class Sedans</p>
+             </div>
+         </div>
+         <div class="sub-container-5">
+            <img src="./image/photo-gallery-03.jpg" width="80px" height="80px"
+             style="border-radius: 5px;">
+             <div>
+                <span class="container-5-span"><i>Lifestyle</i></span>
+                <p class="container-5p">White Stairway Architectural Marvel!</p>
+             </div>
+         </div>
+         <div class="sub-container-5">
+            <img src="./image/dylann-hendricks-uTjOE3UVclE-unsplash.jpg" width="80px" height="80px"
+             style="border-radius: 5px;">
+             <div>
+                <span class="container-5-span"><i>Beauty</i></span>
+                <p class="container-5p">Interview Of Beginner Urban Style Model & Blog Diva</p>
+             </div>
+         </div>
+        </div>
+        </section>
+        <section class="section-6">
+           <div class="container-6">
+            <div class="sub-container-6a">
+                <div style="border-bottom: 2px solid black; width: 210px;">
+            <h2>Todays Sportlight</h2>
+                </div>
+            <div class="sub-container-6a-2">
+              <div>
+               <img src="./image/Getty images.jfif" width="250px" height="180px" style="border-radius: 6px;">
+               <p class="container-6p">What's People Buzzing About? Your Content Shoud Join The<br/> Conversation</p>
+               <div style="display: grid; grid-template-columns: 0.5fr 0.5fr; color: rgb(85, 84, 84); font-size: small;"> 
+                <div>Gillion, 7 years ago </div> 
+                <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-left: 10px;
+                border-left: 1px solid rgb(112, 111, 111);"> 
+                <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                   <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                 </svg></div><span style="padding-left: 4px;">3 min read </span></div></div>
+              </div>
+              <div>
+                <img src="./image/laptop.jfif" width="250px" height="180px" style="border-radius: 6px;">
+                <p class="container-6p">Does Coffee Help Deduce Stress Hormone Levels?</p>
+                <div style="display: grid; grid-template-columns: 0.5fr 0.5fr; color: rgb(85, 84, 84); font-size: small;"> 
+                 <div>Gillion, 5 years ago </div> 
+                 <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-left: 10px;
+                 border-left: 1px solid rgb(112, 111, 111);"> 
+                 <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                  </svg></div><span style="padding-left: 4px;">3 min read </span></div></div>
+               </div>
+               <div>
+                <img src="./image/Apple-Salad.webp" width="250px" height="180px" style="border-radius: 6px;">
+                <p class="container-6p">Review Of Healthy Breakfast Meals For Energy Boost</p>
+                <div style="display: grid; grid-template-columns: 0.5fr 0.5fr; color: rgb(85, 84, 84); font-size: small;"> 
+                 <div>Gillion, 6 years ago </div> 
+                 <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-left: 10px;
+                 border-left: 1px solid rgb(112, 111, 111);"> 
+                 <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                  </svg></div><span style="padding-left: 4px;">2 min read </span></div></div>
+               </div>
+            </div>
+            </div>
+            <div class="sub-container-6b">
+            <div style="border-bottom: 2px solid black; width: 190px;">
+            <h2>Stay Connected</h2>
+                </div>
+            <div class="sub-container-6b-1">
+              <div class="like">
+               <div style="display: grid; grid-template-columns: 0.1fr 0.1fr; gap: 10px; color: white;"><svg width="20" height="20" style="padding-top: 14px; padding-left: 10px;" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.2 2.875A4.625 4.625 0 0 0 9.575 7.5v2.575H7.1c-.124 0-.225.1-.225.225v3.4c0 .124.1.225.225.225h2.475V20.9c0 .124.1.225.225.225h3.4c.124 0 .225-.1.225-.225v-6.975h2.497c.103 0 .193-.07.218-.17l.85-3.4a.225.225 0 0 0-.218-.28h-3.347V7.5a.775.775 0 0 1 .775-.775h2.6c.124 0 .225-.1.225-.225V3.1c0-.124-.1-.225-.225-.225h-2.6Z"></path>
+              </svg> <p>Like</p></div>
+               <div style="border-left: 1px solid white; color: white; text-align: center;"><p>1423</p></div>
+              </div>
+              <div class="follow-1">
+                <div style="display: grid; grid-template-columns: 0.1fr 0.1fr; gap: 10px; color: white;"> <svg width="20" height="20" style="padding-top: 14px; padding-left: 10px;" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.25 5.133a9.46 9.46 0 0 1-2.65.717 4.57 4.57 0 0 0 2.03-2.512c-.908.53-1.9.903-2.932 1.101A4.647 4.647 0 0 0 16.327 3c-2.55 0-4.615 2.034-4.615 4.542a4.37 4.37 0 0 0 .119 1.036A13.158 13.158 0 0 1 2.315 3.83a4.485 4.485 0 0 0-.627 2.283c0 1.574.821 2.967 2.062 3.782a4.57 4.57 0 0 1-2.1-.567v.056c0 2.204 1.595 4.036 3.704 4.454a4.752 4.752 0 0 1-1.216.159c-.291 0-.582-.028-.868-.085.587 1.805 2.294 3.118 4.315 3.155a9.356 9.356 0 0 1-6.835 1.88A13.063 13.063 0 0 0 7.816 21c8.501 0 13.146-6.923 13.146-12.928 0-.197-.006-.394-.015-.586a9.304 9.304 0 0 0 2.303-2.353Z"></path>
+                  </svg> <p>Follow</p></div>
+                <div style="border-left: 1px solid white; color: white; text-align: center;"><p>727</p></div>
+               </div>
+               <div class="follow-2">
+                <div style="display: grid; grid-template-columns: 0.1fr 0.1fr; gap: 10px; color: white;"> <svg width="20" height="20" style="padding-top: 14px; padding-left: 10px;" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.375 3.25a4.388 4.388 0 0 1 4.375 4.375v8.75a4.388 4.388 0 0 1-4.375 4.375h-8.75a4.389 4.389 0 0 1-4.375-4.375v-8.75A4.388 4.388 0 0 1 7.625 3.25h8.75Zm0-1.75h-8.75C4.256 1.5 1.5 4.256 1.5 7.625v8.75c0 3.369 2.756 6.125 6.125 6.125h8.75c3.369 0 6.125-2.756 6.125-6.125v-8.75c0-3.369-2.756-6.125-6.125-6.125Z"></path>
+                    <path d="M17.688 7.625a1.313 1.313 0 1 1 0-2.625 1.313 1.313 0 0 1 0 2.625Z"></path>
+                    <path d="M12 8.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Zm0-1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5Z"></path>
+                  </svg><p>Follow</p></div>
+                <div style="border-left: 1px solid white; color: white; text-align: center;"><p>386</p></div>
+               </div>
+               <div class="subscribe">
+                <div style="display: grid; grid-template-columns: 0.1fr 0.1fr; gap: 10px; color: white;"><svg width="20" height="20" style="padding-top: 14px; padding-left: 10px;" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M14.2 2.875A4.625 4.625 0 0 0 9.575 7.5v2.575H7.1c-.124 0-.225.1-.225.225v3.4c0 .124.1.225.225.225h2.475V20.9c0 .124.1.225.225.225h3.4c.124 0 .225-.1.225-.225v-6.975h2.497c.103 0 .193-.07.218-.17l.85-3.4a.225.225 0 0 0-.218-.28h-3.347V7.5a.775.775 0 0 1 .775-.775h2.6c.124 0 .225-.1.225-.225V3.1c0-.124-.1-.225-.225-.225h-2.6Z"></path>
+               </svg> <p>Subscribe</p></div>
+                <div style="border-left: 1px solid white; color: white; text-align: center;"><p>284</p></div>
+               </div>
+            </div>
+            </div>
+           </div>
+        </section>
+        <section class="section-7">
+        <div class="container-7">
+        <div class="sub-container-7">
+                    <div style="border-bottom: 2px solid black; width: 150px;">
+                        <h2>Sport & Cars</h2>
+                            </div>
+                <div class="sub-container-7a">
+                    <div class="container-7a-1">
+                        <div class="sport-1">
+                         <img src="./image/sports-01.jpg" width="100%" height="55%">
+                         <button class="sport-1-button"><i>Sport</i></button>
+                         <h3>How To Start Running Like A Pro</h3>
+                         <div style="display: grid; grid-template-columns: 0.3fr 0.5fr; color: rgb(85, 84, 84); font-size: small;"> 
+                             <div>Gillion, 5 years ago </div> 
+                             <div style="display: grid; grid-template-columns: 0.1fr 0.2fr; height: 15px; padding-left: 10px;
+                             border-left: 1px solid rgb(112, 111, 111);"> 
+                             <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                              </svg></div><span style="padding-left: 4px;">0 </span></div></div>
+                         <p class="sport-1p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet,
+                             aunc et accumsan cursus, neque eros sodeles lectus,<br/> in fermentum...
+                         </p>
+                        </div>
+                        <div class="sport-2">
+                         <div><img src="./image/sports-02.jpg" width="90%" height="100%" style="border-radius: 5px;" ></div>
+                         <div>
+                             <p class="sport-2p">Weather Forecast For Olympic Games-Clouds & Rain</p>
+                             <div style="display: grid; grid-template-columns: 0.5fr 0.5fr; color: rgb(85, 84, 84); font-size: small;"> 
+                                 <div>Gillion, 5 years ago </div> 
+                                 <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-left: 10px;
+                                 border-left: 1px solid rgb(112, 111, 111);"> 
+                                 <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                                  </svg></div><span style="padding-left: 4px;">3 min read </span></div></div>
+                         </div>
+                        </div>
+                        <div class="sport-2">
+                         <div><img src="./image/news-widget-03.jpg" width="90%" height="100%" style="border-radius: 5px;" ></div>
+                         <div>
+                             <p class="sport-2p">Amazing Car Paint Jobs We Seen So Far</p>
+                             <div style="display: grid; grid-template-columns: 0.5fr 0.5fr; color: rgb(85, 84, 84); font-size: small;"> 
+                                 <div>Gillion, 7 years ago </div> 
+                                 <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-left: 10px;
+                                 border-left: 1px solid rgb(112, 111, 111);"> 
+                                 <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                                  </svg></div><span style="padding-left: 4px;">3 min read </span></div></div>
+                         </div>
+                        </div>
+                       </div>
+                       <div class="container-7a-1">
+                        <div class="sport-1">
+                         <img src="./image/photo-gallery-04.jpg" width="100%" height="55%">
+                         <button class="sport-1-button"><i>Cars</i></button>
+                         <h3>Review of New Audi Q Series Cars</h3>
+                         <div style="display: grid; grid-template-columns: 0.3fr 0.5fr; color: rgb(85, 84, 84); font-size: small;"> 
+                             <div>Gillion, 5 years ago </div> 
+                             <div style="display: grid; grid-template-columns: 0.1fr 0.2fr; height: 15px; padding-left: 10px;
+                             border-left: 1px solid rgb(112, 111, 111);"> 
+                             <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                              </svg></div><span style="padding-left: 4px;">0 </span></div></div>
+                         <p class="sport-1p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet,
+                             aunc et accumsan cursus, neque eros sodeles lectus,<br/> in fermentum...
+                         </p>
+                        </div>
+                        <div class="sport-2">
+                         <div><img src="./image/sports-05.jpg" width="90%" height="100%" style="border-radius: 5px;" ></div>
+                         <div>
+                             <p class="sport-2p">Sports Match Of The Century</p>
+                             <div style="display: grid; grid-template-columns: 0.5fr 0.5fr; color: rgb(85, 84, 84); font-size: small;"> 
+                                 <div>Gillion, 5 years ago </div> 
+                                 <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-left: 10px;
+                                 border-left: 1px solid rgb(112, 111, 111);"> 
+                                 <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                                  </svg></div><span style="padding-left: 4px;">3 min read </span></div></div>
+                         </div>
+                        </div>
+                        <div class="sport-2">
+                         <div><img src="./image/sports-03.jpg" width="90%" height="100%" style="border-radius: 5px;" ></div>
+                         <div>
+                             <p class="sport-2p">Top 5 Unheard Interesting Fact About Sport</p>
+                             <div style="display: grid; grid-template-columns: 0.5fr 0.5fr; color: rgb(85, 84, 84); font-size: small;"> 
+                                 <div>Gillion, 7 years ago </div> 
+                                 <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-left: 10px;
+                                 border-left: 1px solid rgb(112, 111, 111);"> 
+                                 <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                                  </svg></div><span style="padding-left: 4px;">3 min read </span></div></div>
+                         </div>
+                        </div>
+                       </div>
+                </div>
+        </div>
+        <div class="sub-container-7b">
+        <div style="border-bottom: 2px solid black; width: 100px;">
+        <h2>Reviews</h2>
+       </div>
+    <div class="container-7b-1">
+          <div class="review" style="height: 113px;">
+                <div><img src="./image/profile-colour.jpg.jfif" width="90%" height="65%" style="border-radius: 5px;"></div>
+                <div>
+                <p class="review-p">Review Of Photoshop CC Editing Techniques</p>
+                <div style="display: grid; grid-template-columns: 0.2fr 0.2fr; color: rgb(85, 84, 84); font-size: small;">
+                <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-right: 10px;"> 
+                <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                 <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                </svg></div><span style="padding-left: 4px;">0 </span></div>
+                <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-left: 10px; 
+                border-left: 1px solid rgb(112, 111, 111);"> 
+                <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                </svg></div><span style="padding-left: 4px;">3896 </span></div>
+                                        </div>
+                                </div>
+                </div>
+                <div class="review">
+                    <div><img src="./image/rafael-garcin-yyh364UJNxE-unsplash.jpg" width="90%" height="100%" style="border-radius: 5px;"></div>
+                    <div>
+                    <p class="review-p">Drone Powered By AI Can Detect Obstacles</p>
+                    <div style="display: grid; grid-template-columns: 0.2fr 0.2fr; color: rgb(85, 84, 84); font-size: small;">
+                    <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-right: 10px;"> 
+                    <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                    </svg></div><span style="padding-left: 4px;">0 </span></div>
+                    <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-left: 10px; 
+                    border-left: 1px solid rgb(112, 111, 111);"> 
+                    <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                    </svg></div><span style="padding-left: 4px;">3181 </span></div>
+                                            </div>
+                                    </div>
+                    </div>
+                    <div class="review" style="height: 113px;">
+                        <div><img src="./image/Apple-Salad.webp" width="90%" height="60%" style="border-radius: 5px;"></div>
+                        <div>
+                        <p class="review-p">Review Of Healthy Breakfast Meals For Energy Boost</p>
+                        <div style="display: grid; grid-template-columns: 0.2fr 0.2fr; color: rgb(85, 84, 84); font-size: small;">
+                        <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-right: 10px;"> 
+                        <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                         <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                        </svg></div><span style="padding-left: 4px;">0 </span></div>
+                        <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-left: 10px; 
+                        border-left: 1px solid rgb(112, 111, 111);"> 
+                        <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                        </svg></div><span style="padding-left: 4px;">3864 </span></div>
+                                                </div>
+                                        </div>
+                        </div>
+                        <div class="review">
+                            <div><img src="./image/technology-04.jpg" width="90%" height="100%" style="border-radius: 5px;"></div>
+                            <div>
+                            <p class="review-p">How To Climb The Career Latter And Don't Waste Your Youth</p>
+                            <div style="display: grid; grid-template-columns: 0.2fr 0.2fr; color: rgb(85, 84, 84); font-size: small;">
+                            <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-right: 10px;"> 
+                            <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                             <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                            </svg></div><span style="padding-left: 4px;">1 </span></div>
+                            <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-left: 10px; 
+                            border-left: 1px solid rgb(112, 111, 111);"> 
+                            <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                            </svg></div><span style="padding-left: 4px;">4439 </span></div>
+                                                    </div>
+                                            </div>
+                            </div>
+                </div>
+                </div>
+            </div>
+            <div class="section-7-image">
+              <img src="./image/chase-chappell-m29D0DvAhF0-unsplash.jpg" class="image-7"
+              width="100%" height="400px"
+              style="border-radius: 5px; filter: brightness(70%);">
+              <div class="sub-container-4b-write">
+                  <button class="container-4a-button"><i>Guide</i></button>
+                  <p>Tips & Trick Every PC Owner Have To Know</p>
+                  <div class="container-4b-icon">
+                      <div><img src="./image/client-01 (1).jpg" width="40px" style="border-radius: 5px;"></div>
+                      <div style="color: rgb(223, 220, 220); font-size: small;">Gillion, 7 years ago</div>
+                      <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 20px;
+                       padding-left: 15px; color: rgb(223, 220, 220); font-size: small;
+                       border-left: 1px solid white;"> <div style="margin-top: 2px;"><svg width="20" height="20" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                        </svg></div><span style="padding-left: 4px;">0 </span></div>
+                      <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 20px; 
+                      padding-left: 5px;  color: rgb(223, 220, 220); font-size: small;
+                       border-left: 1px solid white;"> <div style="margin-top: 2px;"><svg width="20" height="20" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                        </svg></div><span style="padding-left: 4px;">3 min read </span></div>
+                  </div>
+                  </div>
+           </div>
+        </section>
+        <section class="section-8">
+          <div>
+            <div style="border-bottom: 2px solid black; width: 170px;">
+              <h2>Tech & Gadget</h2>
+                  </div>
+          <div class="container-8">
+            <div class="sub-container-8">
+              <img src="./image/technology-01.jpg" width="100%" height="400px" 
+              style="border-radius: 6px;">
+              <div class="container-8-write">
+                <button class="container-4a-button"><i>Lifestyle</i></button>
+                <p>Top 10 IT Workplace Ergonomics Tips</p>
+                <div style="display: grid; grid-template-columns: 0.45fr 0.2fr; gap: 5px; ">
+                  <p style="color: rgb(223, 220, 220); font-size: small; margin: 0px; margin-top: 3px;">Gillion, 7 years ago</p>
+                  <div style="display: grid; grid-template-columns: 0.2fr 1.0fr; gap: 4px; padding-left: 10px;
+                  color: rgb(223, 220, 220); font-size: small; border-left: 1px solid rgb(223, 220, 220);">
+              <svg width="20" height="20" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+              </svg>
+              <p style="margin: 0px; margin-top: 3px;">0</p>    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sub-container-8" style="width: 100%;">
+              <img src="./image/post-02 (1).png" width="100%" height="400px" 
+              style="border-radius: 6px; filter: brightness(70%);">
+              <div class="container-8-write" style="width: 27%;">
+                <button class="container-4a-button"><i>Gadget</i></button>
+                <p>Coolest Gaming Rig With NZXT <br/>Cooling System</p>
+                <div style="display: grid; grid-template-columns: 0.45fr 0.2fr; gap: 5px; ">
+                  <p style="color: rgb(223, 220, 220); font-size: small; margin: 0px; margin-top: 3px;">Gillion, 7 years ago</p>
+                  <div style="display: grid; grid-template-columns: 0.2fr 1.0fr; gap: 4px; padding-left: 10px;
+                  color: rgb(223, 220, 220); font-size: small; border-left: 1px solid rgb(223, 220, 220);">
+              <svg width="20" height="20" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+              </svg>
+              <p style="margin: 0px; margin-top: 3px;">1</p>    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sub-container-8">
+              <img src="./image/kawe-rodrigues-_CDWC2CyGek-unsplash.jpg" width="100%" height="400px" 
+              style="border-radius: 6px; filter: brightness(70%);">
+              <div class="container-8-write">
+                <button class="container-4a-button"><i>News</i></button>
+                <p>Most Impressive Hacker Attack in 2018</p>
+                <div style="display: grid; grid-template-columns: 0.45fr 0.2fr; gap: 5px; ">
+                  <p style="color: rgb(223, 220, 220); font-size: small; margin: 0px; margin-top: 3px;">Gillion, 5 years ago</p>
+                  <div style="display: grid; grid-template-columns: 0.2fr 1.0fr; gap: 4px; padding-left: 10px;
+                  color: rgb(223, 220, 220); font-size: small; border-left: 1px solid rgb(223, 220, 220);">
+              <svg width="20" height="20" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+              </svg>
+              <p style="margin: 0px; margin-top: 3px;">0</p>    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+        <section class="section-9">
+          <div class="container-9">
+            <div class="sub-container-9a">
+              <div style="border-bottom: 2px solid black; width: 180px;">
+                <h2>Newest articles</h2>
+                    </div>
+                    <div class="part">
+                      <div class="part-1">
+                       <div class="part-1a">
+                        <img src="./image/photography.jfif" class="image-9" width="100%" height="196px" style="border-radius: 6px;">
+                        <button class="container-9a-button"><i>Photography</i></button>
+                        <p class="container-9a-p">Rewview Of Photoshop CC Editing Techniques</p>
+                        <div class="container-9-icon">
+                          <div style="color: rgb(95, 94, 94); font-size: small; padding-top: 4px; padding-right: 5px;">Gillion, 7 years ago</div>
+                      <div style="display: grid; grid-template-columns: 0.2fr 0.5fr; height: 20px;
+                       padding-left: 15px; color: rgb(95, 94, 94); font-size: small;
+                       border-left: 1px solid rgb(95, 94, 94);"> <div style="margin-top: 2px;"><svg width="20" height="20" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                        </svg></div><span style="padding-left: 4px; padding-top: 5px;">0 </span></div>
+                      <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 20px; 
+                      padding-left: 5px;  color: rgb(95, 94, 94); font-size: small;
+                       border-left: 1px solid rgb(95, 94, 94);"> <div style="margin-top: 2px;"><svg width="20" height="20" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                        </svg></div><span style="padding-left: 4px; padding-top: 5px;">1 min read </span></div>
+                        </div>
+                       </div>
+                       <div class="part-1a">
+                        <img src="./image/social media.jpg" class="image-9" width="100%" height="196px" style="border-radius: 6px;">
+                        <button class="container-9a-button"><i>Health</i></button>
+                        <p class="container-9a-p">How Much Time On Social Network Is Considered Healthy</p>
+                        <div class="container-9-icon">
+                          <div style="color: rgb(95, 94, 94); font-size: small; padding-top: 4px; padding-right: 5px;">Gillion, 7 years ago</div>
+                      <div style="display: grid; grid-template-columns: 0.2fr 0.5fr; height: 20px;
+                       padding-left: 15px; color: rgb(95, 94, 94); font-size: small;
+                       border-left: 1px solid rgb(95, 94, 94);"> <div style="margin-top: 2px;"><svg width="20" height="20" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                        </svg></div><span style="padding-left: 4px; padding-top: 5px;">0 </span></div>
+                      <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 20px; 
+                      padding-left: 5px;  color: rgb(95, 94, 94); font-size: small;
+                       border-left: 1px solid rgb(95, 94, 94);"> <div style="margin-top: 2px;"><svg width="20" height="20" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                        </svg></div><span style="padding-left: 4px; padding-top: 5px;">3 min read </span></div>
+                        </div>
+                       </div>
+                       <div class="part-1a">
+                        <img src="./image/img-plane.jpg" class="image-9" width="100%" height="196px" style="border-radius: 6px;">
+                        <button class="container-9a-button"><i>Fashion</i></button>
+                        <p class="container-9a-p">Pair Of Green Sneakers, Style Mistake Or Victory</p>
+                        <div class="container-9-icon">
+                          <div style="color: rgb(95, 94, 94); font-size: small; padding-top: 4px; padding-right: 5px;">Gillion, 7 years ago</div>
+                      <div style="display: grid; grid-template-columns: 0.2fr 0.5fr; height: 20px;
+                       padding-left: 15px; color: rgb(95, 94, 94); font-size: small;
+                       border-left: 1px solid rgb(95, 94, 94);"> <div style="margin-top: 2px;"><svg width="20" height="20" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                        </svg></div><span style="padding-left: 4px; padding-top: 5px;">0 </span></div>
+                      <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 20px; 
+                      padding-left: 5px;  color: rgb(95, 94, 94); font-size: small;
+                       border-left: 1px solid rgb(95, 94, 94);"> <div style="margin-top: 2px;"><svg width="20" height="20" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                        </svg></div><span style="padding-left: 4px; padding-top: 5px;">3 min read </span></div>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="part-1">
+                        <div class="part-1a">
+                         <img src="./image/post-01.png" class="image-9" width="100%" height="196px" style="border-radius: 6px;">
+                         <button class="container-9a-button"><i>Tech</i></button>
+                         <p class="container-9a-p">Smart Watches That Will Make You Spend Some Money</p>
+                         <div class="container-9-icon">
+                           <div style="color: rgb(95, 94, 94); font-size: small; padding-top: 4px; padding-right: 5px;">Gillion, 5 years ago</div>
+                       <div style="display: grid; grid-template-columns: 0.2fr 0.5fr; height: 20px;
+                        padding-left: 15px; color: rgb(95, 94, 94); font-size: small;
+                        border-left: 1px solid rgb(95, 94, 94);"> <div style="margin-top: 2px;"><svg width="20" height="20" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                         </svg></div><span style="padding-left: 4px; padding-top: 5px;">0 </span></div>
+                       <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 20px; 
+                       padding-left: 5px;  color: rgb(95, 94, 94); font-size: small;
+                        border-left: 1px solid rgb(95, 94, 94);"> <div style="margin-top: 2px;"><svg width="20" height="20" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                         </svg></div><span style="padding-left: 4px; padding-top: 5px;">3 min read </span></div>
+                         </div>
+                        </div>
+                        <div class="part-1a">
+                         <img src="./image/kawe-rodrigues-d_XiPToXk3E-unsplash.jpg" class="image-9" width="100%" height="196px" style="border-radius: 6px;">
+                         <button class="container-9a-button"><i>Health</i></button>
+                         <p class="container-9a-p">Best Portable Bluetooth Speaker In 2018</p>
+                         <div class="container-9-icon">
+                           <div style="color: rgb(95, 94, 94); font-size: small; padding-top: 4px; padding-right: 5px;">Gillion, 5 years ago</div>
+                       <div style="display: grid; grid-template-columns: 0.2fr 0.5fr; height: 20px;
+                        padding-left: 15px; color: rgb(95, 94, 94); font-size: small;
+                        border-left: 1px solid rgb(95, 94, 94);"> <div style="margin-top: 2px;"><svg width="20" height="20" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                         </svg></div><span style="padding-left: 4px; padding-top: 5px;">2 </span></div>
+                       <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 20px; 
+                       padding-left: 5px;  color: rgb(95, 94, 94); font-size: small;
+                        border-left: 1px solid rgb(95, 94, 94);"> <div style="margin-top: 2px;"><svg width="20" height="20" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                         </svg></div><span style="padding-left: 4px; padding-top: 5px;">3 min read </span></div>
+                         </div>
+                        </div>
+                        <div class="part-1a">
+                         <img src="./image/sports-01.jpg" class="image-9" width="100%" height="196px" style="border-radius: 6px;">
+                         <button class="container-9a-button"><i>Photography</i></button>
+                         <p class="container-9a-p">How To Start Running Like A Pro</p>
+                         <div class="container-9-icon">
+                           <div style="color: rgb(95, 94, 94); font-size: small; padding-top: 4px; padding-right: 5px;">Gillion, 5 years ago</div>
+                       <div style="display: grid; grid-template-columns: 0.2fr 0.5fr; height: 20px;
+                        padding-left: 15px; color: rgb(95, 94, 94); font-size: small;
+                        border-left: 1px solid rgb(95, 94, 94);"> <div style="margin-top: 2px;"><svg width="20" height="20" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                         </svg></div><span style="padding-left: 4px; padding-top: 5px;">0 </span></div>
+                       <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 20px; 
+                       padding-left: 5px;  color: rgb(95, 94, 94); font-size: small;
+                        border-left: 1px solid rgb(95, 94, 94);"> <div style="margin-top: 2px;"><svg width="20" height="20" fill="#555" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                         </svg></div><span style="padding-left: 4px; padding-top: 5px;">3 min read </span></div>
+                         </div>
+                        </div>
+                       </div>
+                    </div>
+            </div>
+            <div class="sub-container-9b">
+              <div class="sub-subscribe">
+                <h2>Subscribe for newsletter</h2>
+                    </div>
+              <div class="container-9b-part1">
+                <input type="email" placeholder="Your email address" class="container-10-input"/>
+                <p class="input-p"><i>* You will recieve the latest news and updates on your favorite celebrities!</i></p>
+              </div>
+              <div class="container-9b-part2">
+                <div class="life-hack">
+                <div style="border-bottom: 2px solid black; width: 130px;">
+                  <h2>Life Hacks</h2>
+                      </div>
+                <div class="hack-1">People</div>
+                <div class="hack-2">Health</div>
+                </div>
+                <div class="advert">
+                  <img src="./image/advertisment.jpg" width="100%" height="200px" class="advert-image"
+                  style="border-radius: 6px; filter: brightness(90%);">
+                </div>
+                <div>
+                  <h3>How To Start Running Like A Pro</h3>
+                         <div style="display: grid; grid-template-columns: 0.35fr 0.5fr; color: rgb(85, 84, 84); font-size: small;"> 
+                             <div>Gillion, 5 years ago </div> 
+                             <div style="display: grid; grid-template-columns: 0.1fr 0.2fr; height: 15px; padding-left: 10px;
+                             border-left: 1px solid rgb(112, 111, 111);"> 
+                             <div style="margin-top: -2px;"><svg width="19" height="19" fill="#555454" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                              </svg></div><span style="padding-left: 4px;">0 </span></div></div>
+                         <p class="sport-1p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet,
+                             aunc et accumsan
+                         </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button class="section-9-button">LOAD MORE</button>
+        </section>
+        <section class="section-10">
+          <div class="container-10">
+              <div>
+                <div style="border-bottom: 2px solid white; width: 180px;">
+                  <h2 style="color: white;">Subscribe Now</h2>
+                      </div>
+                      <div class="container-9b-part1">
+                        <input type="email" placeholder="Your email address" class="container-10-input"/>
+                        <p class="input-p"><i>* You will recieve the latest news and updates on your favorite celebrities!</i></p>
+                      </div>
+              </div>
+              <div class="sub-container-10">
+                <div style="border-bottom: 2px solid white; width: 100px;">
+                <h2 style="color: #fff;">Reviews</h2>
+               </div>
+            <div class="container-10b-1">
+                  <div class="review">
+                        <div><img src="./image/profile-colour.jpg.jfif" width="80px" height="80px" style="border-radius: 5px;"></div>
+                        <div>
+                        <p class="review-10p">Review Of Photoshop CC Editing Techniques</p>
+                        <div style="display: grid; grid-template-columns: 0.2fr 0.2fr; color: white; font-size: small;">
+                        <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-right: 10px;"> 
+                        <div style="margin-top: -2px;"><svg width="19" height="19" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                         <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 
+                         0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11
+                          7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                        </svg></div><span style="padding-left: 4px;">0 </span></div>
+                        <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-left: 10px; 
+                        border-left: 1px solid white;"> 
+                        <div style="margin-top: -2px;"><svg width="19" height="19" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                        </svg></div><span style="padding-left: 4px;">3896 </span></div>
+                                                </div>
+                                        </div>
+                        </div>
+                        <div class="review">
+                            <div><img src="./image/rafael-garcin-yyh364UJNxE-unsplash.jpg" width="80px" height="80px" style="border-radius: 5px;"></div>
+                            <div>
+                            <p class="review-10p">Drone Powered By AI Can Detect Obstacles</p>
+                            <div style="display: grid; grid-template-columns: 0.2fr 0.2fr; color: white; font-size: small;">
+                            <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-right: 10px;"> 
+                            <div style="margin-top: -2px;"><svg width="19" height="19" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                             <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                            </svg></div><span style="padding-left: 4px;">0 </span></div>
+                            <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-left: 10px; 
+                            border-left: 1px solid white;"> 
+                            <div style="margin-top: -2px;"><svg width="19" height="19" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                            </svg></div><span style="padding-left: 4px;">3181 </span></div>
+                                                    </div>
+                                            </div>
+                            </div>
+                            <div class="review">
+                                <div><img src="./image/Apple-Salad.webp" width="80px" height="80px" style="border-radius: 5px;"></div>
+                                <div>
+                                <p class="review-10p">Review Of Healthy Breakfast Meals For Energy Boost</p>
+                                <div style="display: grid; grid-template-columns: 0.2fr 0.2fr; color: white; font-size: small;">
+                                <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-right: 10px;"> 
+                                <div style="margin-top: -2px;"><svg width="19" height="19" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                                </svg></div><span style="padding-left: 4px;">0 </span></div>
+                                <div style="display: grid; grid-template-columns: 0.2fr 1fr; height: 15px; padding-left: 10px; 
+                                border-left: 1px solid white;"> 
+                                <div style="margin-top: -2px;"><svg width="19" height="19" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2ZM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8ZM11 7h1.5v5.25l4.5 2.67-.75 1.23L11 13V7Z" clip-rule="evenodd"></path>
+                                </svg></div><span style="padding-left: 4px;">3864 </span></div>
+                                                        </div>
+                                                </div>
+                                </div>
+                        </div>
+                        </div>
+              <div>
+                <div style="border-bottom: 2px solid white; width: 100px;">
+                  <h2 style="color: #fff;">Categories</h2>
+                 </div>
+                 <div class="container-10-list1">
+                  <li>ANIMAL</li>
+                  <span>1</span>
+                 </div>
+                 <div class="container-10-list2">
+                  <li>BEAUTY</li>
+                  <span>6</span>
+                 </div>
+                 <div class="container-10-list2">
+                  <li>BUSINESS</li>
+                  <span>1</span>
+                 </div>
+                 <div class="container-10-list2">
+                  <li>CARS</li>
+                  <span>5</span>
+                 </div>
+                 <div class="container-10-list2">
+                  <li>COOK</li>
+                  <span>3</span>
+                 </div>
+                 <div class="container-10-list2">
+                  <li>FASHION</li>
+                  <span>6</span>
+                 </div>
+                 <div class="container-10-list2">
+                  <li>FOOD</li>
+                  <span>5</span>
+                 </div>
+                 <div><a>Show All</a></div>
+              </div>
+          </div>         
+        </section>
+        <div class="container-11" id="container"></div>
+        <script src="./js/gillion.js"></script>
+    </body>
+</html>

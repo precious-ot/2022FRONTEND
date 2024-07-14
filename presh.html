@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Developer</title> 
+        <style>
+
+           body{
+            background: url(./image/luke-chesser-pJadQetzTkI-unsplash.jpg) no-repeat 100%;
+            font-family: Arial, Helvetica, sans-serif;
+           margin: 0%;
+            color: #fff;
+           }
+
+           ul{
+            text-align: right;
+            padding: 0%;
+           }
+
+           .container-1{
+            padding-bottom: 30px;
+            display: grid;
+            grid-template-columns: 0.2fr 1fr;
+            padding-top: 20px;
+            padding-left: 10%;
+           }
+
+           .presh-logo{
+            border-radius: 60%;
+            width: 50%;
+           }
+
+           li{
+            display: inline;
+            padding: 0px 30px;
+           }
+
+           a{
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 14px;
+           }
+
+           .nav-button{
+            background-color: transparent;
+            color: rgb(172, 172, 247);
+            border: 2px solid rgb(172, 172, 247);
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+           }
+
+           .container-2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding-top: 50px;
+            line-height: 25px;
+            padding-left: 10%;
+           }
+
+           h2{
+            color: rgb(206, 206, 247);
+           }
+
+           span{
+            font-size: 14px;
+            color: rgb(204, 204, 245);
+           }
+
+           .button-2{
+            background-color: transparent;
+            color: rgb(172, 172, 247);
+            border: 2px solid rgb(172, 172, 247);
+            padding: 15px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 30px;
+           }
+
+           button:hover{
+            color: rgb(136, 136, 248);
+            border-color: rgb(136, 136, 248);
+           }
+
+           .image-2{
+            width: 75%;
+            height: 450px;
+            border-radius: 250px;
+           }
+
+           .logo-p{
+            margin-top: auto; 
+            margin-bottom: auto; 
+            font-size: 20px; 
+            font-family: cursive; 
+            color: rgb(135, 135, 184); 
+            padding-left: 2px;
+           }
+
+           .container-2p{
+            font-size: 14px;
+           }
+
+           @media screen and (max-width: 2560px){
+            .burger-nav{
+                display: none;
+            }
+           }
+
+           @media screen and (max-width: 768px){
+            .container-1{
+                display: grid;
+                grid-template-columns: none;
+                grid-template-rows: 0.1fr 0.1fr;
+                padding-bottom: 10px;
+                padding-left: 0%
+            }
+
+            .presh-logo{
+                width: 10%;
+                
+            }
+
+            .sub-container-1{
+                padding-left: 10%;
+                padding-bottom: 3%;
+            }
+
+            ul{
+                background-color: rgb(92, 92, 167);
+                margin: 0px;
+                padding: 8px 0px;
+                text-align: center;
+            }
+
+            .image-2{
+                width: 80%;
+            }
+           }
+
+           @media screen and (max-width: 480px){
+             
+             .burger-nav{
+                display: block;       
+                padding-top: 10px;
+                cursor: pointer;
+                height: 40px;
+                width: 20%;
+                position: absolute;
+                right: 0px;
+             }
+
+             .presh-logo{
+                width: 35%;
+             }
+
+             .sub-container-1{
+                margin-bottom: 10px;
+                margin: 0%;
+                padding-bottom: 0%;
+             }
+
+             .container-1{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                background-color: #262657;
+                padding-top: 10px;
+                padding-bottom: 0px;
+                
+             }
+
+             
+            .menu ul{
+                overflow: hidden;
+                height: 0;
+                width: 40%;
+                float: right;
+                padding: 0%;
+            }
+
+            ul{
+                position: absolute;
+                right: 0px;
+                top: 70px;
+            }
+
+            .menu ul.open{
+                height: auto;
+                
+            }
+             
+             li{
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0%;
+                padding: 0%;
+             }
+
+             li a{
+                border-bottom: 1px solid #262657;
+                display: block;
+                padding-left: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+             }
+
+             li a:hover{
+                background-color: #525296;
+             }
+
+             .nav-button{
+                border: none;
+                color: #fff;
+                padding-left: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+             }
+
+             .container-2{
+                display: grid;
+                grid-template-columns: none;
+                grid-template-rows: 0.5fr 1fr;
+                
+                padding-left: 7%;
+                gap: 15px;
+             }
+
+             .image-2{
+                height: 300px;
+                width: 70%;
+             }
+
+             .last:nth-child(1n){
+                grid-row: 1;
+                display: grid;
+                place-items: center;
+             }
+           }
+
+        </style>
+    </head>
+    <body>
+        <section class="section-1">
+            <div class="container-1">
+                <div class="sub-container-1"><img class="presh-logo" src="./image/presh-logo (2).png"></div>
+                   <div class="drop-down">
+                    <a class="burger-nav">
+                        <svg width="40" height="40" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 18h18v-2H3v2Zm0-5h18v-2H3v2Zm0-7v2h18V6H3Z"></path>
+                        </svg>
+                    </a>
+                    <div class="menu">
+                <ul>
+                    <li><a href="http.//www.com">About</a></li>
+                    <li><a href="http.//www.com">Experience</a></li>
+                    <li><a href="http.//www.com">Work</a></li>
+                    <li><a href="http.//www.com">Contact</a></li>
+                    <li><button class="nav-button" href="http.//www.com">Resume</button></li>
+                </ul>
+                    </div>
+                   </div>
+            </div>
+        </section>
+        <section style="padding-bottom: 30px;">
+            <div class="container-2">
+                <div>
+                    <span>Hi, my name is</span>
+                    <h1>Precious Otusanya.</h1>
+                    <h2>A Frontend Developer</h2>
+                    <p class="container-2p">Based in Ogun state, Nigeria. I like to craft solid and scalable front-end products
+                        with great user experience. I have developed many types of front-ends from well known
+                        application to Ecommerce booking platforms
+                    </p>
+                    <p class="container-2p">I'm passionate about cutting-edge, pixel-perfect, beautiful interfaces and intuitively
+                        implemented UX
+                    </p>
+                    <button class="button-2">PROJECT</button>
+                </div>
+                <div class="last">
+                    <img class="image-2" src="./image/presh.jpg">
+                </div>
+            </div>
+        </section>
+        <script src="./js/jquery.js"></script>
+        <script src="./js/presh.js"></script>
+    </body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+         crossorigin="anonymous"></script>
+
+         <script src="https://kit.fontawesome.com/4bbe0dcba6.js" crossorigin="anonymous"></script>
+         <style>
+           @font-face {
+            font-family: Nunito, sans-serif;
+            src: url(./fontawesome-free-6.5.2-web.zip);
+           }
+
+           body{
+            color: #3e5055;
+            padding-top: 50px !important;
+           }
+
+            #navbrand{
+                font-family: Nunito, sans-serif;
+                color: #3e5055 !important;
+            }
+
+            #menu:active{
+                box-sizing: none;
+            }
+
+            #link:hover{
+               color: #388da8 !important;
+               
+            }
+
+            #video{
+              color: #388da8 !important;
+            }
+
+            #link{
+              text-decoration: none !important;
+               color: #3e5055;
+               font-size: 17px;
+               font-family: sans-serif;
+            }
+
+            #home{
+              background-image: url(./QuickStart-file/hero-bg-light.webp);
+              background-repeat: no-repeat;
+              overflow: clip;
+            }
+
+            #section-3{
+              background-color: #e0f2f8;
+            }
+
+            #icon{
+              background-color: #b2e9fa;
+              color: #388da8;
+            }
+
+            #icon:hover{
+              background-color: #388da8;
+              color: white;
+            }
+
+            #name{
+              color: white;
+            }
+
+            #mybtn:hover{
+              position: right;
+              animation: mymove 5s infinite;
+            }
+
+            #client{
+              padding: 20px 40px;
+              opacity: 0.5;
+              filter: grayscale(100);
+            }
+
+            #client:hover{
+              opacity: 1;
+              filter: none;
+            }
+
+            #home-tab{
+              color: #3e5055;
+            }
+
+            #home-tab:active{
+              background-color: color-mix(in srgb, #388da8 50%, transparent 90%);
+            }
+
+            @keyframes mymove{
+              50% {position: left;}
+            }
+            
+           
+            @media all and (max-width: 768px){
+              #video{
+                padding-top: 20px !important;
+              }
+            }
+         </style>
+    </head>
+    <body>
+        <section class="fixed-top">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-2 fw-bold" id="navbrand" href="#">
+                    <img src="./QuickStart-file/logo(1).png" class="img-fluid" style="max-height: 36px;"> QuickStart
+                </a>
+                <button class="navbar-toggler border-0" type="button" id="menu" data-bs-toggle="offcanvas"
+                 data-bs-target="#quickoffcanvas" aria-controls="quickoffcanvas" 
+                 aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>    
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="1" id="quickoffcanvas"  aria-labelledby="quickoffcanvasLabel">
+                  <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end align-center me-3 flex-grow-1">
+                    <li class="nav-item pe-2"><a class="nav-link active" aria-current="page" id="link" href="#home">Home</a></li>
+                    <li class="nav-item pe-2"><a class="nav-link" id="link" href="#about">About</a></li>
+                    <li class="nav-item pe-2"><a class="nav-link" id="link" href="#features">Features</a></li>
+                    <li class="nav-item pe-2"><a class="nav-link" id="link" href="#services">Services</a></li>
+                    <li class="nav-item pe-2"><a class="nav-link" id="link" href="#pricing">pricing</a></li>
+                    <li class="nav-item pe-2 dropdown-center"><a class="nav-link text-dark dropdown-toggle" id="link" data-bs-toggle="dropdown" href="#">Dropdown</a>
+                      <ul class="dropdown-menu" style="border-color: #388da8;">
+                        <li class="dropdown-item"><a class="dropdown-link" id="link" href="#">Dropdown 1</a></li>
+                        <li class="dropdown-item"><a class="dropdown-link" id="link" href="#">Dropdown 2</a></li>
+                        <li class="dropdown-item"><a class="dropdown-link" id="link" href="#">Dropdown 3</a></li>
+                        <li class="dropdown-item"><a class="dropdown-link" id="link" href="#">Dropdown 4</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item pe-2"><a class="nav-link" id="link" href="# contact">Contact</a></li>
+                    <li class="nav-item"><button class="nav-link btn rounded-pill text-light ps-3 pe-3" href="#home" style="background-color: #388da8;">
+                      Get Started</button></li>
+                  </ul>
+                  </div>
+                </div>
+            </div>
+          </nav>
+        </section>
+        <section class=" pt-5" id="home">
+          <div class="row justify-content-center align-center text-center container-fluid m-0 p-0">
+            <div class="col-lg-7 col-md-10 text-center">
+            <h1 style="color: #3e5055 !important; font-size: 48px;" class="mb-2">Welcome to <span style="color: #388da8;">QuickStart</span></h1>
+            <p style="color: #3e5055 !important; font-size: 20px;" class="mb-4">Quickly start your project now and set the stage for success</p>
+            <div class="row justify-content-center text-center g-0">
+              <div class="col-lg-3 col-md-3 text-center">
+                <a class=" btn text-light rounded-pill px-4 py-2" href="#home" style="background-color: #388da8;">Get Started
+              </a>
+              </div>
+              <a class="col-lg-3 col-md-3 pt-2 fw-bold text-decoration-none" id="video"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#388da8" class="bi bi-play-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+</svg> Watch Video</a>
+            </div>
+            <div class="row justify-content-center align-center">
+            <img src="./QuickStart-file/hero-services-img.webp" class="img-fluid col-lg-10">
+            </div>
+          </div>
+          </div>
+        </section>
+        <section class="py-5" id="section-3">
+          <div class="container-fluid row justify-content-center align-center ps-3 pe-0 ">
+            <div class="col-sm-8 col-md-4 pe-0" class="lorem">
+              <div class="d-flex flex-row">
+                <div class="px-4 h-100 py-4" id="icon"><a><i class="fa-solid fa-briefcase fa-2xl"></i></a></div>
+                <div class="ms-3">
+                  <h5>Lorem Ipsum</h5>
+                  <p style="font-size: 14px; margin-bottom: 10px;">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p></div>
+              </div>
+            </div>
+            <div class="col-sm-8 col-md-4" class="lorem">
+              <div class="d-flex flex-row">
+                <div class="px-4 h-100 py-4" id="icon"><a><i class="fa-solid fa-list-check fa-2xl"></i></a></div>
+                <div class="ms-3">
+                  <h5>Dolor Sitema</h5>
+                  <p style="font-size: 14px; margin-bottom: 10px;">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p></div>
+              </div>
+            </div>
+            <div class="col-sm-8 col-md-4" class="lorem">
+              <div class="d-flex flex-row">
+                <div class="px-4 h-100 py-4" id="icon"><a><i class="fa-solid fa-thin fa-chart-simple fa-2xl"></i></a></div>
+                <div class="ms-3">
+                  <h5>Set ut Perspiciatis</h5>
+                  <p style="font-size: 14px; margin-bottom: 10px;">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-5 px-5">
+          <div class="container-fluid row row-gap-3" id="about">
+            <div class="col-lg-6 col-md-8">
+              <span class="">WHO WE ARE</span>
+              <h2 class="mt-3" style="color: 3e5055;">Unleashing Potential with Creative Strategy</h2>
+              <p class="fst-italic fw-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                 labore et dolore magna aliqua.</p>
+              <ul>
+                <li class="pb-3 fw-medium" style="color: #388da8; list-style: none;">
+                  <i class="fa-regular fa-circle-check fa-xl"></i>
+                  <span style="color: #3d4348;">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                </li>
+                <li class="pb-3 fw-medium" style="color: #388da8; list-style: none;">
+                  <i class="fa-regular fa-circle-check fa-xl"></i>
+                  <span style="color: #3d4348;"> Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+                </li>
+                <li class="pb-3 fw-medium" style="color: #388da8; list-style: none;">
+                  <i class="fa-regular fa-circle-check fa-xl"></i>
+                  <span style="color: #3d4348;">Ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate trideta 
+                    storacalaperda mastiro dolore eu fugiat nulla pariatur.</span>
+                </li>
+              </ul>
+              <button class="btn rounded" id="mybtn" style="background-color: #388da8; color: white;">Read More
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+            <div class="col-lg-6">
+              <div class="row row-gap-3">
+                <div class="col-lg-6">
+                  <img class="img-fluid rounded" src="./QuickStart-file/about-company-1.jpg">
+                </div>
+                <div class="col-lg-6">
+                  <div>
+                    <img class="img-fluid rounded" src="./QuickStart-file/about-company-2.jpg">
+                  </div>
+                  <div class="mt-3">
+                    <img class="img-fluid rounded" src="./QuickStart-file/about-company-3.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-5 px-5">
+          <div class="row">
+            <div class="col-xl-2 col-md-3 col-sm-6">
+              <img class="img-fluid" id="client" src="./QuickStart-file/client-1.png">
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-6">
+              <img class="img-fluid" id="client" src="./QuickStart-file/client-2.png">
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-6">
+              <img class="img-fluid" id="client" src="./QuickStart-file/client-3.png">
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-6">
+              <img class="img-fluid" id="client" src="./QuickStart-file/client-4.png">
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-6">
+              <img class="img-fluid" id="client" src="./QuickStart-file/client-5.png">
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-6">
+              <img class="img-fluid" id="client" src="./QuickStart-file/client-6.png">
+            </div>
+          </div>
+        </section>
+        <section class="py-5 px-5">
+          <div class="container-fluid">
+            <div class="text-center">
+            <h2 class="mb-3">Features</h2>
+            <hr style="width: 60px; border: 2px solid #388da8; margin: auto; opacity: 1;">
+            <p class="mt-3">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+          </div>
+            <div class="row pt-5">
+            <div class="col-lg-6">
+               <ul class="nav nav-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active py-3 px-3 rounded" class="mytab" id="home-tab" type="button" data-bs-toggle="tab" role="tab" data-bs-target="#tab-1"
+                   aria-controls="home-pane" aria-selected="true">
+                   <div class="d-flex flex-row">
+                    <div class="shadow bg-light h-100 p-3 rounded-5 me-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#388da8" class="bi bi-binoculars" viewBox="0 0 16 16">
+                        <path d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="d-none d-lg-block">Modi sit est dela pireda nest</h4>
+                      <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit
+                         esse cillum dolore eu fugiat nulla pariatur</p>
+                    </div>
+                   </div>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link py-3 px-3 rounded" class="mytab" id="home-tab" type="button" data-bs-toggle="tab" role="tab" data-bs-target="#tab-2"
+                   aria-controls="tab-1" aria-selected="false">
+                   <div class="d-flex flex-row">
+                    <div class="shadow bg-light h-100 p-3 rounded-5 me-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#388da8" class="bi bi-box-seam" viewBox="0 0 16 16">
+                        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="d-none d-lg-block">Unde praesenti mara setra let</h4>
+                      <p>Recusandae atque nihil. Delectus vitae non similique magnam 
+                        molestiae sapiente similique tenetur
+                         aut voluptates sed voluptas ipsum voluptas</p>
+                    </div>
+                   </div>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link py-3 px-3 rounded" id="home-tab" type="button" data-bs-toggle="tab" role="tab" data-bs-target="#tab-3"
+                   aria-controls="home-pane" aria-selected="false">
+                   <div class="d-flex flex-row">
+                    <div class="shadow bg-light h-100 p-3 rounded-5 me-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#388da8" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="d-none d-lg-block">Pariatur explica nitro dela</h4>
+                      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                         qui officia deserunt mollit anim id
+                         est laborum Debitis nulla est maxime voluptas dolor aut</p>
+                    </div>
+                   </div>
+                  </a>
+                </li>
+               </ul>
+            </div>
+            <div class="col-lg-6 tab-content">
+              <div class="tab-pane fade show active" id="tab-1" role="tabpanel" tabindex="0">
+                <img class="img-fluid rounded" src="./QuickStart-file/tabs-1.jpg">
+              </div>
+              <div class="tab-pane fade" id="tab-2" role="tabpanel" tabindex="0">
+                <img class="img-fluid rounded" src="./QuickStart-file/tabs-2.jpg">
+              </div>
+              <div class="tab-pane fade" id="tab-3" role="tabpanel" tabindex="0">
+                <img class="img-fluid rounded" src="./QuickStart-file/tabs-3.jpg">
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-5 px-5">
+          <div class="container-fluid">
+            <div class="row gx-5">
+            <div class="col-lg-6">
+              <img class="img-fluid rounded-4" src="./QuickStart-file/features-1.jpg">
+            </div>
+            <div class="col-lg-6 py-3 px-5">
+              <div class="rounded-4 py-4 px-5 mt-4" style="background-color: color-mix(in srgb, #388da8 10%, transparent 95%);">
+                <h3 class="mb-4">Corporis temporibus maiores provident</h3>
+                <p class="lh-base mb-4">Ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                  Excepteur sint occaecat cupidatat non proident.</p>
+                  <button class="btn text-light" style="background-color: #388da8;">Learn More</button>
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-5 px-5">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="rounded-4 py-4 px-5" style="background-color: color-mix(in srgb, #388da8 10%, transparent 95%);">
+                 <h3 class="mb-3">Neque ipsum omnis sapiente quod quia dicta</h3>
+                 <p class="lh-base mb-3">Quidem qui dolore incidunt aut. In assumenda harum id iusto lorena plasico mares</p>
+                 <ul class="ps-0">
+                  <li class="list-unstyled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#388da8" class="bi bi-easel" viewBox="0 0 16 16">
+                      <path d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0M2 3v7h12V3z"/>
+                    </svg>
+                    Et corporis ea eveniet ducimus.</li>
+                  <li>Exercitationem dolorem sapiente.</li>
+                  <li>Veniam quia modi magnam.</li>
+                 </ul>
+                </div>
+              </div>
+              <div class="col-lg-6"></div>
+            </div>
+          </div>
+        </section>
+    </body>
+</html>
