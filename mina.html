@@ -9,22 +9,29 @@
          crossorigin="anonymous"></script>
          <style>
             body{
+                margin: 0%;
                 background-color: color-mix(in srgb-linear, blue 80%, skyblue 50%);
+            }
+
+            #text::placeholder{
+             color: rgb(158, 156, 156);
             }
          </style>
     </head>
-    <body class="mx-md-5 mt-4">
-        <section>
+    <body>
+        <section class="mx-md-5 mt-4">
             <nav class="navbar navbar-expand-md text-light">
                 <div class="container-xxl">
                     <span class="nav-brand ms-3">Landing</span>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" 
                     data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle Navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center align-center" id="main-nav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link text-light ms-3" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-light ms-3" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link text-light ms-3" href="#">Features</a></li>
                         <li class="nav-item"><a class="nav-link text-light ms-3" href="#">Reviews</a></li>
                         <li class="nav-item"><a class="nav-link text-light ms-3" href="#">Pricing</a></li>
@@ -35,17 +42,37 @@
                 </div>
             </nav>
         </section>
-        <section class="mt-5">
-         <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-6 text-light">
+        <section class="mt-5 mx-md-5 mb-lg-4" id="home">
+         <div class="container-fluid pt-5 px-4">
+            <div class="row justify-content-center pt-md-5 row-gap-5">
+                <div class="col-md-6 col-sm-8 text-light ps-lg-5 pe-lg-5 mt-lg-4">
                     <h2>Fly Makes You Faster</h2>
-                    <p>New free templates by uicookies.com. For more templates visit the site.
+                    <p class="pt-2 fs-6">New free templates by uicookies.com. For more templates visit the site.
                          Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button class="btn btn-primary rounded-pill mt-2">See Pricing</button>     
                 </div>
-                <div class="col-6"></div>
+                <div class="col-md-6 col-sm-8 ps-md-5 pb-5">
+                    <div class="bg-light justify-content-center text-center align-center py-3 px-4 shadow-lg rounded">
+                       <h3>Sign Up For Free</h3>
+                         <form class="d-grid">
+                            <input class="form-control mt-3 mb-3 border-0" id="text" style="background-color: rgb(238, 236, 236);" type="text" placeholder="Full name">
+                            <input class="form-control mb-3 border-0" id="text" style="background-color: rgb(238, 236, 236);" type="email" placeholder="Email">
+                            <input class="form-control mb-3 border-0" id="text" style="background-color: rgb(238, 236, 236);" type="tel" placeholder="Number">
+                            <select class="form-select mb-3 border-0" style="background-color: rgb(238, 236, 236);">
+                                <option value="type" selected>Type</option>
+                            </select>
+                            <button class="btn btn-primary rounded-pill">Register</button>
+                         </form>
+                    </div>
+                </div>
             </div>
          </div>
+        </section>
+        <section>
+            <div class="bg-primary text-center text-light py-3">
+               Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
+               MINA. All Right Reserved
+            </div>
         </section>
     </body>
 </html>
